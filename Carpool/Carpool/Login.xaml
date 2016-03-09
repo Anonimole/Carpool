@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carpool.Login">
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0,20,0,0
+      </OnPlatform.iOS>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <ScrollView>
+    <StackLayout Orientation="Vertical" BackgroundColor="#26A69A">
+
+      <Label Text="AppName" FontSize="30" BackgroundColor="#004D40" HeightRequest="100" WidthRequest="100" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+
+      <StackLayout Orientation="Vertical" Padding="20,50,20,20" Spacing="30">
+        <Entry x:Name="emailEntry" Placeholder="Email" />
+        <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True" />
+        <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+
+          <Label Text="No Account?" Style="{StaticResource labelBoldStyle}"></Label>
+
+          <Button x:Name="signUpButton" Text="Sign Up" Style="{StaticResource linkStyle}" ></Button>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+
+          <Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}" ></Button>
+
+        </StackLayout>
+      </StackLayout>
+
+    </StackLayout>
+
+
+
+  </ScrollView>
+</ContentPage>
