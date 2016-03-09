@@ -19,7 +19,7 @@
       <StackLayout Orientation="Vertical" Padding="20,50,20,20" Spacing="30">
         <Entry x:Name="emailEntry" Placeholder="Email" />
         <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True" />
-        <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" />
+        <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" Clicked="SignIn"/>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
 
@@ -31,7 +31,7 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
 
-          <Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}" ></Button>
+          <Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}"  ></Button>
 
         </StackLayout>
       </StackLayout>

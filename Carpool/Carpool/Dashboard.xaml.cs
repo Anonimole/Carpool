@@ -8,17 +8,11 @@ using Xamarin.Forms;
 
 namespace Carpool
 {
-	public partial class Login : ContentPage
+	public partial class Dashboard : ContentPage
 	{
-		public Login ()
+		public Dashboard ()
 		{
 			InitializeComponent ();
 		}
-
-        async void SignIn(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Dashboard());
-            
-        }
 	}
 }
