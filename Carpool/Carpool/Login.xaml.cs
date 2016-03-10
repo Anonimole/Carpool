@@ -17,7 +17,8 @@ namespace Carpool
 
         async void SignIn(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Dashboard());
+
+            Application.Current.MainPage = new Dashboard();
             
         }
 	}
