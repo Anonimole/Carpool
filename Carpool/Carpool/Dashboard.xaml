@@ -13,7 +13,7 @@
 
   <TabbedPage.Children>
     
-    <ContentPage Title="Page 2" Icon="icon2.png">
+    <ContentPage Title="Page 2" Icon="icon2.png" >
       
       <StackLayout Orientation="Vertical" BackgroundColor="#26A69A"  Padding="0,10,0,0" Spacing="30">
         <StackLayout Orientation="Horizontal">
