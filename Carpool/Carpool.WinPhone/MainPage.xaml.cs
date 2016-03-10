@@ -28,7 +28,7 @@ namespace Carpool.WinPhone
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            LoadApplication(new Carpool.App());
+            LoadApplication(new Carpool.AppStart());
         }
 
         /// <summary>

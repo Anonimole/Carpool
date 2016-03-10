@@ -12,7 +12,7 @@ namespace Carpool
 	{
 		public Dashboard ()
 		{
-			InitializeComponent ();
-		}
+            InitializeComponent();
+        }
 	}
 }

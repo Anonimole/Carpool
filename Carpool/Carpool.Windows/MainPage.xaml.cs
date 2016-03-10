@@ -21,7 +21,7 @@ namespace Carpool.Windows
         {
             this.InitializeComponent();
 
-            LoadApplication(new Carpool.App());
+            LoadApplication(new Carpool.AppStart());
         }
     }
 }
