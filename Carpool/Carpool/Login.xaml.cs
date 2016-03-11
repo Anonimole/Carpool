@@ -12,13 +12,20 @@ namespace Carpool
 	{
 		public Login ()
 		{
+
 			InitializeComponent ();
 		}
 
-        async void SignIn(object sender, EventArgs e)
+        void SignIn(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Dashboard());
+            //await Navigation.PushModalAsync(new Dashboard());
+            var page = new NavigationPage(new Dashboard());
+            page.BarBackgroundColor = Color.FromHex("#004D40");
+            page.BarTextColor=Color.White;
             
+
+            Application.Current.MainPage = page;
+
         }
 	}
 }

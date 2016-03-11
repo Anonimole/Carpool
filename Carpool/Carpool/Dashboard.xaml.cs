@@ -8,11 +8,24 @@ using Xamarin.Forms;
 
 namespace Carpool
 {
-	public partial class Dashboard : ContentPage
-	{
-		public Dashboard ()
-		{
-			InitializeComponent ();
-		}
-	}
+    public partial class Dashboard : ContentPage
+    {
+        public Dashboard()
+        {
+            
+            InitializeComponent();
+            
+            this.routesList.ItemsSource = new string[]{
+              "mono",
+              "monodroid",
+              "monotouch",
+              "monorail",
+              "monodevelop",
+              "monotone",
+              "monopoly",
+              "monomodal",
+              "mononucleosis"
+            };
+        }
+    }
 }
