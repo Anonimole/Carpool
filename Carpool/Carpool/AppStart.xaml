@@ -5,6 +5,18 @@
 
   <Application.Resources>
     <ResourceDictionary>
+      
+      <Style x:Key="contentPageStyle" TargetType="StackLayout">
+        <Setter Property="BackgroundColor" Value="#26A69A"/>
+        <Setter Property="Orientation" Value="Vertical"></Setter>
+      </Style>
+
+      <Style x:Key="stackContent" TargetType="StackLayout">        
+        <Setter Property="Orientation" Value="Vertical"></Setter>
+        <Setter Property="Padding" Value="20,50,20,20"></Setter>
+        <Setter Property="Spacing" Value="30"></Setter>
+      </Style>
+
       <Style TargetType="Entry">
         <Setter Property="BackgroundColor" Value="White"/>
         <Setter Property="TextColor" Value="#00695C" />
