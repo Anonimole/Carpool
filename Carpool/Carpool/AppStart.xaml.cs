@@ -14,7 +14,10 @@ namespace Carpool
 		{
 			InitializeComponent ();
             //MainPage = new NavigationPage(new Login());
-            MainPage = new Login();
+            var loginPage = new NavigationPage(new Login());
+            
+
+            MainPage = loginPage;
             //MainPage = new Dashboard();
 		}
 	}
