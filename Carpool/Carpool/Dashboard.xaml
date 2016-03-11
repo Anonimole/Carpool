@@ -1,37 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Dashboard"
-             Title=" Dashboard">
-  <TabbedPage.Padding>
+             Title=" Dashboard"
+            BackgroundColor="#26A69A"
+          >
+  <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness">
       <OnPlatform.iOS>
         0,20,0,0
       </OnPlatform.iOS>
     </OnPlatform>
-  </TabbedPage.Padding>
+  </ContentPage.Padding>
 
-  <TabbedPage.Children>
-    
-    <ContentPage Title="Page 2" Icon="icon2.png" >
-      
-      <StackLayout Orientation="Vertical" BackgroundColor="#26A69A"  Padding="0,10,0,0" Spacing="30">
-        <StackLayout Orientation="Horizontal">
-          <Entry  HorizontalOptions="FillAndExpand"></Entry>
-          <Button Text="Search" Style="{StaticResource buttonSuccessStyle}"></Button>
-        </StackLayout>
+  <StackLayout Orientation="Vertical" Spacing="10">
+    <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+      <Entry  HorizontalOptions="FillAndExpand"></Entry>
+      <Button Text="Search" Style="{StaticResource buttonSuccessStyle}"></Button>
+    </StackLayout>
 
-        <ListView x:Name="routesList" BackgroundColor="White" ></ListView>
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+      <ListView x:Name="routesList" BackgroundColor="White"></ListView>
 
-      </StackLayout>
+    </StackLayout>
+  </StackLayout>
 
-    </ContentPage>
-    
-    <ContentPage Title="Page 3" Icon="icon3.png" />
-    
-  </TabbedPage.Children>
-
-  
-
-
-</TabbedPage>
+</ContentPage>
