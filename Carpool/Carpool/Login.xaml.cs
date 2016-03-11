@@ -21,6 +21,8 @@ namespace Carpool
         {
             //await Navigation.PushModalAsync(new Dashboard());
             var page = new NavigationPage(new Dashboard());
+
+            page = this.ToolBarInit(page);
             
 
             Application.Current.MainPage = page;
@@ -30,8 +32,9 @@ namespace Carpool
         async void SignUp(object sender, EventArgs e)
         {
             var signUpPage = new SignUp();
-            
-            await Navigation.PushAsync(new SignUp());
+            //signUpPage = this.ToolBarInit(signUpPage);
+
+            await Navigation.PushAsync(signUpPage);
         }
 
         
