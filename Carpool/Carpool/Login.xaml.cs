@@ -16,7 +16,7 @@ namespace Carpool
 			InitializeComponent ();
 		}
 
-        async void SignIn(object sender, EventArgs e)
+        void SignIn(object sender, EventArgs e)
         {
             //await Navigation.PushModalAsync(new Dashboard());
             var page = new NavigationPage(new Dashboard());
