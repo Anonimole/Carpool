@@ -58,6 +58,10 @@
         <Setter Property="VerticalOptions" Value="Center"/>
       </Style>
 
+      <Style x:Key="listCustomized" TargetType="StackLayout">
+        <Setter Property="BackgroundColor" Value="White"/>
+      </Style>
+
     </ResourceDictionary>
   </Application.Resources>
   
