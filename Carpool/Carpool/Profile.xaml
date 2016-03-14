@@ -4,13 +4,14 @@
              x:Class="Carpool.Profile"
              Title="Profile"
              >
-  <ContentPage.Padding>
+  
+  <!--<ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness">
       <OnPlatform.iOS>
         0,20,0,0
       </OnPlatform.iOS>
     </OnPlatform>
-  </ContentPage.Padding>
+  </ContentPage.Padding>-->
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
       <StackLayout Style="{StaticResource stackContent}">

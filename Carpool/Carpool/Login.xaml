@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Login">
-
-  <ContentPage.Padding>
+   <!--<ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness">
       <OnPlatform.iOS>
         0,20,0,0
       </OnPlatform.iOS>
     </OnPlatform>
-  </ContentPage.Padding>
-
+  </ContentPage.Padding>-->
+  
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
 
