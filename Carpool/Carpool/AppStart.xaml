@@ -24,6 +24,22 @@
         <Setter Property="HeightRequest" Value="42"/>
       </Style>
 
+
+      <Style TargetType="Picker">
+        <Setter Property="BackgroundColor" Value="White"/>
+
+      </Style>
+
+      
+
+      <Style TargetType="SearchBar">
+        <Setter Property="PlaceholderColor" Value="White"/>        
+      </Style>
+
+      <Style TargetType="Label">
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+
       <Style x:Key="labelBoldStyle" TargetType="Label">
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="TextColor" Value="White"/>

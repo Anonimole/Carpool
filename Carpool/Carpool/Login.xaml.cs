@@ -19,12 +19,8 @@ namespace Carpool
 
         void SignIn(object sender, EventArgs e)
         {
-            //await Navigation.PushModalAsync(new Dashboard());
-            var page = new NavigationPage(new Dashboard());
-
-            page = this.ToolBarInit(page);
+            var page = new NavigationPage(new Profile());
             
-
             Application.Current.MainPage = page;
 
         }
@@ -32,20 +28,8 @@ namespace Carpool
         async void SignUp(object sender, EventArgs e)
         {
             var signUpPage = new SignUp();
-            //signUpPage = this.ToolBarInit(signUpPage);
-
             await Navigation.PushAsync(signUpPage);
         }
-
         
-        NavigationPage ToolBarInit(NavigationPage page)
-        {
-            page.BarBackgroundColor = Color.FromHex("#004D40");
-            page.BarTextColor = Color.White;
-
-            return page;
-        }
-
-
 	}
 }
