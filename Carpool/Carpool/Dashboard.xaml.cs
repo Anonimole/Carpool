@@ -16,15 +16,17 @@ namespace Carpool
             InitializeComponent();
             
             this.routesList.ItemsSource = new string[]{
-              "mono",
-              "monodroid",
-              "monotouch",
-              "monorail",
-              "monodevelop",
-              "monotone",
-              "monopoly",
-              "monomodal",
-              "mononucleosis"
+              "Cluster - Catedral",
+              "Cluster - Av. Ventura Puente",
+              "Cluster - Plaza Las Americas",
+              "Cluster - Plaza la Huerta",
+              "Cluster - Catedral",
+              "Cluster - Av. Ventura Puente",
+              "Cluster - Plaza Las Americas",
+              "Cluster - Plaza la Huerta",
+              "Cluster - Av. Ventura Puente",
+              "Cluster - Plaza Las Americas",
+              "Cluster - Plaza la Huerta"
             };
         }
     }

@@ -2,9 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Dashboard"
-             Title=" Dashboard"
-            BackgroundColor="#26A69A"
-          >
+             Title=" Dashboard">
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness">
       <OnPlatform.iOS>
@@ -13,16 +11,28 @@
     </OnPlatform>
   </ContentPage.Padding>
 
-  <StackLayout Orientation="Vertical" Spacing="10">
-    <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-      <Entry  HorizontalOptions="FillAndExpand"></Entry>
-      <Button Text="Search" Style="{StaticResource buttonSuccessStyle}"></Button>
+
+  <ContentPage.ToolbarItems >
+    <ToolbarItem Name="Profile" Order="Secondary" Priority="0" />
+    <ToolbarItem Name="My routes"   Order="Secondary" Priority="1" />
+    <ToolbarItem Name="Log off"   Order="Secondary" Priority="2" />
+  </ContentPage.ToolbarItems>
+
+  <StackLayout Style="{StaticResource contentPageStyle}">
+
+    <StackLayout Orientation="Vertical" Spacing="10">
+      <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
+        <Entry  HorizontalOptions="FillAndExpand"></Entry>
+        <Button Text="Search" Style="{StaticResource buttonSuccessStyle}"></Button>
+      </StackLayout>
+
+      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <ListView x:Name="routesList" BackgroundColor="White"></ListView>
+
+      </StackLayout>
+    
     </StackLayout>
 
-    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-      <ListView x:Name="routesList" BackgroundColor="White"></ListView>
-
-    </StackLayout>
   </StackLayout>
 
 </ContentPage>
