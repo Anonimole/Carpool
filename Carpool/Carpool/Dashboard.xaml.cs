@@ -15,7 +15,7 @@ namespace Carpool
             
             InitializeComponent();
             
-            this.routesList.ItemsSource = new string[]{
+            /*this.routesList.ItemsSource = new string[]{
               "Cluster - Catedral",
               "Cluster - Av. Ventura Puente",
               "Cluster - Plaza Las Americas",
@@ -27,7 +27,7 @@ namespace Carpool
               "Cluster - Av. Ventura Puente",
               "Cluster - Plaza Las Americas",
               "Cluster - Plaza la Huerta"
-            };
+            };*/
         }
     }
 }

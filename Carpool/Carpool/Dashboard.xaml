@@ -19,20 +19,21 @@
   </ContentPage.ToolbarItems>
 
   <StackLayout Style="{StaticResource contentPageStyle}">
-
-    <StackLayout Orientation="Vertical" Spacing="10">
-      <StackLayout Orientation="Horizontal" Padding="10,10,10,0">
-        <Entry  HorizontalOptions="FillAndExpand"></Entry>
-        <Button Text="Search" Style="{StaticResource buttonSuccessStyle}"></Button>
-      </StackLayout>
-
-      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-        <ListView x:Name="routesList" BackgroundColor="White"></ListView>
-
-      </StackLayout>
+    <SearchBar Placeholder="Search" ></SearchBar>
     
+    <StackLayout Style="{StaticResource stackContent}">
+      <!--<ListView x:Name="routesList" BackgroundColor="White"></ListView>-->
+      <ScrollView>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}">
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A"></Label>
+        </StackLayout>
+      </ScrollView>
+
+
     </StackLayout>
 
   </StackLayout>
+  
 
 </ContentPage>
