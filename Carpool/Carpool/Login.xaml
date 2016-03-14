@@ -33,12 +33,12 @@
 
           <Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}"  ></Button>
 
+
+
         </StackLayout>
       </StackLayout>
 
     </StackLayout>
-
-
 
   </ScrollView>
 </ContentPage>

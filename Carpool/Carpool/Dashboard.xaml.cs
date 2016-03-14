@@ -12,9 +12,9 @@ namespace Carpool
     {
         public Dashboard()
         {
-            
+
             InitializeComponent();
-            
+
             /*this.routesList.ItemsSource = new string[]{
               "Cluster - Catedral",
               "Cluster - Av. Ventura Puente",
@@ -29,5 +29,21 @@ namespace Carpool
               "Cluster - Plaza la Huerta"
             };*/
         }
+
+        async void RouteDetails(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Route());
+        }
+
+        async void ProfileDetails(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Profile());
+        }
+
+        async void LogOff(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

@@ -14,5 +14,10 @@ namespace Carpool
 		{
 			InitializeComponent ();
 		}
+
+        async void Dashboard(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new Dashboard());
+        }
 	}
 }

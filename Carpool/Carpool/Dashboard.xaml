@@ -13,25 +13,69 @@
 
 
   <ContentPage.ToolbarItems >
-    <ToolbarItem Name="Profile" Order="Secondary" Priority="0" />
+    <ToolbarItem Name="Profile" Order="Secondary" Priority="0" Clicked="ProfileDetails"/>
     <ToolbarItem Name="My routes"   Order="Secondary" Priority="1" />
-    <ToolbarItem Name="Log off"   Order="Secondary" Priority="2" />
+    <ToolbarItem Name="Log off"   Order="Secondary" Priority="2" Clicked="LogOff"/>
   </ContentPage.ToolbarItems>
 
   <StackLayout Style="{StaticResource contentPageStyle}">
     <SearchBar Placeholder="Search" ></SearchBar>
     
-    <StackLayout Style="{StaticResource stackContent}">
-      <!--<ListView x:Name="routesList" BackgroundColor="White"></ListView>-->
-      <ScrollView>
-        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}">
+    
+    <ScrollView>
+
+      <StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
           <Image Source="profile.jpg" WidthRequest="70"></Image>
-          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A"></Label>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
         </StackLayout>
-      </ScrollView>
+        
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
+          <Image Source="profile.jpg" WidthRequest="70"></Image>
+          <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+          <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
+        </StackLayout>
+
+      </StackLayout>
 
 
-    </StackLayout>
+    </ScrollView>
 
   </StackLayout>
   
