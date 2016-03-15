@@ -40,9 +40,9 @@ namespace Carpool
             await Navigation.PushAsync(new Profile());
         }
 
-        async void LogOff(object sender, EventArgs e)
+        async void LogOut(object sender, EventArgs e)
         {
-           
+            Application.Current.MainPage = new NavigationPage(new Login());
         }
 
     }

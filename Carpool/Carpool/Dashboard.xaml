@@ -15,8 +15,8 @@
 
   <ContentPage.ToolbarItems >
     <ToolbarItem Name="Profile" Order="Secondary" Priority="0" Clicked="ProfileDetails"/>
-    <ToolbarItem Name="My routes"   Order="Secondary" Priority="1" />
-    <ToolbarItem Name="Log off"   Order="Secondary" Priority="2" Clicked="LogOff"/>
+    <!--<ToolbarItem Name="My routes"   Order="Secondary" Priority="1" />-->
+    <ToolbarItem Name="Log Out"   Order="Secondary" Priority="2" Clicked="LogOut"/>
   </ContentPage.ToolbarItems>
 
   <StackLayout Style="{StaticResource contentPageStyle}">

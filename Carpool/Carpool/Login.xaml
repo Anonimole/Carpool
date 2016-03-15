@@ -30,9 +30,7 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
 
-          <Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}"  ></Button>
-
-
+          <!--<Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}"  ></Button>-->
 
         </StackLayout>
       </StackLayout>

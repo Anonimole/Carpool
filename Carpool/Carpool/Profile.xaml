@@ -20,7 +20,7 @@
         <Entry Placeholder="Age" Keyboard="Numeric"/>
         <Entry Placeholder="Phone" Keyboard="Telephone"/>
 
-        <Picker Title="Genre">
+        <Picker Title="Gender">
           <Picker.Items>
             <x:String>Male</x:String>
             <x:String>Female</x:String>
