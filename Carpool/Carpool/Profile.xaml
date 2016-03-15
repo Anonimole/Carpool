@@ -4,13 +4,14 @@
              x:Class="Carpool.Profile"
              Title="Profile"
              >
-  <ContentPage.Padding>
+  
+  <!--<ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness">
       <OnPlatform.iOS>
         0,20,0,0
       </OnPlatform.iOS>
     </OnPlatform>
-  </ContentPage.Padding>
+  </ContentPage.Padding>-->
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
       <StackLayout Style="{StaticResource stackContent}">
@@ -19,14 +20,14 @@
         <Entry Placeholder="Age" Keyboard="Numeric"/>
         <Entry Placeholder="Phone" Keyboard="Telephone"/>
 
-        <Picker Title="Genre">
+        <Picker Title="Gender">
           <Picker.Items>
             <x:String>Male</x:String>
             <x:String>Female</x:String>
           </Picker.Items>
         </Picker>
 
-        <Button Text="Save" Style="{StaticResource buttonSuccessStyle}"></Button>
+        <Button Text="Save" Style="{StaticResource buttonSuccessStyle}" Clicked="Dashboard"></Button>
 
       </StackLayout>
     </StackLayout>

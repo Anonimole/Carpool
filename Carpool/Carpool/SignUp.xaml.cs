@@ -14,5 +14,12 @@ namespace Carpool
 		{
 			InitializeComponent ();
 		}
+
+        async void Profile(object sender, EventArgs e)
+        {
+            
+            await Navigation.PushModalAsync(new Profile());
+            await Navigation.PopAsync();
+        }
 	}
 }

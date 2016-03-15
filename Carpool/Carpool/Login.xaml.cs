@@ -19,7 +19,7 @@ namespace Carpool
 
         void SignIn(object sender, EventArgs e)
         {
-            var page = new NavigationPage(new Profile());
+            var page = new NavigationPage(new Dashboard());
             
             Application.Current.MainPage = page;
 
