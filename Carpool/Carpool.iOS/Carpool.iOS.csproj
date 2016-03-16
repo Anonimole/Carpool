@@ -8,9 +8,9 @@
     <ProjectGuid>{61379538-3326-4777-A7E0-5386E8392E6B}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Carpool.iOS</RootNamespace>
+    <RootNamespace>Carpool</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CarpooliOS</AssemblyName>
+    <AssemblyName>Carpool</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
