@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Carpool.Login">
-   <!--<ContentPage.Padding>
-    <OnPlatform x:TypeArguments="Thickness">
-      <OnPlatform.iOS>
-        0,20,0,0
-      </OnPlatform.iOS>
-    </OnPlatform>
-  </ContentPage.Padding>-->
+             x:Class="Carpool.Login"
+             xmlns:local="clr-namespace:Carpool;assembly=Carpool"
+             >
   
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
@@ -16,7 +11,12 @@
       <Label Text="AppName" FontSize="30" BackgroundColor="#004D40" HeightRequest="100" WidthRequest="100" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
 
       <StackLayout Style="{StaticResource stackContent}">
-        <Entry x:Name="emailEntry" Placeholder="Email" />
+        <Entry x:Name="emailEntry" Placeholder="Email" >
+          <Entry.Behaviors>
+            <local:EmailValidatorBehavior/>
+          </Entry.Behaviors>
+        </Entry>
+        
         <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True" />
         <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" Clicked="SignIn"/>
 

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Carpool.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Carpool.Resource", IsApplication=true)]
 
-namespace Carpool.Droid
+namespace Carpool
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Carpool.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Carpool.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Carpool.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

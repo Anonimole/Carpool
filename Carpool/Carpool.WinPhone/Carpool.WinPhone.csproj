@@ -7,8 +7,8 @@
     <ProjectGuid>{93E1A018-5528-4FC1-992C-5AF71AE8FB87}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Carpool.WinPhone</RootNamespace>
-    <AssemblyName>Carpool.WinPhone</AssemblyName>
+    <RootNamespace>Carpool</RootNamespace>
+    <AssemblyName>Carpool</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
