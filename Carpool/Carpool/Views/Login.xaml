@@ -12,13 +12,14 @@
 
       <StackLayout Style="{StaticResource stackContent}">
         <Entry x:Name="emailEntry" Placeholder="Email" >
-          <Entry.Behaviors>
-            <local:EmailValidatorBehavior/>
-          </Entry.Behaviors>
+          <!--<Entry.Behaviors>
+            <local:EmailValidatorBehavior x:Name="EmailValidatorBehavior"/>
+          </Entry.Behaviors>-->
         </Entry>
         
         <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True" />
-        <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" Clicked="SignIn"/>
+        <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" Clicked="SignIn" />
+        <!--IsEnabled="{Binding Source={x:Reference EmailValidatorBehavior}, Path=IsValid}"-->
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
 

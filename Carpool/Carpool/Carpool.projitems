@@ -13,7 +13,11 @@
       <DependentUpon>AppStart.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)EmailValidatorBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Azure\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\EmailValidatorBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LengthValidatorBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Users.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UsersManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Dashboard.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>Dashboard.xaml</DependentUpon>
@@ -60,5 +64,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
   </ItemGroup>
 </Project>

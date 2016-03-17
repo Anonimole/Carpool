@@ -43,6 +43,13 @@
         <Setter Property="FontSize" Value="Medium"/>
       </Style>
 
+      <Style x:Key="labelErrorStyle" TargetType="Label">
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="#e53935"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="FontSize" Value="Medium"/>
+      </Style>
+
       <Style x:Key="buttonSuccessStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="#4CAF50"/>
         <Setter Property="TextColor" Value="White"/>
