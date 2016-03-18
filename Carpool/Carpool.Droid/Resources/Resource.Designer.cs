@@ -27,6 +27,1583 @@ namespace Carpool
 		public static void UpdateIdValues()
 		{
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Carpool.Resource.Attribute.actionBarSize;
+			global::XLabs.Forms.Resource.Animation.abc_fade_in = global::Carpool.Resource.Animation.abc_fade_in;
+			global::XLabs.Forms.Resource.Animation.abc_fade_out = global::Carpool.Resource.Animation.abc_fade_out;
+			global::XLabs.Forms.Resource.Animation.abc_grow_fade_in_from_bottom = global::Carpool.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::XLabs.Forms.Resource.Animation.abc_popup_enter = global::Carpool.Resource.Animation.abc_popup_enter;
+			global::XLabs.Forms.Resource.Animation.abc_popup_exit = global::Carpool.Resource.Animation.abc_popup_exit;
+			global::XLabs.Forms.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Carpool.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::XLabs.Forms.Resource.Animation.abc_slide_in_bottom = global::Carpool.Resource.Animation.abc_slide_in_bottom;
+			global::XLabs.Forms.Resource.Animation.abc_slide_in_top = global::Carpool.Resource.Animation.abc_slide_in_top;
+			global::XLabs.Forms.Resource.Animation.abc_slide_out_bottom = global::Carpool.Resource.Animation.abc_slide_out_bottom;
+			global::XLabs.Forms.Resource.Animation.abc_slide_out_top = global::Carpool.Resource.Animation.abc_slide_out_top;
+			global::XLabs.Forms.Resource.Animation.design_fab_in = global::Carpool.Resource.Animation.design_fab_in;
+			global::XLabs.Forms.Resource.Animation.design_fab_out = global::Carpool.Resource.Animation.design_fab_out;
+			global::XLabs.Forms.Resource.Animation.design_snackbar_in = global::Carpool.Resource.Animation.design_snackbar_in;
+			global::XLabs.Forms.Resource.Animation.design_snackbar_out = global::Carpool.Resource.Animation.design_snackbar_out;
+			global::XLabs.Forms.Resource.Attribute.actionBarDivider = global::Carpool.Resource.Attribute.actionBarDivider;
+			global::XLabs.Forms.Resource.Attribute.actionBarItemBackground = global::Carpool.Resource.Attribute.actionBarItemBackground;
+			global::XLabs.Forms.Resource.Attribute.actionBarPopupTheme = global::Carpool.Resource.Attribute.actionBarPopupTheme;
+			global::XLabs.Forms.Resource.Attribute.actionBarSize = global::Carpool.Resource.Attribute.actionBarSize;
+			global::XLabs.Forms.Resource.Attribute.actionBarSplitStyle = global::Carpool.Resource.Attribute.actionBarSplitStyle;
+			global::XLabs.Forms.Resource.Attribute.actionBarStyle = global::Carpool.Resource.Attribute.actionBarStyle;
+			global::XLabs.Forms.Resource.Attribute.actionBarTabBarStyle = global::Carpool.Resource.Attribute.actionBarTabBarStyle;
+			global::XLabs.Forms.Resource.Attribute.actionBarTabStyle = global::Carpool.Resource.Attribute.actionBarTabStyle;
+			global::XLabs.Forms.Resource.Attribute.actionBarTabTextStyle = global::Carpool.Resource.Attribute.actionBarTabTextStyle;
+			global::XLabs.Forms.Resource.Attribute.actionBarTheme = global::Carpool.Resource.Attribute.actionBarTheme;
+			global::XLabs.Forms.Resource.Attribute.actionBarWidgetTheme = global::Carpool.Resource.Attribute.actionBarWidgetTheme;
+			global::XLabs.Forms.Resource.Attribute.actionButtonStyle = global::Carpool.Resource.Attribute.actionButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.actionDropDownStyle = global::Carpool.Resource.Attribute.actionDropDownStyle;
+			global::XLabs.Forms.Resource.Attribute.actionLayout = global::Carpool.Resource.Attribute.actionLayout;
+			global::XLabs.Forms.Resource.Attribute.actionMenuTextAppearance = global::Carpool.Resource.Attribute.actionMenuTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.actionMenuTextColor = global::Carpool.Resource.Attribute.actionMenuTextColor;
+			global::XLabs.Forms.Resource.Attribute.actionModeBackground = global::Carpool.Resource.Attribute.actionModeBackground;
+			global::XLabs.Forms.Resource.Attribute.actionModeCloseButtonStyle = global::Carpool.Resource.Attribute.actionModeCloseButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.actionModeCloseDrawable = global::Carpool.Resource.Attribute.actionModeCloseDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModeCopyDrawable = global::Carpool.Resource.Attribute.actionModeCopyDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModeCutDrawable = global::Carpool.Resource.Attribute.actionModeCutDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModeFindDrawable = global::Carpool.Resource.Attribute.actionModeFindDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModePasteDrawable = global::Carpool.Resource.Attribute.actionModePasteDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModePopupWindowStyle = global::Carpool.Resource.Attribute.actionModePopupWindowStyle;
+			global::XLabs.Forms.Resource.Attribute.actionModeSelectAllDrawable = global::Carpool.Resource.Attribute.actionModeSelectAllDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModeShareDrawable = global::Carpool.Resource.Attribute.actionModeShareDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionModeSplitBackground = global::Carpool.Resource.Attribute.actionModeSplitBackground;
+			global::XLabs.Forms.Resource.Attribute.actionModeStyle = global::Carpool.Resource.Attribute.actionModeStyle;
+			global::XLabs.Forms.Resource.Attribute.actionModeWebSearchDrawable = global::Carpool.Resource.Attribute.actionModeWebSearchDrawable;
+			global::XLabs.Forms.Resource.Attribute.actionOverflowButtonStyle = global::Carpool.Resource.Attribute.actionOverflowButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.actionOverflowMenuStyle = global::Carpool.Resource.Attribute.actionOverflowMenuStyle;
+			global::XLabs.Forms.Resource.Attribute.actionProviderClass = global::Carpool.Resource.Attribute.actionProviderClass;
+			global::XLabs.Forms.Resource.Attribute.actionViewClass = global::Carpool.Resource.Attribute.actionViewClass;
+			global::XLabs.Forms.Resource.Attribute.activityChooserViewStyle = global::Carpool.Resource.Attribute.activityChooserViewStyle;
+			global::XLabs.Forms.Resource.Attribute.alertDialogButtonGroupStyle = global::Carpool.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::XLabs.Forms.Resource.Attribute.alertDialogCenterButtons = global::Carpool.Resource.Attribute.alertDialogCenterButtons;
+			global::XLabs.Forms.Resource.Attribute.alertDialogStyle = global::Carpool.Resource.Attribute.alertDialogStyle;
+			global::XLabs.Forms.Resource.Attribute.alertDialogTheme = global::Carpool.Resource.Attribute.alertDialogTheme;
+			global::XLabs.Forms.Resource.Attribute.arrowHeadLength = global::Carpool.Resource.Attribute.arrowHeadLength;
+			global::XLabs.Forms.Resource.Attribute.arrowShaftLength = global::Carpool.Resource.Attribute.arrowShaftLength;
+			global::XLabs.Forms.Resource.Attribute.autoCompleteTextViewStyle = global::Carpool.Resource.Attribute.autoCompleteTextViewStyle;
+			global::XLabs.Forms.Resource.Attribute.background = global::Carpool.Resource.Attribute.background;
+			global::XLabs.Forms.Resource.Attribute.backgroundSplit = global::Carpool.Resource.Attribute.backgroundSplit;
+			global::XLabs.Forms.Resource.Attribute.backgroundStacked = global::Carpool.Resource.Attribute.backgroundStacked;
+			global::XLabs.Forms.Resource.Attribute.backgroundTint = global::Carpool.Resource.Attribute.backgroundTint;
+			global::XLabs.Forms.Resource.Attribute.backgroundTintMode = global::Carpool.Resource.Attribute.backgroundTintMode;
+			global::XLabs.Forms.Resource.Attribute.barLength = global::Carpool.Resource.Attribute.barLength;
+			global::XLabs.Forms.Resource.Attribute.behavior_overlapTop = global::Carpool.Resource.Attribute.behavior_overlapTop;
+			global::XLabs.Forms.Resource.Attribute.borderWidth = global::Carpool.Resource.Attribute.borderWidth;
+			global::XLabs.Forms.Resource.Attribute.borderlessButtonStyle = global::Carpool.Resource.Attribute.borderlessButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonBarButtonStyle = global::Carpool.Resource.Attribute.buttonBarButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonBarNegativeButtonStyle = global::Carpool.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonBarNeutralButtonStyle = global::Carpool.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonBarPositiveButtonStyle = global::Carpool.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonBarStyle = global::Carpool.Resource.Attribute.buttonBarStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonPanelSideLayout = global::Carpool.Resource.Attribute.buttonPanelSideLayout;
+			global::XLabs.Forms.Resource.Attribute.buttonStyle = global::Carpool.Resource.Attribute.buttonStyle;
+			global::XLabs.Forms.Resource.Attribute.buttonStyleSmall = global::Carpool.Resource.Attribute.buttonStyleSmall;
+			global::XLabs.Forms.Resource.Attribute.buttonTint = global::Carpool.Resource.Attribute.buttonTint;
+			global::XLabs.Forms.Resource.Attribute.buttonTintMode = global::Carpool.Resource.Attribute.buttonTintMode;
+			global::XLabs.Forms.Resource.Attribute.cardBackgroundColor = global::Carpool.Resource.Attribute.cardBackgroundColor;
+			global::XLabs.Forms.Resource.Attribute.cardCornerRadius = global::Carpool.Resource.Attribute.cardCornerRadius;
+			global::XLabs.Forms.Resource.Attribute.cardElevation = global::Carpool.Resource.Attribute.cardElevation;
+			global::XLabs.Forms.Resource.Attribute.cardMaxElevation = global::Carpool.Resource.Attribute.cardMaxElevation;
+			global::XLabs.Forms.Resource.Attribute.cardPreventCornerOverlap = global::Carpool.Resource.Attribute.cardPreventCornerOverlap;
+			global::XLabs.Forms.Resource.Attribute.cardUseCompatPadding = global::Carpool.Resource.Attribute.cardUseCompatPadding;
+			global::XLabs.Forms.Resource.Attribute.checkboxStyle = global::Carpool.Resource.Attribute.checkboxStyle;
+			global::XLabs.Forms.Resource.Attribute.checkedTextViewStyle = global::Carpool.Resource.Attribute.checkedTextViewStyle;
+			global::XLabs.Forms.Resource.Attribute.closeIcon = global::Carpool.Resource.Attribute.closeIcon;
+			global::XLabs.Forms.Resource.Attribute.closeItemLayout = global::Carpool.Resource.Attribute.closeItemLayout;
+			global::XLabs.Forms.Resource.Attribute.collapseContentDescription = global::Carpool.Resource.Attribute.collapseContentDescription;
+			global::XLabs.Forms.Resource.Attribute.collapseIcon = global::Carpool.Resource.Attribute.collapseIcon;
+			global::XLabs.Forms.Resource.Attribute.collapsedTitleGravity = global::Carpool.Resource.Attribute.collapsedTitleGravity;
+			global::XLabs.Forms.Resource.Attribute.collapsedTitleTextAppearance = global::Carpool.Resource.Attribute.collapsedTitleTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.color = global::Carpool.Resource.Attribute.color;
+			global::XLabs.Forms.Resource.Attribute.colorAccent = global::Carpool.Resource.Attribute.colorAccent;
+			global::XLabs.Forms.Resource.Attribute.colorButtonNormal = global::Carpool.Resource.Attribute.colorButtonNormal;
+			global::XLabs.Forms.Resource.Attribute.colorControlActivated = global::Carpool.Resource.Attribute.colorControlActivated;
+			global::XLabs.Forms.Resource.Attribute.colorControlHighlight = global::Carpool.Resource.Attribute.colorControlHighlight;
+			global::XLabs.Forms.Resource.Attribute.colorControlNormal = global::Carpool.Resource.Attribute.colorControlNormal;
+			global::XLabs.Forms.Resource.Attribute.colorPrimary = global::Carpool.Resource.Attribute.colorPrimary;
+			global::XLabs.Forms.Resource.Attribute.colorPrimaryDark = global::Carpool.Resource.Attribute.colorPrimaryDark;
+			global::XLabs.Forms.Resource.Attribute.colorSwitchThumbNormal = global::Carpool.Resource.Attribute.colorSwitchThumbNormal;
+			global::XLabs.Forms.Resource.Attribute.commitIcon = global::Carpool.Resource.Attribute.commitIcon;
+			global::XLabs.Forms.Resource.Attribute.contentInsetEnd = global::Carpool.Resource.Attribute.contentInsetEnd;
+			global::XLabs.Forms.Resource.Attribute.contentInsetLeft = global::Carpool.Resource.Attribute.contentInsetLeft;
+			global::XLabs.Forms.Resource.Attribute.contentInsetRight = global::Carpool.Resource.Attribute.contentInsetRight;
+			global::XLabs.Forms.Resource.Attribute.contentInsetStart = global::Carpool.Resource.Attribute.contentInsetStart;
+			global::XLabs.Forms.Resource.Attribute.contentPadding = global::Carpool.Resource.Attribute.contentPadding;
+			global::XLabs.Forms.Resource.Attribute.contentPaddingBottom = global::Carpool.Resource.Attribute.contentPaddingBottom;
+			global::XLabs.Forms.Resource.Attribute.contentPaddingLeft = global::Carpool.Resource.Attribute.contentPaddingLeft;
+			global::XLabs.Forms.Resource.Attribute.contentPaddingRight = global::Carpool.Resource.Attribute.contentPaddingRight;
+			global::XLabs.Forms.Resource.Attribute.contentPaddingTop = global::Carpool.Resource.Attribute.contentPaddingTop;
+			global::XLabs.Forms.Resource.Attribute.contentScrim = global::Carpool.Resource.Attribute.contentScrim;
+			global::XLabs.Forms.Resource.Attribute.controlBackground = global::Carpool.Resource.Attribute.controlBackground;
+			global::XLabs.Forms.Resource.Attribute.customNavigationLayout = global::Carpool.Resource.Attribute.customNavigationLayout;
+			global::XLabs.Forms.Resource.Attribute.defaultQueryHint = global::Carpool.Resource.Attribute.defaultQueryHint;
+			global::XLabs.Forms.Resource.Attribute.dialogPreferredPadding = global::Carpool.Resource.Attribute.dialogPreferredPadding;
+			global::XLabs.Forms.Resource.Attribute.dialogTheme = global::Carpool.Resource.Attribute.dialogTheme;
+			global::XLabs.Forms.Resource.Attribute.displayOptions = global::Carpool.Resource.Attribute.displayOptions;
+			global::XLabs.Forms.Resource.Attribute.divider = global::Carpool.Resource.Attribute.divider;
+			global::XLabs.Forms.Resource.Attribute.dividerHorizontal = global::Carpool.Resource.Attribute.dividerHorizontal;
+			global::XLabs.Forms.Resource.Attribute.dividerPadding = global::Carpool.Resource.Attribute.dividerPadding;
+			global::XLabs.Forms.Resource.Attribute.dividerVertical = global::Carpool.Resource.Attribute.dividerVertical;
+			global::XLabs.Forms.Resource.Attribute.drawableSize = global::Carpool.Resource.Attribute.drawableSize;
+			global::XLabs.Forms.Resource.Attribute.drawerArrowStyle = global::Carpool.Resource.Attribute.drawerArrowStyle;
+			global::XLabs.Forms.Resource.Attribute.dropDownListViewStyle = global::Carpool.Resource.Attribute.dropDownListViewStyle;
+			global::XLabs.Forms.Resource.Attribute.dropdownListPreferredItemHeight = global::Carpool.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::XLabs.Forms.Resource.Attribute.editTextBackground = global::Carpool.Resource.Attribute.editTextBackground;
+			global::XLabs.Forms.Resource.Attribute.editTextColor = global::Carpool.Resource.Attribute.editTextColor;
+			global::XLabs.Forms.Resource.Attribute.editTextStyle = global::Carpool.Resource.Attribute.editTextStyle;
+			global::XLabs.Forms.Resource.Attribute.elevation = global::Carpool.Resource.Attribute.elevation;
+			global::XLabs.Forms.Resource.Attribute.errorEnabled = global::Carpool.Resource.Attribute.errorEnabled;
+			global::XLabs.Forms.Resource.Attribute.errorTextAppearance = global::Carpool.Resource.Attribute.errorTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Carpool.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::XLabs.Forms.Resource.Attribute.expanded = global::Carpool.Resource.Attribute.expanded;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleGravity = global::Carpool.Resource.Attribute.expandedTitleGravity;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleMargin = global::Carpool.Resource.Attribute.expandedTitleMargin;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginBottom = global::Carpool.Resource.Attribute.expandedTitleMarginBottom;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginEnd = global::Carpool.Resource.Attribute.expandedTitleMarginEnd;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginStart = global::Carpool.Resource.Attribute.expandedTitleMarginStart;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleMarginTop = global::Carpool.Resource.Attribute.expandedTitleMarginTop;
+			global::XLabs.Forms.Resource.Attribute.expandedTitleTextAppearance = global::Carpool.Resource.Attribute.expandedTitleTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.externalRouteEnabledDrawable = global::Carpool.Resource.Attribute.externalRouteEnabledDrawable;
+			global::XLabs.Forms.Resource.Attribute.fabSize = global::Carpool.Resource.Attribute.fabSize;
+			global::XLabs.Forms.Resource.Attribute.gapBetweenBars = global::Carpool.Resource.Attribute.gapBetweenBars;
+			global::XLabs.Forms.Resource.Attribute.goIcon = global::Carpool.Resource.Attribute.goIcon;
+			global::XLabs.Forms.Resource.Attribute.headerLayout = global::Carpool.Resource.Attribute.headerLayout;
+			global::XLabs.Forms.Resource.Attribute.height = global::Carpool.Resource.Attribute.height;
+			global::XLabs.Forms.Resource.Attribute.hideOnContentScroll = global::Carpool.Resource.Attribute.hideOnContentScroll;
+			global::XLabs.Forms.Resource.Attribute.hintAnimationEnabled = global::Carpool.Resource.Attribute.hintAnimationEnabled;
+			global::XLabs.Forms.Resource.Attribute.hintTextAppearance = global::Carpool.Resource.Attribute.hintTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.homeAsUpIndicator = global::Carpool.Resource.Attribute.homeAsUpIndicator;
+			global::XLabs.Forms.Resource.Attribute.homeLayout = global::Carpool.Resource.Attribute.homeLayout;
+			global::XLabs.Forms.Resource.Attribute.icon = global::Carpool.Resource.Attribute.icon;
+			global::XLabs.Forms.Resource.Attribute.iconifiedByDefault = global::Carpool.Resource.Attribute.iconifiedByDefault;
+			global::XLabs.Forms.Resource.Attribute.indeterminateProgressStyle = global::Carpool.Resource.Attribute.indeterminateProgressStyle;
+			global::XLabs.Forms.Resource.Attribute.initialActivityCount = global::Carpool.Resource.Attribute.initialActivityCount;
+			global::XLabs.Forms.Resource.Attribute.insetForeground = global::Carpool.Resource.Attribute.insetForeground;
+			global::XLabs.Forms.Resource.Attribute.isLightTheme = global::Carpool.Resource.Attribute.isLightTheme;
+			global::XLabs.Forms.Resource.Attribute.itemBackground = global::Carpool.Resource.Attribute.itemBackground;
+			global::XLabs.Forms.Resource.Attribute.itemIconTint = global::Carpool.Resource.Attribute.itemIconTint;
+			global::XLabs.Forms.Resource.Attribute.itemPadding = global::Carpool.Resource.Attribute.itemPadding;
+			global::XLabs.Forms.Resource.Attribute.itemTextAppearance = global::Carpool.Resource.Attribute.itemTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.itemTextColor = global::Carpool.Resource.Attribute.itemTextColor;
+			global::XLabs.Forms.Resource.Attribute.keylines = global::Carpool.Resource.Attribute.keylines;
+			global::XLabs.Forms.Resource.Attribute.layout = global::Carpool.Resource.Attribute.layout;
+			global::XLabs.Forms.Resource.Attribute.layout_anchor = global::Carpool.Resource.Attribute.layout_anchor;
+			global::XLabs.Forms.Resource.Attribute.layout_anchorGravity = global::Carpool.Resource.Attribute.layout_anchorGravity;
+			global::XLabs.Forms.Resource.Attribute.layout_behavior = global::Carpool.Resource.Attribute.layout_behavior;
+			global::XLabs.Forms.Resource.Attribute.layout_collapseMode = global::Carpool.Resource.Attribute.layout_collapseMode;
+			global::XLabs.Forms.Resource.Attribute.layout_collapseParallaxMultiplier = global::Carpool.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::XLabs.Forms.Resource.Attribute.layout_keyline = global::Carpool.Resource.Attribute.layout_keyline;
+			global::XLabs.Forms.Resource.Attribute.layout_scrollFlags = global::Carpool.Resource.Attribute.layout_scrollFlags;
+			global::XLabs.Forms.Resource.Attribute.layout_scrollInterpolator = global::Carpool.Resource.Attribute.layout_scrollInterpolator;
+			global::XLabs.Forms.Resource.Attribute.listChoiceBackgroundIndicator = global::Carpool.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::XLabs.Forms.Resource.Attribute.listDividerAlertDialog = global::Carpool.Resource.Attribute.listDividerAlertDialog;
+			global::XLabs.Forms.Resource.Attribute.listItemLayout = global::Carpool.Resource.Attribute.listItemLayout;
+			global::XLabs.Forms.Resource.Attribute.listLayout = global::Carpool.Resource.Attribute.listLayout;
+			global::XLabs.Forms.Resource.Attribute.listPopupWindowStyle = global::Carpool.Resource.Attribute.listPopupWindowStyle;
+			global::XLabs.Forms.Resource.Attribute.listPreferredItemHeight = global::Carpool.Resource.Attribute.listPreferredItemHeight;
+			global::XLabs.Forms.Resource.Attribute.listPreferredItemHeightLarge = global::Carpool.Resource.Attribute.listPreferredItemHeightLarge;
+			global::XLabs.Forms.Resource.Attribute.listPreferredItemHeightSmall = global::Carpool.Resource.Attribute.listPreferredItemHeightSmall;
+			global::XLabs.Forms.Resource.Attribute.listPreferredItemPaddingLeft = global::Carpool.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::XLabs.Forms.Resource.Attribute.listPreferredItemPaddingRight = global::Carpool.Resource.Attribute.listPreferredItemPaddingRight;
+			global::XLabs.Forms.Resource.Attribute.logo = global::Carpool.Resource.Attribute.logo;
+			global::XLabs.Forms.Resource.Attribute.logoDescription = global::Carpool.Resource.Attribute.logoDescription;
+			global::XLabs.Forms.Resource.Attribute.maxActionInlineWidth = global::Carpool.Resource.Attribute.maxActionInlineWidth;
+			global::XLabs.Forms.Resource.Attribute.maxButtonHeight = global::Carpool.Resource.Attribute.maxButtonHeight;
+			global::XLabs.Forms.Resource.Attribute.measureWithLargestChild = global::Carpool.Resource.Attribute.measureWithLargestChild;
+			global::XLabs.Forms.Resource.Attribute.mediaRouteButtonStyle = global::Carpool.Resource.Attribute.mediaRouteButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.mediaRouteCastDrawable = global::Carpool.Resource.Attribute.mediaRouteCastDrawable;
+			global::XLabs.Forms.Resource.Attribute.mediaRouteConnectingDrawable = global::Carpool.Resource.Attribute.mediaRouteConnectingDrawable;
+			global::XLabs.Forms.Resource.Attribute.mediaRouteOffDrawable = global::Carpool.Resource.Attribute.mediaRouteOffDrawable;
+			global::XLabs.Forms.Resource.Attribute.mediaRouteOnDrawable = global::Carpool.Resource.Attribute.mediaRouteOnDrawable;
+			global::XLabs.Forms.Resource.Attribute.mediaRoutePauseDrawable = global::Carpool.Resource.Attribute.mediaRoutePauseDrawable;
+			global::XLabs.Forms.Resource.Attribute.mediaRoutePlayDrawable = global::Carpool.Resource.Attribute.mediaRoutePlayDrawable;
+			global::XLabs.Forms.Resource.Attribute.mediaRouteSettingsDrawable = global::Carpool.Resource.Attribute.mediaRouteSettingsDrawable;
+			global::XLabs.Forms.Resource.Attribute.menu = global::Carpool.Resource.Attribute.menu;
+			global::XLabs.Forms.Resource.Attribute.multiChoiceItemLayout = global::Carpool.Resource.Attribute.multiChoiceItemLayout;
+			global::XLabs.Forms.Resource.Attribute.navigationContentDescription = global::Carpool.Resource.Attribute.navigationContentDescription;
+			global::XLabs.Forms.Resource.Attribute.navigationIcon = global::Carpool.Resource.Attribute.navigationIcon;
+			global::XLabs.Forms.Resource.Attribute.navigationMode = global::Carpool.Resource.Attribute.navigationMode;
+			global::XLabs.Forms.Resource.Attribute.overlapAnchor = global::Carpool.Resource.Attribute.overlapAnchor;
+			global::XLabs.Forms.Resource.Attribute.paddingEnd = global::Carpool.Resource.Attribute.paddingEnd;
+			global::XLabs.Forms.Resource.Attribute.paddingStart = global::Carpool.Resource.Attribute.paddingStart;
+			global::XLabs.Forms.Resource.Attribute.panelBackground = global::Carpool.Resource.Attribute.panelBackground;
+			global::XLabs.Forms.Resource.Attribute.panelMenuListTheme = global::Carpool.Resource.Attribute.panelMenuListTheme;
+			global::XLabs.Forms.Resource.Attribute.panelMenuListWidth = global::Carpool.Resource.Attribute.panelMenuListWidth;
+			global::XLabs.Forms.Resource.Attribute.popupMenuStyle = global::Carpool.Resource.Attribute.popupMenuStyle;
+			global::XLabs.Forms.Resource.Attribute.popupTheme = global::Carpool.Resource.Attribute.popupTheme;
+			global::XLabs.Forms.Resource.Attribute.popupWindowStyle = global::Carpool.Resource.Attribute.popupWindowStyle;
+			global::XLabs.Forms.Resource.Attribute.preserveIconSpacing = global::Carpool.Resource.Attribute.preserveIconSpacing;
+			global::XLabs.Forms.Resource.Attribute.pressedTranslationZ = global::Carpool.Resource.Attribute.pressedTranslationZ;
+			global::XLabs.Forms.Resource.Attribute.progressBarPadding = global::Carpool.Resource.Attribute.progressBarPadding;
+			global::XLabs.Forms.Resource.Attribute.progressBarStyle = global::Carpool.Resource.Attribute.progressBarStyle;
+			global::XLabs.Forms.Resource.Attribute.queryBackground = global::Carpool.Resource.Attribute.queryBackground;
+			global::XLabs.Forms.Resource.Attribute.queryHint = global::Carpool.Resource.Attribute.queryHint;
+			global::XLabs.Forms.Resource.Attribute.radioButtonStyle = global::Carpool.Resource.Attribute.radioButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.ratingBarStyle = global::Carpool.Resource.Attribute.ratingBarStyle;
+			global::XLabs.Forms.Resource.Attribute.rippleColor = global::Carpool.Resource.Attribute.rippleColor;
+			global::XLabs.Forms.Resource.Attribute.searchHintIcon = global::Carpool.Resource.Attribute.searchHintIcon;
+			global::XLabs.Forms.Resource.Attribute.searchIcon = global::Carpool.Resource.Attribute.searchIcon;
+			global::XLabs.Forms.Resource.Attribute.searchViewStyle = global::Carpool.Resource.Attribute.searchViewStyle;
+			global::XLabs.Forms.Resource.Attribute.selectableItemBackground = global::Carpool.Resource.Attribute.selectableItemBackground;
+			global::XLabs.Forms.Resource.Attribute.selectableItemBackgroundBorderless = global::Carpool.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::XLabs.Forms.Resource.Attribute.showAsAction = global::Carpool.Resource.Attribute.showAsAction;
+			global::XLabs.Forms.Resource.Attribute.showDividers = global::Carpool.Resource.Attribute.showDividers;
+			global::XLabs.Forms.Resource.Attribute.showText = global::Carpool.Resource.Attribute.showText;
+			global::XLabs.Forms.Resource.Attribute.singleChoiceItemLayout = global::Carpool.Resource.Attribute.singleChoiceItemLayout;
+			global::XLabs.Forms.Resource.Attribute.spinBars = global::Carpool.Resource.Attribute.spinBars;
+			global::XLabs.Forms.Resource.Attribute.spinnerDropDownItemStyle = global::Carpool.Resource.Attribute.spinnerDropDownItemStyle;
+			global::XLabs.Forms.Resource.Attribute.spinnerStyle = global::Carpool.Resource.Attribute.spinnerStyle;
+			global::XLabs.Forms.Resource.Attribute.splitTrack = global::Carpool.Resource.Attribute.splitTrack;
+			global::XLabs.Forms.Resource.Attribute.state_above_anchor = global::Carpool.Resource.Attribute.state_above_anchor;
+			global::XLabs.Forms.Resource.Attribute.statusBarBackground = global::Carpool.Resource.Attribute.statusBarBackground;
+			global::XLabs.Forms.Resource.Attribute.statusBarScrim = global::Carpool.Resource.Attribute.statusBarScrim;
+			global::XLabs.Forms.Resource.Attribute.submitBackground = global::Carpool.Resource.Attribute.submitBackground;
+			global::XLabs.Forms.Resource.Attribute.subtitle = global::Carpool.Resource.Attribute.subtitle;
+			global::XLabs.Forms.Resource.Attribute.subtitleTextAppearance = global::Carpool.Resource.Attribute.subtitleTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.subtitleTextColor = global::Carpool.Resource.Attribute.subtitleTextColor;
+			global::XLabs.Forms.Resource.Attribute.subtitleTextStyle = global::Carpool.Resource.Attribute.subtitleTextStyle;
+			global::XLabs.Forms.Resource.Attribute.suggestionRowLayout = global::Carpool.Resource.Attribute.suggestionRowLayout;
+			global::XLabs.Forms.Resource.Attribute.switchMinWidth = global::Carpool.Resource.Attribute.switchMinWidth;
+			global::XLabs.Forms.Resource.Attribute.switchPadding = global::Carpool.Resource.Attribute.switchPadding;
+			global::XLabs.Forms.Resource.Attribute.switchStyle = global::Carpool.Resource.Attribute.switchStyle;
+			global::XLabs.Forms.Resource.Attribute.switchTextAppearance = global::Carpool.Resource.Attribute.switchTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.tabBackground = global::Carpool.Resource.Attribute.tabBackground;
+			global::XLabs.Forms.Resource.Attribute.tabContentStart = global::Carpool.Resource.Attribute.tabContentStart;
+			global::XLabs.Forms.Resource.Attribute.tabGravity = global::Carpool.Resource.Attribute.tabGravity;
+			global::XLabs.Forms.Resource.Attribute.tabIndicatorColor = global::Carpool.Resource.Attribute.tabIndicatorColor;
+			global::XLabs.Forms.Resource.Attribute.tabIndicatorHeight = global::Carpool.Resource.Attribute.tabIndicatorHeight;
+			global::XLabs.Forms.Resource.Attribute.tabMaxWidth = global::Carpool.Resource.Attribute.tabMaxWidth;
+			global::XLabs.Forms.Resource.Attribute.tabMinWidth = global::Carpool.Resource.Attribute.tabMinWidth;
+			global::XLabs.Forms.Resource.Attribute.tabMode = global::Carpool.Resource.Attribute.tabMode;
+			global::XLabs.Forms.Resource.Attribute.tabPadding = global::Carpool.Resource.Attribute.tabPadding;
+			global::XLabs.Forms.Resource.Attribute.tabPaddingBottom = global::Carpool.Resource.Attribute.tabPaddingBottom;
+			global::XLabs.Forms.Resource.Attribute.tabPaddingEnd = global::Carpool.Resource.Attribute.tabPaddingEnd;
+			global::XLabs.Forms.Resource.Attribute.tabPaddingStart = global::Carpool.Resource.Attribute.tabPaddingStart;
+			global::XLabs.Forms.Resource.Attribute.tabPaddingTop = global::Carpool.Resource.Attribute.tabPaddingTop;
+			global::XLabs.Forms.Resource.Attribute.tabSelectedTextColor = global::Carpool.Resource.Attribute.tabSelectedTextColor;
+			global::XLabs.Forms.Resource.Attribute.tabTextAppearance = global::Carpool.Resource.Attribute.tabTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.tabTextColor = global::Carpool.Resource.Attribute.tabTextColor;
+			global::XLabs.Forms.Resource.Attribute.textAllCaps = global::Carpool.Resource.Attribute.textAllCaps;
+			global::XLabs.Forms.Resource.Attribute.textAppearanceLargePopupMenu = global::Carpool.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::XLabs.Forms.Resource.Attribute.textAppearanceListItem = global::Carpool.Resource.Attribute.textAppearanceListItem;
+			global::XLabs.Forms.Resource.Attribute.textAppearanceListItemSmall = global::Carpool.Resource.Attribute.textAppearanceListItemSmall;
+			global::XLabs.Forms.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Carpool.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::XLabs.Forms.Resource.Attribute.textAppearanceSearchResultTitle = global::Carpool.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::XLabs.Forms.Resource.Attribute.textAppearanceSmallPopupMenu = global::Carpool.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::XLabs.Forms.Resource.Attribute.textColorAlertDialogListItem = global::Carpool.Resource.Attribute.textColorAlertDialogListItem;
+			global::XLabs.Forms.Resource.Attribute.textColorSearchUrl = global::Carpool.Resource.Attribute.textColorSearchUrl;
+			global::XLabs.Forms.Resource.Attribute.theme = global::Carpool.Resource.Attribute.theme;
+			global::XLabs.Forms.Resource.Attribute.thickness = global::Carpool.Resource.Attribute.thickness;
+			global::XLabs.Forms.Resource.Attribute.thumbTextPadding = global::Carpool.Resource.Attribute.thumbTextPadding;
+			global::XLabs.Forms.Resource.Attribute.title = global::Carpool.Resource.Attribute.title;
+			global::XLabs.Forms.Resource.Attribute.titleEnabled = global::Carpool.Resource.Attribute.titleEnabled;
+			global::XLabs.Forms.Resource.Attribute.titleMarginBottom = global::Carpool.Resource.Attribute.titleMarginBottom;
+			global::XLabs.Forms.Resource.Attribute.titleMarginEnd = global::Carpool.Resource.Attribute.titleMarginEnd;
+			global::XLabs.Forms.Resource.Attribute.titleMarginStart = global::Carpool.Resource.Attribute.titleMarginStart;
+			global::XLabs.Forms.Resource.Attribute.titleMarginTop = global::Carpool.Resource.Attribute.titleMarginTop;
+			global::XLabs.Forms.Resource.Attribute.titleMargins = global::Carpool.Resource.Attribute.titleMargins;
+			global::XLabs.Forms.Resource.Attribute.titleTextAppearance = global::Carpool.Resource.Attribute.titleTextAppearance;
+			global::XLabs.Forms.Resource.Attribute.titleTextColor = global::Carpool.Resource.Attribute.titleTextColor;
+			global::XLabs.Forms.Resource.Attribute.titleTextStyle = global::Carpool.Resource.Attribute.titleTextStyle;
+			global::XLabs.Forms.Resource.Attribute.toolbarId = global::Carpool.Resource.Attribute.toolbarId;
+			global::XLabs.Forms.Resource.Attribute.toolbarNavigationButtonStyle = global::Carpool.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::XLabs.Forms.Resource.Attribute.toolbarStyle = global::Carpool.Resource.Attribute.toolbarStyle;
+			global::XLabs.Forms.Resource.Attribute.track = global::Carpool.Resource.Attribute.track;
+			global::XLabs.Forms.Resource.Attribute.voiceIcon = global::Carpool.Resource.Attribute.voiceIcon;
+			global::XLabs.Forms.Resource.Attribute.windowActionBar = global::Carpool.Resource.Attribute.windowActionBar;
+			global::XLabs.Forms.Resource.Attribute.windowActionBarOverlay = global::Carpool.Resource.Attribute.windowActionBarOverlay;
+			global::XLabs.Forms.Resource.Attribute.windowActionModeOverlay = global::Carpool.Resource.Attribute.windowActionModeOverlay;
+			global::XLabs.Forms.Resource.Attribute.windowFixedHeightMajor = global::Carpool.Resource.Attribute.windowFixedHeightMajor;
+			global::XLabs.Forms.Resource.Attribute.windowFixedHeightMinor = global::Carpool.Resource.Attribute.windowFixedHeightMinor;
+			global::XLabs.Forms.Resource.Attribute.windowFixedWidthMajor = global::Carpool.Resource.Attribute.windowFixedWidthMajor;
+			global::XLabs.Forms.Resource.Attribute.windowFixedWidthMinor = global::Carpool.Resource.Attribute.windowFixedWidthMinor;
+			global::XLabs.Forms.Resource.Attribute.windowMinWidthMajor = global::Carpool.Resource.Attribute.windowMinWidthMajor;
+			global::XLabs.Forms.Resource.Attribute.windowMinWidthMinor = global::Carpool.Resource.Attribute.windowMinWidthMinor;
+			global::XLabs.Forms.Resource.Attribute.windowNoTitle = global::Carpool.Resource.Attribute.windowNoTitle;
+			global::XLabs.Forms.Resource.Boolean.abc_action_bar_embed_tabs = global::Carpool.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::XLabs.Forms.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::Carpool.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
+			global::XLabs.Forms.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::Carpool.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
+			global::XLabs.Forms.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Carpool.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::XLabs.Forms.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::Carpool.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
+			global::XLabs.Forms.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Carpool.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::XLabs.Forms.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Carpool.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::XLabs.Forms.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Carpool.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::XLabs.Forms.Resource.Color.abc_background_cache_hint_selector_material_light = global::Carpool.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::XLabs.Forms.Resource.Color.abc_color_highlight_material = global::Carpool.Resource.Color.abc_color_highlight_material;
+			global::XLabs.Forms.Resource.Color.abc_input_method_navigation_guard = global::Carpool.Resource.Color.abc_input_method_navigation_guard;
+			global::XLabs.Forms.Resource.Color.abc_primary_text_disable_only_material_dark = global::Carpool.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::XLabs.Forms.Resource.Color.abc_primary_text_disable_only_material_light = global::Carpool.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::XLabs.Forms.Resource.Color.abc_primary_text_material_dark = global::Carpool.Resource.Color.abc_primary_text_material_dark;
+			global::XLabs.Forms.Resource.Color.abc_primary_text_material_light = global::Carpool.Resource.Color.abc_primary_text_material_light;
+			global::XLabs.Forms.Resource.Color.abc_search_url_text = global::Carpool.Resource.Color.abc_search_url_text;
+			global::XLabs.Forms.Resource.Color.abc_search_url_text_normal = global::Carpool.Resource.Color.abc_search_url_text_normal;
+			global::XLabs.Forms.Resource.Color.abc_search_url_text_pressed = global::Carpool.Resource.Color.abc_search_url_text_pressed;
+			global::XLabs.Forms.Resource.Color.abc_search_url_text_selected = global::Carpool.Resource.Color.abc_search_url_text_selected;
+			global::XLabs.Forms.Resource.Color.abc_secondary_text_material_dark = global::Carpool.Resource.Color.abc_secondary_text_material_dark;
+			global::XLabs.Forms.Resource.Color.abc_secondary_text_material_light = global::Carpool.Resource.Color.abc_secondary_text_material_light;
+			global::XLabs.Forms.Resource.Color.accent_material_dark = global::Carpool.Resource.Color.accent_material_dark;
+			global::XLabs.Forms.Resource.Color.accent_material_light = global::Carpool.Resource.Color.accent_material_light;
+			global::XLabs.Forms.Resource.Color.background_floating_material_dark = global::Carpool.Resource.Color.background_floating_material_dark;
+			global::XLabs.Forms.Resource.Color.background_floating_material_light = global::Carpool.Resource.Color.background_floating_material_light;
+			global::XLabs.Forms.Resource.Color.background_material_dark = global::Carpool.Resource.Color.background_material_dark;
+			global::XLabs.Forms.Resource.Color.background_material_light = global::Carpool.Resource.Color.background_material_light;
+			global::XLabs.Forms.Resource.Color.bright_foreground_disabled_material_dark = global::Carpool.Resource.Color.bright_foreground_disabled_material_dark;
+			global::XLabs.Forms.Resource.Color.bright_foreground_disabled_material_light = global::Carpool.Resource.Color.bright_foreground_disabled_material_light;
+			global::XLabs.Forms.Resource.Color.bright_foreground_inverse_material_dark = global::Carpool.Resource.Color.bright_foreground_inverse_material_dark;
+			global::XLabs.Forms.Resource.Color.bright_foreground_inverse_material_light = global::Carpool.Resource.Color.bright_foreground_inverse_material_light;
+			global::XLabs.Forms.Resource.Color.bright_foreground_material_dark = global::Carpool.Resource.Color.bright_foreground_material_dark;
+			global::XLabs.Forms.Resource.Color.bright_foreground_material_light = global::Carpool.Resource.Color.bright_foreground_material_light;
+			global::XLabs.Forms.Resource.Color.button_material_dark = global::Carpool.Resource.Color.button_material_dark;
+			global::XLabs.Forms.Resource.Color.button_material_light = global::Carpool.Resource.Color.button_material_light;
+			global::XLabs.Forms.Resource.Color.calendar_active_month_bg = global::Carpool.Resource.Color.calendar_active_month_bg;
+			global::XLabs.Forms.Resource.Color.calendar_bg = global::Carpool.Resource.Color.calendar_bg;
+			global::XLabs.Forms.Resource.Color.calendar_divider = global::Carpool.Resource.Color.calendar_divider;
+			global::XLabs.Forms.Resource.Color.calendar_highlighted_day_bg = global::Carpool.Resource.Color.calendar_highlighted_day_bg;
+			global::XLabs.Forms.Resource.Color.calendar_inactive_month_bg = global::Carpool.Resource.Color.calendar_inactive_month_bg;
+			global::XLabs.Forms.Resource.Color.calendar_selected_day_bg = global::Carpool.Resource.Color.calendar_selected_day_bg;
+			global::XLabs.Forms.Resource.Color.calendar_selected_range_bg = global::Carpool.Resource.Color.calendar_selected_range_bg;
+			global::XLabs.Forms.Resource.Color.calendar_text_active = global::Carpool.Resource.Color.calendar_text_active;
+			global::XLabs.Forms.Resource.Color.calendar_text_inactive = global::Carpool.Resource.Color.calendar_text_inactive;
+			global::XLabs.Forms.Resource.Color.calendar_text_selected = global::Carpool.Resource.Color.calendar_text_selected;
+			global::XLabs.Forms.Resource.Color.calendar_text_selector = global::Carpool.Resource.Color.calendar_text_selector;
+			global::XLabs.Forms.Resource.Color.calendar_text_unselectable = global::Carpool.Resource.Color.calendar_text_unselectable;
+			global::XLabs.Forms.Resource.Color.cardview_dark_background = global::Carpool.Resource.Color.cardview_dark_background;
+			global::XLabs.Forms.Resource.Color.cardview_light_background = global::Carpool.Resource.Color.cardview_light_background;
+			global::XLabs.Forms.Resource.Color.cardview_shadow_end_color = global::Carpool.Resource.Color.cardview_shadow_end_color;
+			global::XLabs.Forms.Resource.Color.cardview_shadow_start_color = global::Carpool.Resource.Color.cardview_shadow_start_color;
+			global::XLabs.Forms.Resource.Color.design_fab_shadow_end_color = global::Carpool.Resource.Color.design_fab_shadow_end_color;
+			global::XLabs.Forms.Resource.Color.design_fab_shadow_mid_color = global::Carpool.Resource.Color.design_fab_shadow_mid_color;
+			global::XLabs.Forms.Resource.Color.design_fab_shadow_start_color = global::Carpool.Resource.Color.design_fab_shadow_start_color;
+			global::XLabs.Forms.Resource.Color.design_fab_stroke_end_inner_color = global::Carpool.Resource.Color.design_fab_stroke_end_inner_color;
+			global::XLabs.Forms.Resource.Color.design_fab_stroke_end_outer_color = global::Carpool.Resource.Color.design_fab_stroke_end_outer_color;
+			global::XLabs.Forms.Resource.Color.design_fab_stroke_top_inner_color = global::Carpool.Resource.Color.design_fab_stroke_top_inner_color;
+			global::XLabs.Forms.Resource.Color.design_fab_stroke_top_outer_color = global::Carpool.Resource.Color.design_fab_stroke_top_outer_color;
+			global::XLabs.Forms.Resource.Color.design_snackbar_background_color = global::Carpool.Resource.Color.design_snackbar_background_color;
+			global::XLabs.Forms.Resource.Color.design_textinput_error_color = global::Carpool.Resource.Color.design_textinput_error_color;
+			global::XLabs.Forms.Resource.Color.dim_foreground_disabled_material_dark = global::Carpool.Resource.Color.dim_foreground_disabled_material_dark;
+			global::XLabs.Forms.Resource.Color.dim_foreground_disabled_material_light = global::Carpool.Resource.Color.dim_foreground_disabled_material_light;
+			global::XLabs.Forms.Resource.Color.dim_foreground_material_dark = global::Carpool.Resource.Color.dim_foreground_material_dark;
+			global::XLabs.Forms.Resource.Color.dim_foreground_material_light = global::Carpool.Resource.Color.dim_foreground_material_light;
+			global::XLabs.Forms.Resource.Color.foreground_material_dark = global::Carpool.Resource.Color.foreground_material_dark;
+			global::XLabs.Forms.Resource.Color.foreground_material_light = global::Carpool.Resource.Color.foreground_material_light;
+			global::XLabs.Forms.Resource.Color.highlighted_text_material_dark = global::Carpool.Resource.Color.highlighted_text_material_dark;
+			global::XLabs.Forms.Resource.Color.highlighted_text_material_light = global::Carpool.Resource.Color.highlighted_text_material_light;
+			global::XLabs.Forms.Resource.Color.hint_foreground_material_dark = global::Carpool.Resource.Color.hint_foreground_material_dark;
+			global::XLabs.Forms.Resource.Color.hint_foreground_material_light = global::Carpool.Resource.Color.hint_foreground_material_light;
+			global::XLabs.Forms.Resource.Color.material_blue_grey_800 = global::Carpool.Resource.Color.material_blue_grey_800;
+			global::XLabs.Forms.Resource.Color.material_blue_grey_900 = global::Carpool.Resource.Color.material_blue_grey_900;
+			global::XLabs.Forms.Resource.Color.material_blue_grey_950 = global::Carpool.Resource.Color.material_blue_grey_950;
+			global::XLabs.Forms.Resource.Color.material_deep_teal_200 = global::Carpool.Resource.Color.material_deep_teal_200;
+			global::XLabs.Forms.Resource.Color.material_deep_teal_500 = global::Carpool.Resource.Color.material_deep_teal_500;
+			global::XLabs.Forms.Resource.Color.material_grey_100 = global::Carpool.Resource.Color.material_grey_100;
+			global::XLabs.Forms.Resource.Color.material_grey_300 = global::Carpool.Resource.Color.material_grey_300;
+			global::XLabs.Forms.Resource.Color.material_grey_50 = global::Carpool.Resource.Color.material_grey_50;
+			global::XLabs.Forms.Resource.Color.material_grey_600 = global::Carpool.Resource.Color.material_grey_600;
+			global::XLabs.Forms.Resource.Color.material_grey_800 = global::Carpool.Resource.Color.material_grey_800;
+			global::XLabs.Forms.Resource.Color.material_grey_850 = global::Carpool.Resource.Color.material_grey_850;
+			global::XLabs.Forms.Resource.Color.material_grey_900 = global::Carpool.Resource.Color.material_grey_900;
+			global::XLabs.Forms.Resource.Color.primary_dark_material_dark = global::Carpool.Resource.Color.primary_dark_material_dark;
+			global::XLabs.Forms.Resource.Color.primary_dark_material_light = global::Carpool.Resource.Color.primary_dark_material_light;
+			global::XLabs.Forms.Resource.Color.primary_material_dark = global::Carpool.Resource.Color.primary_material_dark;
+			global::XLabs.Forms.Resource.Color.primary_material_light = global::Carpool.Resource.Color.primary_material_light;
+			global::XLabs.Forms.Resource.Color.primary_text_default_material_dark = global::Carpool.Resource.Color.primary_text_default_material_dark;
+			global::XLabs.Forms.Resource.Color.primary_text_default_material_light = global::Carpool.Resource.Color.primary_text_default_material_light;
+			global::XLabs.Forms.Resource.Color.primary_text_disabled_material_dark = global::Carpool.Resource.Color.primary_text_disabled_material_dark;
+			global::XLabs.Forms.Resource.Color.primary_text_disabled_material_light = global::Carpool.Resource.Color.primary_text_disabled_material_light;
+			global::XLabs.Forms.Resource.Color.ripple_material_dark = global::Carpool.Resource.Color.ripple_material_dark;
+			global::XLabs.Forms.Resource.Color.ripple_material_light = global::Carpool.Resource.Color.ripple_material_light;
+			global::XLabs.Forms.Resource.Color.secondary_text_default_material_dark = global::Carpool.Resource.Color.secondary_text_default_material_dark;
+			global::XLabs.Forms.Resource.Color.secondary_text_default_material_light = global::Carpool.Resource.Color.secondary_text_default_material_light;
+			global::XLabs.Forms.Resource.Color.secondary_text_disabled_material_dark = global::Carpool.Resource.Color.secondary_text_disabled_material_dark;
+			global::XLabs.Forms.Resource.Color.secondary_text_disabled_material_light = global::Carpool.Resource.Color.secondary_text_disabled_material_light;
+			global::XLabs.Forms.Resource.Color.switch_thumb_disabled_material_dark = global::Carpool.Resource.Color.switch_thumb_disabled_material_dark;
+			global::XLabs.Forms.Resource.Color.switch_thumb_disabled_material_light = global::Carpool.Resource.Color.switch_thumb_disabled_material_light;
+			global::XLabs.Forms.Resource.Color.switch_thumb_material_dark = global::Carpool.Resource.Color.switch_thumb_material_dark;
+			global::XLabs.Forms.Resource.Color.switch_thumb_material_light = global::Carpool.Resource.Color.switch_thumb_material_light;
+			global::XLabs.Forms.Resource.Color.switch_thumb_normal_material_dark = global::Carpool.Resource.Color.switch_thumb_normal_material_dark;
+			global::XLabs.Forms.Resource.Color.switch_thumb_normal_material_light = global::Carpool.Resource.Color.switch_thumb_normal_material_light;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_content_inset_material = global::Carpool.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_default_height_material = global::Carpool.Resource.Dimension.abc_action_bar_default_height_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Carpool.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Carpool.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Carpool.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Carpool.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Carpool.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_progress_bar_size = global::Carpool.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_stacked_max_height = global::Carpool.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Carpool.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Carpool.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Carpool.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_button_min_height_material = global::Carpool.Resource.Dimension.abc_action_button_min_height_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_button_min_width_material = global::Carpool.Resource.Dimension.abc_action_button_min_width_material;
+			global::XLabs.Forms.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Carpool.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::XLabs.Forms.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Carpool.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::XLabs.Forms.Resource.Dimension.abc_button_inset_horizontal_material = global::Carpool.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::XLabs.Forms.Resource.Dimension.abc_button_inset_vertical_material = global::Carpool.Resource.Dimension.abc_button_inset_vertical_material;
+			global::XLabs.Forms.Resource.Dimension.abc_button_padding_horizontal_material = global::Carpool.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::XLabs.Forms.Resource.Dimension.abc_button_padding_vertical_material = global::Carpool.Resource.Dimension.abc_button_padding_vertical_material;
+			global::XLabs.Forms.Resource.Dimension.abc_config_prefDialogWidth = global::Carpool.Resource.Dimension.abc_config_prefDialogWidth;
+			global::XLabs.Forms.Resource.Dimension.abc_control_corner_material = global::Carpool.Resource.Dimension.abc_control_corner_material;
+			global::XLabs.Forms.Resource.Dimension.abc_control_inset_material = global::Carpool.Resource.Dimension.abc_control_inset_material;
+			global::XLabs.Forms.Resource.Dimension.abc_control_padding_material = global::Carpool.Resource.Dimension.abc_control_padding_material;
+			global::XLabs.Forms.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::Carpool.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::XLabs.Forms.Resource.Dimension.abc_dialog_min_width_major = global::Carpool.Resource.Dimension.abc_dialog_min_width_major;
+			global::XLabs.Forms.Resource.Dimension.abc_dialog_min_width_minor = global::Carpool.Resource.Dimension.abc_dialog_min_width_minor;
+			global::XLabs.Forms.Resource.Dimension.abc_dialog_padding_material = global::Carpool.Resource.Dimension.abc_dialog_padding_material;
+			global::XLabs.Forms.Resource.Dimension.abc_dialog_padding_top_material = global::Carpool.Resource.Dimension.abc_dialog_padding_top_material;
+			global::XLabs.Forms.Resource.Dimension.abc_disabled_alpha_material_dark = global::Carpool.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::XLabs.Forms.Resource.Dimension.abc_disabled_alpha_material_light = global::Carpool.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::XLabs.Forms.Resource.Dimension.abc_dropdownitem_icon_width = global::Carpool.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::XLabs.Forms.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Carpool.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::XLabs.Forms.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Carpool.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::XLabs.Forms.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Carpool.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::XLabs.Forms.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Carpool.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::XLabs.Forms.Resource.Dimension.abc_edit_text_inset_top_material = global::Carpool.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::XLabs.Forms.Resource.Dimension.abc_floating_window_z = global::Carpool.Resource.Dimension.abc_floating_window_z;
+			global::XLabs.Forms.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Carpool.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::XLabs.Forms.Resource.Dimension.abc_panel_menu_list_width = global::Carpool.Resource.Dimension.abc_panel_menu_list_width;
+			global::XLabs.Forms.Resource.Dimension.abc_search_view_preferred_width = global::Carpool.Resource.Dimension.abc_search_view_preferred_width;
+			global::XLabs.Forms.Resource.Dimension.abc_search_view_text_min_width = global::Carpool.Resource.Dimension.abc_search_view_text_min_width;
+			global::XLabs.Forms.Resource.Dimension.abc_switch_padding = global::Carpool.Resource.Dimension.abc_switch_padding;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_body_1_material = global::Carpool.Resource.Dimension.abc_text_size_body_1_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_body_2_material = global::Carpool.Resource.Dimension.abc_text_size_body_2_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_button_material = global::Carpool.Resource.Dimension.abc_text_size_button_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_caption_material = global::Carpool.Resource.Dimension.abc_text_size_caption_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_1_material = global::Carpool.Resource.Dimension.abc_text_size_display_1_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_2_material = global::Carpool.Resource.Dimension.abc_text_size_display_2_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_3_material = global::Carpool.Resource.Dimension.abc_text_size_display_3_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_display_4_material = global::Carpool.Resource.Dimension.abc_text_size_display_4_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_headline_material = global::Carpool.Resource.Dimension.abc_text_size_headline_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_large_material = global::Carpool.Resource.Dimension.abc_text_size_large_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_medium_material = global::Carpool.Resource.Dimension.abc_text_size_medium_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_menu_material = global::Carpool.Resource.Dimension.abc_text_size_menu_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_small_material = global::Carpool.Resource.Dimension.abc_text_size_small_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_subhead_material = global::Carpool.Resource.Dimension.abc_text_size_subhead_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Carpool.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_title_material = global::Carpool.Resource.Dimension.abc_text_size_title_material;
+			global::XLabs.Forms.Resource.Dimension.abc_text_size_title_material_toolbar = global::Carpool.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::XLabs.Forms.Resource.Dimension.calendar_day_headers_paddingbottom = global::Carpool.Resource.Dimension.calendar_day_headers_paddingbottom;
+			global::XLabs.Forms.Resource.Dimension.calendar_month_title_bottommargin = global::Carpool.Resource.Dimension.calendar_month_title_bottommargin;
+			global::XLabs.Forms.Resource.Dimension.calendar_month_topmargin = global::Carpool.Resource.Dimension.calendar_month_topmargin;
+			global::XLabs.Forms.Resource.Dimension.calendar_text_medium = global::Carpool.Resource.Dimension.calendar_text_medium;
+			global::XLabs.Forms.Resource.Dimension.calendar_text_small = global::Carpool.Resource.Dimension.calendar_text_small;
+			global::XLabs.Forms.Resource.Dimension.cardview_compat_inset_shadow = global::Carpool.Resource.Dimension.cardview_compat_inset_shadow;
+			global::XLabs.Forms.Resource.Dimension.cardview_default_elevation = global::Carpool.Resource.Dimension.cardview_default_elevation;
+			global::XLabs.Forms.Resource.Dimension.cardview_default_radius = global::Carpool.Resource.Dimension.cardview_default_radius;
+			global::XLabs.Forms.Resource.Dimension.design_appbar_elevation = global::Carpool.Resource.Dimension.design_appbar_elevation;
+			global::XLabs.Forms.Resource.Dimension.design_fab_border_width = global::Carpool.Resource.Dimension.design_fab_border_width;
+			global::XLabs.Forms.Resource.Dimension.design_fab_content_size = global::Carpool.Resource.Dimension.design_fab_content_size;
+			global::XLabs.Forms.Resource.Dimension.design_fab_elevation = global::Carpool.Resource.Dimension.design_fab_elevation;
+			global::XLabs.Forms.Resource.Dimension.design_fab_size_mini = global::Carpool.Resource.Dimension.design_fab_size_mini;
+			global::XLabs.Forms.Resource.Dimension.design_fab_size_normal = global::Carpool.Resource.Dimension.design_fab_size_normal;
+			global::XLabs.Forms.Resource.Dimension.design_fab_translation_z_pressed = global::Carpool.Resource.Dimension.design_fab_translation_z_pressed;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_elevation = global::Carpool.Resource.Dimension.design_navigation_elevation;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_icon_padding = global::Carpool.Resource.Dimension.design_navigation_icon_padding;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_icon_size = global::Carpool.Resource.Dimension.design_navigation_icon_size;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_max_width = global::Carpool.Resource.Dimension.design_navigation_max_width;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_padding_bottom = global::Carpool.Resource.Dimension.design_navigation_padding_bottom;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_padding_top_default = global::Carpool.Resource.Dimension.design_navigation_padding_top_default;
+			global::XLabs.Forms.Resource.Dimension.design_navigation_separator_vertical_padding = global::Carpool.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_action_inline_max_width = global::Carpool.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_background_corner_radius = global::Carpool.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_elevation = global::Carpool.Resource.Dimension.design_snackbar_elevation;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Carpool.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_max_width = global::Carpool.Resource.Dimension.design_snackbar_max_width;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_min_width = global::Carpool.Resource.Dimension.design_snackbar_min_width;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_padding_horizontal = global::Carpool.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_padding_vertical = global::Carpool.Resource.Dimension.design_snackbar_padding_vertical;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Carpool.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::XLabs.Forms.Resource.Dimension.design_snackbar_text_size = global::Carpool.Resource.Dimension.design_snackbar_text_size;
+			global::XLabs.Forms.Resource.Dimension.design_tab_max_width = global::Carpool.Resource.Dimension.design_tab_max_width;
+			global::XLabs.Forms.Resource.Dimension.design_tab_min_width = global::Carpool.Resource.Dimension.design_tab_min_width;
+			global::XLabs.Forms.Resource.Dimension.dialog_fixed_height_major = global::Carpool.Resource.Dimension.dialog_fixed_height_major;
+			global::XLabs.Forms.Resource.Dimension.dialog_fixed_height_minor = global::Carpool.Resource.Dimension.dialog_fixed_height_minor;
+			global::XLabs.Forms.Resource.Dimension.dialog_fixed_width_major = global::Carpool.Resource.Dimension.dialog_fixed_width_major;
+			global::XLabs.Forms.Resource.Dimension.dialog_fixed_width_minor = global::Carpool.Resource.Dimension.dialog_fixed_width_minor;
+			global::XLabs.Forms.Resource.Dimension.disabled_alpha_material_dark = global::Carpool.Resource.Dimension.disabled_alpha_material_dark;
+			global::XLabs.Forms.Resource.Dimension.disabled_alpha_material_light = global::Carpool.Resource.Dimension.disabled_alpha_material_light;
+			global::XLabs.Forms.Resource.Dimension.highlight_alpha_material_colored = global::Carpool.Resource.Dimension.highlight_alpha_material_colored;
+			global::XLabs.Forms.Resource.Dimension.highlight_alpha_material_dark = global::Carpool.Resource.Dimension.highlight_alpha_material_dark;
+			global::XLabs.Forms.Resource.Dimension.highlight_alpha_material_light = global::Carpool.Resource.Dimension.highlight_alpha_material_light;
+			global::XLabs.Forms.Resource.Dimension.mr_media_route_controller_art_max_height = global::Carpool.Resource.Dimension.mr_media_route_controller_art_max_height;
+			global::XLabs.Forms.Resource.Dimension.notification_large_icon_height = global::Carpool.Resource.Dimension.notification_large_icon_height;
+			global::XLabs.Forms.Resource.Dimension.notification_large_icon_width = global::Carpool.Resource.Dimension.notification_large_icon_width;
+			global::XLabs.Forms.Resource.Dimension.notification_subtext_size = global::Carpool.Resource.Dimension.notification_subtext_size;
+			global::XLabs.Forms.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_action_bar_item_background_material = global::Carpool.Resource.Drawable.abc_action_bar_item_background_material;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_borderless_material = global::Carpool.Resource.Drawable.abc_btn_borderless_material;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_check_material = global::Carpool.Resource.Drawable.abc_btn_check_material;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Carpool.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Carpool.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_colored_material = global::Carpool.Resource.Drawable.abc_btn_colored_material;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_default_mtrl_shape = global::Carpool.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_radio_material = global::Carpool.Resource.Drawable.abc_btn_radio_material;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Carpool.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Carpool.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::Carpool.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::Carpool.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Carpool.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::XLabs.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Carpool.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::XLabs.Forms.Resource.Drawable.abc_cab_background_internal_bg = global::Carpool.Resource.Drawable.abc_cab_background_internal_bg;
+			global::XLabs.Forms.Resource.Drawable.abc_cab_background_top_material = global::Carpool.Resource.Drawable.abc_cab_background_top_material;
+			global::XLabs.Forms.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Carpool.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_control_background_material = global::Carpool.Resource.Drawable.abc_control_background_material;
+			global::XLabs.Forms.Resource.Drawable.abc_dialog_material_background_dark = global::Carpool.Resource.Drawable.abc_dialog_material_background_dark;
+			global::XLabs.Forms.Resource.Drawable.abc_dialog_material_background_light = global::Carpool.Resource.Drawable.abc_dialog_material_background_light;
+			global::XLabs.Forms.Resource.Drawable.abc_edit_text_material = global::Carpool.Resource.Drawable.abc_edit_text_material;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::Carpool.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_clear_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Carpool.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Carpool.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::Carpool.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_item_background_holo_dark = global::Carpool.Resource.Drawable.abc_item_background_holo_dark;
+			global::XLabs.Forms.Resource.Drawable.abc_item_background_holo_light = global::Carpool.Resource.Drawable.abc_item_background_holo_light;
+			global::XLabs.Forms.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Carpool.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_list_focused_holo = global::Carpool.Resource.Drawable.abc_list_focused_holo;
+			global::XLabs.Forms.Resource.Drawable.abc_list_longpressed_holo = global::Carpool.Resource.Drawable.abc_list_longpressed_holo;
+			global::XLabs.Forms.Resource.Drawable.abc_list_pressed_holo_dark = global::Carpool.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::XLabs.Forms.Resource.Drawable.abc_list_pressed_holo_light = global::Carpool.Resource.Drawable.abc_list_pressed_holo_light;
+			global::XLabs.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Carpool.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::XLabs.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Carpool.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::XLabs.Forms.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Carpool.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::XLabs.Forms.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Carpool.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::XLabs.Forms.Resource.Drawable.abc_list_selector_holo_dark = global::Carpool.Resource.Drawable.abc_list_selector_holo_dark;
+			global::XLabs.Forms.Resource.Drawable.abc_list_selector_holo_light = global::Carpool.Resource.Drawable.abc_list_selector_holo_light;
+			global::XLabs.Forms.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Carpool.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::XLabs.Forms.Resource.Drawable.abc_popup_background_mtrl_mult = global::Carpool.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::XLabs.Forms.Resource.Drawable.abc_ratingbar_full_material = global::Carpool.Resource.Drawable.abc_ratingbar_full_material;
+			global::XLabs.Forms.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Carpool.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_spinner_textfield_background_material = global::Carpool.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::XLabs.Forms.Resource.Drawable.abc_switch_thumb_material = global::Carpool.Resource.Drawable.abc_switch_thumb_material;
+			global::XLabs.Forms.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Carpool.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_tab_indicator_material = global::Carpool.Resource.Drawable.abc_tab_indicator_material;
+			global::XLabs.Forms.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Carpool.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_text_cursor_material = global::Carpool.Resource.Drawable.abc_text_cursor_material;
+			global::XLabs.Forms.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Carpool.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Carpool.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Carpool.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Carpool.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::XLabs.Forms.Resource.Drawable.abc_textfield_search_material = global::Carpool.Resource.Drawable.abc_textfield_search_material;
+			global::XLabs.Forms.Resource.Drawable.ad16 = global::Carpool.Resource.Drawable.ad16;
+			global::XLabs.Forms.Resource.Drawable.calendar_bg_selector = global::Carpool.Resource.Drawable.calendar_bg_selector;
+			global::XLabs.Forms.Resource.Drawable.design_fab_background = global::Carpool.Resource.Drawable.design_fab_background;
+			global::XLabs.Forms.Resource.Drawable.design_snackbar_background = global::Carpool.Resource.Drawable.design_snackbar_background;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_dark = global::Carpool.Resource.Drawable.ic_cast_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_disabled_light = global::Carpool.Resource.Drawable.ic_cast_disabled_light;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_light = global::Carpool.Resource.Drawable.ic_cast_light;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_off_light = global::Carpool.Resource.Drawable.ic_cast_off_light;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_on_0_light = global::Carpool.Resource.Drawable.ic_cast_on_0_light;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_on_1_light = global::Carpool.Resource.Drawable.ic_cast_on_1_light;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_on_2_light = global::Carpool.Resource.Drawable.ic_cast_on_2_light;
+			global::XLabs.Forms.Resource.Drawable.ic_cast_on_light = global::Carpool.Resource.Drawable.ic_cast_on_light;
+			global::XLabs.Forms.Resource.Drawable.ic_media_pause = global::Carpool.Resource.Drawable.ic_media_pause;
+			global::XLabs.Forms.Resource.Drawable.ic_media_play = global::Carpool.Resource.Drawable.ic_media_play;
+			global::XLabs.Forms.Resource.Drawable.ic_media_route_disabled_mono_dark = global::Carpool.Resource.Drawable.ic_media_route_disabled_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_media_route_off_mono_dark = global::Carpool.Resource.Drawable.ic_media_route_off_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_0_mono_dark = global::Carpool.Resource.Drawable.ic_media_route_on_0_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_1_mono_dark = global::Carpool.Resource.Drawable.ic_media_route_on_1_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_2_mono_dark = global::Carpool.Resource.Drawable.ic_media_route_on_2_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_media_route_on_mono_dark = global::Carpool.Resource.Drawable.ic_media_route_on_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_pause_dark = global::Carpool.Resource.Drawable.ic_pause_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_pause_light = global::Carpool.Resource.Drawable.ic_pause_light;
+			global::XLabs.Forms.Resource.Drawable.ic_play_dark = global::Carpool.Resource.Drawable.ic_play_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_play_light = global::Carpool.Resource.Drawable.ic_play_light;
+			global::XLabs.Forms.Resource.Drawable.ic_setting_dark = global::Carpool.Resource.Drawable.ic_setting_dark;
+			global::XLabs.Forms.Resource.Drawable.ic_setting_light = global::Carpool.Resource.Drawable.ic_setting_light;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_cast_dark = global::Carpool.Resource.Drawable.mr_ic_cast_dark;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_cast_light = global::Carpool.Resource.Drawable.mr_ic_cast_light;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_connecting_mono_dark = global::Carpool.Resource.Drawable.mr_ic_media_route_connecting_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_connecting_mono_light = global::Carpool.Resource.Drawable.mr_ic_media_route_connecting_mono_light;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_mono_dark = global::Carpool.Resource.Drawable.mr_ic_media_route_mono_dark;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_media_route_mono_light = global::Carpool.Resource.Drawable.mr_ic_media_route_mono_light;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_pause_dark = global::Carpool.Resource.Drawable.mr_ic_pause_dark;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_pause_light = global::Carpool.Resource.Drawable.mr_ic_pause_light;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_play_dark = global::Carpool.Resource.Drawable.mr_ic_play_dark;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_play_light = global::Carpool.Resource.Drawable.mr_ic_play_light;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_settings_dark = global::Carpool.Resource.Drawable.mr_ic_settings_dark;
+			global::XLabs.Forms.Resource.Drawable.mr_ic_settings_light = global::Carpool.Resource.Drawable.mr_ic_settings_light;
+			global::XLabs.Forms.Resource.Drawable.notification_template_icon_bg = global::Carpool.Resource.Drawable.notification_template_icon_bg;
+			global::XLabs.Forms.Resource.Id.action0 = global::Carpool.Resource.Id.action0;
+			global::XLabs.Forms.Resource.Id.action_bar = global::Carpool.Resource.Id.action_bar;
+			global::XLabs.Forms.Resource.Id.action_bar_activity_content = global::Carpool.Resource.Id.action_bar_activity_content;
+			global::XLabs.Forms.Resource.Id.action_bar_container = global::Carpool.Resource.Id.action_bar_container;
+			global::XLabs.Forms.Resource.Id.action_bar_root = global::Carpool.Resource.Id.action_bar_root;
+			global::XLabs.Forms.Resource.Id.action_bar_spinner = global::Carpool.Resource.Id.action_bar_spinner;
+			global::XLabs.Forms.Resource.Id.action_bar_subtitle = global::Carpool.Resource.Id.action_bar_subtitle;
+			global::XLabs.Forms.Resource.Id.action_bar_title = global::Carpool.Resource.Id.action_bar_title;
+			global::XLabs.Forms.Resource.Id.action_context_bar = global::Carpool.Resource.Id.action_context_bar;
+			global::XLabs.Forms.Resource.Id.action_divider = global::Carpool.Resource.Id.action_divider;
+			global::XLabs.Forms.Resource.Id.action_menu_divider = global::Carpool.Resource.Id.action_menu_divider;
+			global::XLabs.Forms.Resource.Id.action_menu_presenter = global::Carpool.Resource.Id.action_menu_presenter;
+			global::XLabs.Forms.Resource.Id.action_mode_bar = global::Carpool.Resource.Id.action_mode_bar;
+			global::XLabs.Forms.Resource.Id.action_mode_bar_stub = global::Carpool.Resource.Id.action_mode_bar_stub;
+			global::XLabs.Forms.Resource.Id.action_mode_close_button = global::Carpool.Resource.Id.action_mode_close_button;
+			global::XLabs.Forms.Resource.Id.activity_chooser_view_content = global::Carpool.Resource.Id.activity_chooser_view_content;
+			global::XLabs.Forms.Resource.Id.alertTitle = global::Carpool.Resource.Id.alertTitle;
+			global::XLabs.Forms.Resource.Id.always = global::Carpool.Resource.Id.always;
+			global::XLabs.Forms.Resource.Id.art = global::Carpool.Resource.Id.art;
+			global::XLabs.Forms.Resource.Id.beginning = global::Carpool.Resource.Id.beginning;
+			global::XLabs.Forms.Resource.Id.bottom = global::Carpool.Resource.Id.bottom;
+			global::XLabs.Forms.Resource.Id.buttonPanel = global::Carpool.Resource.Id.buttonPanel;
+			global::XLabs.Forms.Resource.Id.buttons = global::Carpool.Resource.Id.buttons;
+			global::XLabs.Forms.Resource.Id.calendar_grid = global::Carpool.Resource.Id.calendar_grid;
+			global::XLabs.Forms.Resource.Id.calendar_view = global::Carpool.Resource.Id.calendar_view;
+			global::XLabs.Forms.Resource.Id.cancel_action = global::Carpool.Resource.Id.cancel_action;
+			global::XLabs.Forms.Resource.Id.center = global::Carpool.Resource.Id.center;
+			global::XLabs.Forms.Resource.Id.center_horizontal = global::Carpool.Resource.Id.center_horizontal;
+			global::XLabs.Forms.Resource.Id.center_vertical = global::Carpool.Resource.Id.center_vertical;
+			global::XLabs.Forms.Resource.Id.checkbox = global::Carpool.Resource.Id.checkbox;
+			global::XLabs.Forms.Resource.Id.chronometer = global::Carpool.Resource.Id.chronometer;
+			global::XLabs.Forms.Resource.Id.clip_horizontal = global::Carpool.Resource.Id.clip_horizontal;
+			global::XLabs.Forms.Resource.Id.clip_vertical = global::Carpool.Resource.Id.clip_vertical;
+			global::XLabs.Forms.Resource.Id.collapseActionView = global::Carpool.Resource.Id.collapseActionView;
+			global::XLabs.Forms.Resource.Id.contentPanel = global::Carpool.Resource.Id.contentPanel;
+			global::XLabs.Forms.Resource.Id.custom = global::Carpool.Resource.Id.custom;
+			global::XLabs.Forms.Resource.Id.customPanel = global::Carpool.Resource.Id.customPanel;
+			global::XLabs.Forms.Resource.Id.decor_content_parent = global::Carpool.Resource.Id.decor_content_parent;
+			global::XLabs.Forms.Resource.Id.default_activity_button = global::Carpool.Resource.Id.default_activity_button;
+			global::XLabs.Forms.Resource.Id.default_control_frame = global::Carpool.Resource.Id.default_control_frame;
+			global::XLabs.Forms.Resource.Id.disableHome = global::Carpool.Resource.Id.disableHome;
+			global::XLabs.Forms.Resource.Id.disconnect = global::Carpool.Resource.Id.disconnect;
+			global::XLabs.Forms.Resource.Id.edit_query = global::Carpool.Resource.Id.edit_query;
+			global::XLabs.Forms.Resource.Id.end = global::Carpool.Resource.Id.end;
+			global::XLabs.Forms.Resource.Id.end_padder = global::Carpool.Resource.Id.end_padder;
+			global::XLabs.Forms.Resource.Id.enterAlways = global::Carpool.Resource.Id.enterAlways;
+			global::XLabs.Forms.Resource.Id.enterAlwaysCollapsed = global::Carpool.Resource.Id.enterAlwaysCollapsed;
+			global::XLabs.Forms.Resource.Id.exitUntilCollapsed = global::Carpool.Resource.Id.exitUntilCollapsed;
+			global::XLabs.Forms.Resource.Id.expand_activities_button = global::Carpool.Resource.Id.expand_activities_button;
+			global::XLabs.Forms.Resource.Id.expanded_menu = global::Carpool.Resource.Id.expanded_menu;
+			global::XLabs.Forms.Resource.Id.fill = global::Carpool.Resource.Id.fill;
+			global::XLabs.Forms.Resource.Id.fill_horizontal = global::Carpool.Resource.Id.fill_horizontal;
+			global::XLabs.Forms.Resource.Id.fill_vertical = global::Carpool.Resource.Id.fill_vertical;
+			global::XLabs.Forms.Resource.Id.@fixed = global::Carpool.Resource.Id.@fixed;
+			global::XLabs.Forms.Resource.Id.home = global::Carpool.Resource.Id.home;
+			global::XLabs.Forms.Resource.Id.homeAsUp = global::Carpool.Resource.Id.homeAsUp;
+			global::XLabs.Forms.Resource.Id.icon = global::Carpool.Resource.Id.icon;
+			global::XLabs.Forms.Resource.Id.ifRoom = global::Carpool.Resource.Id.ifRoom;
+			global::XLabs.Forms.Resource.Id.image = global::Carpool.Resource.Id.image;
+			global::XLabs.Forms.Resource.Id.info = global::Carpool.Resource.Id.info;
+			global::XLabs.Forms.Resource.Id.left = global::Carpool.Resource.Id.left;
+			global::XLabs.Forms.Resource.Id.left_arrow = global::Carpool.Resource.Id.left_arrow;
+			global::XLabs.Forms.Resource.Id.line1 = global::Carpool.Resource.Id.line1;
+			global::XLabs.Forms.Resource.Id.line3 = global::Carpool.Resource.Id.line3;
+			global::XLabs.Forms.Resource.Id.listMode = global::Carpool.Resource.Id.listMode;
+			global::XLabs.Forms.Resource.Id.list_item = global::Carpool.Resource.Id.list_item;
+			global::XLabs.Forms.Resource.Id.media_actions = global::Carpool.Resource.Id.media_actions;
+			global::XLabs.Forms.Resource.Id.media_route_control_frame = global::Carpool.Resource.Id.media_route_control_frame;
+			global::XLabs.Forms.Resource.Id.media_route_list = global::Carpool.Resource.Id.media_route_list;
+			global::XLabs.Forms.Resource.Id.media_route_volume_layout = global::Carpool.Resource.Id.media_route_volume_layout;
+			global::XLabs.Forms.Resource.Id.media_route_volume_slider = global::Carpool.Resource.Id.media_route_volume_slider;
+			global::XLabs.Forms.Resource.Id.middle = global::Carpool.Resource.Id.middle;
+			global::XLabs.Forms.Resource.Id.mini = global::Carpool.Resource.Id.mini;
+			global::XLabs.Forms.Resource.Id.multiply = global::Carpool.Resource.Id.multiply;
+			global::XLabs.Forms.Resource.Id.never = global::Carpool.Resource.Id.never;
+			global::XLabs.Forms.Resource.Id.none = global::Carpool.Resource.Id.none;
+			global::XLabs.Forms.Resource.Id.normal = global::Carpool.Resource.Id.normal;
+			global::XLabs.Forms.Resource.Id.parallax = global::Carpool.Resource.Id.parallax;
+			global::XLabs.Forms.Resource.Id.parentPanel = global::Carpool.Resource.Id.parentPanel;
+			global::XLabs.Forms.Resource.Id.pin = global::Carpool.Resource.Id.pin;
+			global::XLabs.Forms.Resource.Id.play_pause = global::Carpool.Resource.Id.play_pause;
+			global::XLabs.Forms.Resource.Id.progress_circular = global::Carpool.Resource.Id.progress_circular;
+			global::XLabs.Forms.Resource.Id.progress_horizontal = global::Carpool.Resource.Id.progress_horizontal;
+			global::XLabs.Forms.Resource.Id.radio = global::Carpool.Resource.Id.radio;
+			global::XLabs.Forms.Resource.Id.right = global::Carpool.Resource.Id.right;
+			global::XLabs.Forms.Resource.Id.right_arrow = global::Carpool.Resource.Id.right_arrow;
+			global::XLabs.Forms.Resource.Id.route_name = global::Carpool.Resource.Id.route_name;
+			global::XLabs.Forms.Resource.Id.screen = global::Carpool.Resource.Id.screen;
+			global::XLabs.Forms.Resource.Id.scroll = global::Carpool.Resource.Id.scroll;
+			global::XLabs.Forms.Resource.Id.scrollView = global::Carpool.Resource.Id.scrollView;
+			global::XLabs.Forms.Resource.Id.scrollable = global::Carpool.Resource.Id.scrollable;
+			global::XLabs.Forms.Resource.Id.search_badge = global::Carpool.Resource.Id.search_badge;
+			global::XLabs.Forms.Resource.Id.search_bar = global::Carpool.Resource.Id.search_bar;
+			global::XLabs.Forms.Resource.Id.search_button = global::Carpool.Resource.Id.search_button;
+			global::XLabs.Forms.Resource.Id.search_close_btn = global::Carpool.Resource.Id.search_close_btn;
+			global::XLabs.Forms.Resource.Id.search_edit_frame = global::Carpool.Resource.Id.search_edit_frame;
+			global::XLabs.Forms.Resource.Id.search_go_btn = global::Carpool.Resource.Id.search_go_btn;
+			global::XLabs.Forms.Resource.Id.search_mag_icon = global::Carpool.Resource.Id.search_mag_icon;
+			global::XLabs.Forms.Resource.Id.search_plate = global::Carpool.Resource.Id.search_plate;
+			global::XLabs.Forms.Resource.Id.search_src_text = global::Carpool.Resource.Id.search_src_text;
+			global::XLabs.Forms.Resource.Id.search_voice_btn = global::Carpool.Resource.Id.search_voice_btn;
+			global::XLabs.Forms.Resource.Id.select_dialog_listview = global::Carpool.Resource.Id.select_dialog_listview;
+			global::XLabs.Forms.Resource.Id.settings = global::Carpool.Resource.Id.settings;
+			global::XLabs.Forms.Resource.Id.shortcut = global::Carpool.Resource.Id.shortcut;
+			global::XLabs.Forms.Resource.Id.showCustom = global::Carpool.Resource.Id.showCustom;
+			global::XLabs.Forms.Resource.Id.showHome = global::Carpool.Resource.Id.showHome;
+			global::XLabs.Forms.Resource.Id.showTitle = global::Carpool.Resource.Id.showTitle;
+			global::XLabs.Forms.Resource.Id.snackbar_action = global::Carpool.Resource.Id.snackbar_action;
+			global::XLabs.Forms.Resource.Id.snackbar_text = global::Carpool.Resource.Id.snackbar_text;
+			global::XLabs.Forms.Resource.Id.split_action_bar = global::Carpool.Resource.Id.split_action_bar;
+			global::XLabs.Forms.Resource.Id.src_atop = global::Carpool.Resource.Id.src_atop;
+			global::XLabs.Forms.Resource.Id.src_in = global::Carpool.Resource.Id.src_in;
+			global::XLabs.Forms.Resource.Id.src_over = global::Carpool.Resource.Id.src_over;
+			global::XLabs.Forms.Resource.Id.start = global::Carpool.Resource.Id.start;
+			global::XLabs.Forms.Resource.Id.status_bar_latest_event_content = global::Carpool.Resource.Id.status_bar_latest_event_content;
+			global::XLabs.Forms.Resource.Id.stop = global::Carpool.Resource.Id.stop;
+			global::XLabs.Forms.Resource.Id.submit_area = global::Carpool.Resource.Id.submit_area;
+			global::XLabs.Forms.Resource.Id.subtitle = global::Carpool.Resource.Id.subtitle;
+			global::XLabs.Forms.Resource.Id.tabMode = global::Carpool.Resource.Id.tabMode;
+			global::XLabs.Forms.Resource.Id.text = global::Carpool.Resource.Id.text;
+			global::XLabs.Forms.Resource.Id.text2 = global::Carpool.Resource.Id.text2;
+			global::XLabs.Forms.Resource.Id.textSpacerNoButtons = global::Carpool.Resource.Id.textSpacerNoButtons;
+			global::XLabs.Forms.Resource.Id.time = global::Carpool.Resource.Id.time;
+			global::XLabs.Forms.Resource.Id.title = global::Carpool.Resource.Id.title;
+			global::XLabs.Forms.Resource.Id.title_bar = global::Carpool.Resource.Id.title_bar;
+			global::XLabs.Forms.Resource.Id.title_template = global::Carpool.Resource.Id.title_template;
+			global::XLabs.Forms.Resource.Id.top = global::Carpool.Resource.Id.top;
+			global::XLabs.Forms.Resource.Id.topPanel = global::Carpool.Resource.Id.topPanel;
+			global::XLabs.Forms.Resource.Id.up = global::Carpool.Resource.Id.up;
+			global::XLabs.Forms.Resource.Id.useLogo = global::Carpool.Resource.Id.useLogo;
+			global::XLabs.Forms.Resource.Id.view_offset_helper = global::Carpool.Resource.Id.view_offset_helper;
+			global::XLabs.Forms.Resource.Id.withText = global::Carpool.Resource.Id.withText;
+			global::XLabs.Forms.Resource.Id.wrap_content = global::Carpool.Resource.Id.wrap_content;
+			global::XLabs.Forms.Resource.Integer.abc_config_activityDefaultDur = global::Carpool.Resource.Integer.abc_config_activityDefaultDur;
+			global::XLabs.Forms.Resource.Integer.abc_config_activityShortDur = global::Carpool.Resource.Integer.abc_config_activityShortDur;
+			global::XLabs.Forms.Resource.Integer.abc_max_action_buttons = global::Carpool.Resource.Integer.abc_max_action_buttons;
+			global::XLabs.Forms.Resource.Integer.cancel_button_image_alpha = global::Carpool.Resource.Integer.cancel_button_image_alpha;
+			global::XLabs.Forms.Resource.Integer.design_snackbar_text_max_lines = global::Carpool.Resource.Integer.design_snackbar_text_max_lines;
+			global::XLabs.Forms.Resource.Integer.status_bar_notification_info_maxnum = global::Carpool.Resource.Integer.status_bar_notification_info_maxnum;
+			global::XLabs.Forms.Resource.Layout.abc_action_bar_title_item = global::Carpool.Resource.Layout.abc_action_bar_title_item;
+			global::XLabs.Forms.Resource.Layout.abc_action_bar_up_container = global::Carpool.Resource.Layout.abc_action_bar_up_container;
+			global::XLabs.Forms.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Carpool.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::XLabs.Forms.Resource.Layout.abc_action_menu_item_layout = global::Carpool.Resource.Layout.abc_action_menu_item_layout;
+			global::XLabs.Forms.Resource.Layout.abc_action_menu_layout = global::Carpool.Resource.Layout.abc_action_menu_layout;
+			global::XLabs.Forms.Resource.Layout.abc_action_mode_bar = global::Carpool.Resource.Layout.abc_action_mode_bar;
+			global::XLabs.Forms.Resource.Layout.abc_action_mode_close_item_material = global::Carpool.Resource.Layout.abc_action_mode_close_item_material;
+			global::XLabs.Forms.Resource.Layout.abc_activity_chooser_view = global::Carpool.Resource.Layout.abc_activity_chooser_view;
+			global::XLabs.Forms.Resource.Layout.abc_activity_chooser_view_list_item = global::Carpool.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::XLabs.Forms.Resource.Layout.abc_alert_dialog_material = global::Carpool.Resource.Layout.abc_alert_dialog_material;
+			global::XLabs.Forms.Resource.Layout.abc_dialog_title_material = global::Carpool.Resource.Layout.abc_dialog_title_material;
+			global::XLabs.Forms.Resource.Layout.abc_expanded_menu_layout = global::Carpool.Resource.Layout.abc_expanded_menu_layout;
+			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_checkbox = global::Carpool.Resource.Layout.abc_list_menu_item_checkbox;
+			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_icon = global::Carpool.Resource.Layout.abc_list_menu_item_icon;
+			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_layout = global::Carpool.Resource.Layout.abc_list_menu_item_layout;
+			global::XLabs.Forms.Resource.Layout.abc_list_menu_item_radio = global::Carpool.Resource.Layout.abc_list_menu_item_radio;
+			global::XLabs.Forms.Resource.Layout.abc_popup_menu_item_layout = global::Carpool.Resource.Layout.abc_popup_menu_item_layout;
+			global::XLabs.Forms.Resource.Layout.abc_screen_content_include = global::Carpool.Resource.Layout.abc_screen_content_include;
+			global::XLabs.Forms.Resource.Layout.abc_screen_simple = global::Carpool.Resource.Layout.abc_screen_simple;
+			global::XLabs.Forms.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Carpool.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::XLabs.Forms.Resource.Layout.abc_screen_toolbar = global::Carpool.Resource.Layout.abc_screen_toolbar;
+			global::XLabs.Forms.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Carpool.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::XLabs.Forms.Resource.Layout.abc_search_view = global::Carpool.Resource.Layout.abc_search_view;
+			global::XLabs.Forms.Resource.Layout.abc_select_dialog_material = global::Carpool.Resource.Layout.abc_select_dialog_material;
+			global::XLabs.Forms.Resource.Layout.calendar_pager_layout = global::Carpool.Resource.Layout.calendar_pager_layout;
+			global::XLabs.Forms.Resource.Layout.calendar_picker = global::Carpool.Resource.Layout.calendar_picker;
+			global::XLabs.Forms.Resource.Layout.design_layout_snackbar = global::Carpool.Resource.Layout.design_layout_snackbar;
+			global::XLabs.Forms.Resource.Layout.design_layout_snackbar_include = global::Carpool.Resource.Layout.design_layout_snackbar_include;
+			global::XLabs.Forms.Resource.Layout.design_layout_tab_icon = global::Carpool.Resource.Layout.design_layout_tab_icon;
+			global::XLabs.Forms.Resource.Layout.design_layout_tab_text = global::Carpool.Resource.Layout.design_layout_tab_text;
+			global::XLabs.Forms.Resource.Layout.design_navigation_item = global::Carpool.Resource.Layout.design_navigation_item;
+			global::XLabs.Forms.Resource.Layout.design_navigation_item_header = global::Carpool.Resource.Layout.design_navigation_item_header;
+			global::XLabs.Forms.Resource.Layout.design_navigation_item_separator = global::Carpool.Resource.Layout.design_navigation_item_separator;
+			global::XLabs.Forms.Resource.Layout.design_navigation_item_subheader = global::Carpool.Resource.Layout.design_navigation_item_subheader;
+			global::XLabs.Forms.Resource.Layout.design_navigation_menu = global::Carpool.Resource.Layout.design_navigation_menu;
+			global::XLabs.Forms.Resource.Layout.dialog = global::Carpool.Resource.Layout.dialog;
+			global::XLabs.Forms.Resource.Layout.month = global::Carpool.Resource.Layout.month;
+			global::XLabs.Forms.Resource.Layout.mr_media_route_chooser_dialog = global::Carpool.Resource.Layout.mr_media_route_chooser_dialog;
+			global::XLabs.Forms.Resource.Layout.mr_media_route_controller_material_dialog_b = global::Carpool.Resource.Layout.mr_media_route_controller_material_dialog_b;
+			global::XLabs.Forms.Resource.Layout.mr_media_route_list_item = global::Carpool.Resource.Layout.mr_media_route_list_item;
+			global::XLabs.Forms.Resource.Layout.notification_media_action = global::Carpool.Resource.Layout.notification_media_action;
+			global::XLabs.Forms.Resource.Layout.notification_media_cancel_action = global::Carpool.Resource.Layout.notification_media_cancel_action;
+			global::XLabs.Forms.Resource.Layout.notification_template_big_media = global::Carpool.Resource.Layout.notification_template_big_media;
+			global::XLabs.Forms.Resource.Layout.notification_template_big_media_narrow = global::Carpool.Resource.Layout.notification_template_big_media_narrow;
+			global::XLabs.Forms.Resource.Layout.notification_template_lines = global::Carpool.Resource.Layout.notification_template_lines;
+			global::XLabs.Forms.Resource.Layout.notification_template_media = global::Carpool.Resource.Layout.notification_template_media;
+			global::XLabs.Forms.Resource.Layout.notification_template_part_chronometer = global::Carpool.Resource.Layout.notification_template_part_chronometer;
+			global::XLabs.Forms.Resource.Layout.notification_template_part_time = global::Carpool.Resource.Layout.notification_template_part_time;
+			global::XLabs.Forms.Resource.Layout.select_dialog_item_material = global::Carpool.Resource.Layout.select_dialog_item_material;
+			global::XLabs.Forms.Resource.Layout.select_dialog_multichoice_material = global::Carpool.Resource.Layout.select_dialog_multichoice_material;
+			global::XLabs.Forms.Resource.Layout.select_dialog_singlechoice_material = global::Carpool.Resource.Layout.select_dialog_singlechoice_material;
+			global::XLabs.Forms.Resource.Layout.support_simple_spinner_dropdown_item = global::Carpool.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::XLabs.Forms.Resource.Layout.week = global::Carpool.Resource.Layout.week;
+			global::XLabs.Forms.Resource.String.ApplicationName = global::Carpool.Resource.String.ApplicationName;
+			global::XLabs.Forms.Resource.String.Hello = global::Carpool.Resource.String.Hello;
+			global::XLabs.Forms.Resource.String.abc_action_bar_home_description = global::Carpool.Resource.String.abc_action_bar_home_description;
+			global::XLabs.Forms.Resource.String.abc_action_bar_home_description_format = global::Carpool.Resource.String.abc_action_bar_home_description_format;
+			global::XLabs.Forms.Resource.String.abc_action_bar_home_subtitle_description_format = global::Carpool.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::XLabs.Forms.Resource.String.abc_action_bar_up_description = global::Carpool.Resource.String.abc_action_bar_up_description;
+			global::XLabs.Forms.Resource.String.abc_action_menu_overflow_description = global::Carpool.Resource.String.abc_action_menu_overflow_description;
+			global::XLabs.Forms.Resource.String.abc_action_mode_done = global::Carpool.Resource.String.abc_action_mode_done;
+			global::XLabs.Forms.Resource.String.abc_activity_chooser_view_see_all = global::Carpool.Resource.String.abc_activity_chooser_view_see_all;
+			global::XLabs.Forms.Resource.String.abc_activitychooserview_choose_application = global::Carpool.Resource.String.abc_activitychooserview_choose_application;
+			global::XLabs.Forms.Resource.String.abc_search_hint = global::Carpool.Resource.String.abc_search_hint;
+			global::XLabs.Forms.Resource.String.abc_searchview_description_clear = global::Carpool.Resource.String.abc_searchview_description_clear;
+			global::XLabs.Forms.Resource.String.abc_searchview_description_query = global::Carpool.Resource.String.abc_searchview_description_query;
+			global::XLabs.Forms.Resource.String.abc_searchview_description_search = global::Carpool.Resource.String.abc_searchview_description_search;
+			global::XLabs.Forms.Resource.String.abc_searchview_description_submit = global::Carpool.Resource.String.abc_searchview_description_submit;
+			global::XLabs.Forms.Resource.String.abc_searchview_description_voice = global::Carpool.Resource.String.abc_searchview_description_voice;
+			global::XLabs.Forms.Resource.String.abc_shareactionprovider_share_with = global::Carpool.Resource.String.abc_shareactionprovider_share_with;
+			global::XLabs.Forms.Resource.String.abc_shareactionprovider_share_with_application = global::Carpool.Resource.String.abc_shareactionprovider_share_with_application;
+			global::XLabs.Forms.Resource.String.abc_toolbar_collapse_description = global::Carpool.Resource.String.abc_toolbar_collapse_description;
+			global::XLabs.Forms.Resource.String.appbar_scrolling_view_behavior = global::Carpool.Resource.String.appbar_scrolling_view_behavior;
+			global::XLabs.Forms.Resource.String.day_name_format = global::Carpool.Resource.String.day_name_format;
+			global::XLabs.Forms.Resource.String.full_date_format = global::Carpool.Resource.String.full_date_format;
+			global::XLabs.Forms.Resource.String.invalid_date = global::Carpool.Resource.String.invalid_date;
+			global::XLabs.Forms.Resource.String.library_name = global::Carpool.Resource.String.library_name;
+			global::XLabs.Forms.Resource.String.month_name_format = global::Carpool.Resource.String.month_name_format;
+			global::XLabs.Forms.Resource.String.mr_media_route_button_content_description = global::Carpool.Resource.String.mr_media_route_button_content_description;
+			global::XLabs.Forms.Resource.String.mr_media_route_chooser_searching = global::Carpool.Resource.String.mr_media_route_chooser_searching;
+			global::XLabs.Forms.Resource.String.mr_media_route_chooser_title = global::Carpool.Resource.String.mr_media_route_chooser_title;
+			global::XLabs.Forms.Resource.String.mr_media_route_controller_disconnect = global::Carpool.Resource.String.mr_media_route_controller_disconnect;
+			global::XLabs.Forms.Resource.String.mr_media_route_controller_no_info_available = global::Carpool.Resource.String.mr_media_route_controller_no_info_available;
+			global::XLabs.Forms.Resource.String.mr_media_route_controller_pause = global::Carpool.Resource.String.mr_media_route_controller_pause;
+			global::XLabs.Forms.Resource.String.mr_media_route_controller_play = global::Carpool.Resource.String.mr_media_route_controller_play;
+			global::XLabs.Forms.Resource.String.mr_media_route_controller_settings_description = global::Carpool.Resource.String.mr_media_route_controller_settings_description;
+			global::XLabs.Forms.Resource.String.mr_media_route_controller_stop = global::Carpool.Resource.String.mr_media_route_controller_stop;
+			global::XLabs.Forms.Resource.String.mr_system_route_name = global::Carpool.Resource.String.mr_system_route_name;
+			global::XLabs.Forms.Resource.String.mr_user_route_category_name = global::Carpool.Resource.String.mr_user_route_category_name;
+			global::XLabs.Forms.Resource.String.status_bar_notification_info_overflow = global::Carpool.Resource.String.status_bar_notification_info_overflow;
+			global::XLabs.Forms.Resource.Style.AlertDialog_AppCompat = global::Carpool.Resource.Style.AlertDialog_AppCompat;
+			global::XLabs.Forms.Resource.Style.AlertDialog_AppCompat_Light = global::Carpool.Resource.Style.AlertDialog_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Animation_AppCompat_Dialog = global::Carpool.Resource.Style.Animation_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Animation_AppCompat_DropDownUp = global::Carpool.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::XLabs.Forms.Resource.Style.Base_AlertDialog_AppCompat = global::Carpool.Resource.Style.Base_AlertDialog_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Carpool.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_Animation_AppCompat_Dialog = global::Carpool.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Carpool.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::XLabs.Forms.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Carpool.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Carpool.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Carpool.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Carpool.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Carpool.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::XLabs.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Carpool.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat = global::Carpool.Resource.Style.Base_Theme_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Carpool.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog = global::Carpool.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Carpool.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Carpool.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Carpool.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Carpool.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::XLabs.Forms.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Carpool.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat = global::Carpool.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Carpool.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Carpool.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Carpool.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::XLabs.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Carpool.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Carpool.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Carpool.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Carpool.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::XLabs.Forms.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Carpool.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat = global::Carpool.Resource.Style.Base_V21_Theme_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Carpool.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Carpool.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Carpool.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_V22_Theme_AppCompat = global::Carpool.Resource.Style.Base_V22_Theme_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Carpool.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_V23_Theme_AppCompat = global::Carpool.Resource.Style.Base_V23_Theme_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Carpool.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat = global::Carpool.Resource.Style.Base_V7_Theme_AppCompat;
+			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Carpool.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Carpool.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Carpool.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::XLabs.Forms.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Carpool.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::XLabs.Forms.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Carpool.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Carpool.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Carpool.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button = global::Carpool.Resource.Style.Base_Widget_AppCompat_Button;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Carpool.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Carpool.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Carpool.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Carpool.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Carpool.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Carpool.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Carpool.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Carpool.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Carpool.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Carpool.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Carpool.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Carpool.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_EditText = global::Carpool.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Carpool.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Carpool.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListView = global::Carpool.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Carpool.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Carpool.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Carpool.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Carpool.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Carpool.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Carpool.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_SearchView = global::Carpool.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Carpool.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Spinner = global::Carpool.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Carpool.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Carpool.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Carpool.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::XLabs.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Carpool.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::XLabs.Forms.Resource.Style.Base_Widget_Design_TabLayout = global::Carpool.Resource.Style.Base_Widget_Design_TabLayout;
+			global::XLabs.Forms.Resource.Style.CalendarCell = global::Carpool.Resource.Style.CalendarCell;
+			global::XLabs.Forms.Resource.Style.CalendarCell_CalendarDate = global::Carpool.Resource.Style.CalendarCell_CalendarDate;
+			global::XLabs.Forms.Resource.Style.CalendarCell_DayHeader = global::Carpool.Resource.Style.CalendarCell_DayHeader;
+			global::XLabs.Forms.Resource.Style.CalendarTitle = global::Carpool.Resource.Style.CalendarTitle;
+			global::XLabs.Forms.Resource.Style.CardView = global::Carpool.Resource.Style.CardView;
+			global::XLabs.Forms.Resource.Style.CardView_Dark = global::Carpool.Resource.Style.CardView_Dark;
+			global::XLabs.Forms.Resource.Style.CardView_Light = global::Carpool.Resource.Style.CardView_Light;
+			global::XLabs.Forms.Resource.Style.Platform_AppCompat = global::Carpool.Resource.Style.Platform_AppCompat;
+			global::XLabs.Forms.Resource.Style.Platform_AppCompat_Light = global::Carpool.Resource.Style.Platform_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Carpool.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::XLabs.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Carpool.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::XLabs.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Carpool.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Platform_V11_AppCompat = global::Carpool.Resource.Style.Platform_V11_AppCompat;
+			global::XLabs.Forms.Resource.Style.Platform_V11_AppCompat_Light = global::Carpool.Resource.Style.Platform_V11_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Platform_V14_AppCompat = global::Carpool.Resource.Style.Platform_V14_AppCompat;
+			global::XLabs.Forms.Resource.Style.Platform_V14_AppCompat_Light = global::Carpool.Resource.Style.Platform_V14_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Carpool.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Carpool.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::XLabs.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Carpool.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat = global::Carpool.Resource.Style.TextAppearance_AppCompat;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Body1 = global::Carpool.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Body2 = global::Carpool.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Button = global::Carpool.Resource.Style.TextAppearance_AppCompat_Button;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Caption = global::Carpool.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display1 = global::Carpool.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display2 = global::Carpool.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display3 = global::Carpool.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Display4 = global::Carpool.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Headline = global::Carpool.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Large = global::Carpool.Resource.Style.TextAppearance_AppCompat_Large;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Carpool.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Carpool.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Carpool.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Carpool.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Medium = global::Carpool.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Menu = global::Carpool.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Carpool.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Carpool.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Small = global::Carpool.Resource.Style.TextAppearance_AppCompat_Small;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Subhead = global::Carpool.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Title = global::Carpool.Resource.Style.TextAppearance_AppCompat_Title;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::XLabs.Forms.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Carpool.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Carpool.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Error = global::Carpool.Resource.Style.TextAppearance_Design_Error;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Hint = global::Carpool.Resource.Style.TextAppearance_Design_Hint;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Carpool.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Design_Tab = global::Carpool.Resource.Style.TextAppearance_Design_Tab;
+			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent = global::Carpool.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Carpool.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Carpool.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Carpool.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::XLabs.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Carpool.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Carpool.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Carpool.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::XLabs.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Carpool.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat = global::Carpool.Resource.Style.Theme_AppCompat;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_CompactMenu = global::Carpool.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Dialog = global::Carpool.Resource.Style.Theme_AppCompat_Dialog;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Carpool.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Carpool.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Carpool.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light = global::Carpool.Resource.Style.Theme_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Carpool.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_Dialog = global::Carpool.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Carpool.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Carpool.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Carpool.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Carpool.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::XLabs.Forms.Resource.Style.Theme_AppCompat_NoActionBar = global::Carpool.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::XLabs.Forms.Resource.Style.Theme_MediaRouter = global::Carpool.Resource.Style.Theme_MediaRouter;
+			global::XLabs.Forms.Resource.Style.Theme_MediaRouter_Light = global::Carpool.Resource.Style.Theme_MediaRouter_Light;
+			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat = global::Carpool.Resource.Style.ThemeOverlay_AppCompat;
+			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Carpool.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Carpool.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Carpool.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::XLabs.Forms.Resource.Style.ThemeOverlay_AppCompat_Light = global::Carpool.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar = global::Carpool.Resource.Style.Widget_AppCompat_ActionBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Carpool.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Carpool.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Carpool.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Carpool.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionButton = global::Carpool.Resource.Style.Widget_AppCompat_ActionButton;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Carpool.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Carpool.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActionMode = global::Carpool.Resource.Style.Widget_AppCompat_ActionMode;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Carpool.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Carpool.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button = global::Carpool.Resource.Style.Widget_AppCompat_Button;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Borderless = global::Carpool.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Carpool.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Carpool.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Colored = global::Carpool.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Button_Small = global::Carpool.Resource.Style.Widget_AppCompat_Button_Small;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ButtonBar = global::Carpool.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Carpool.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Carpool.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Carpool.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Carpool.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Carpool.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Carpool.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_EditText = global::Carpool.Resource.Style.Widget_AppCompat_EditText;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Carpool.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Carpool.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Carpool.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Carpool.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Carpool.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Carpool.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Carpool.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_SearchView = global::Carpool.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Carpool.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Carpool.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListView = global::Carpool.Resource.Style.Widget_AppCompat_ListView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Carpool.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ListView_Menu = global::Carpool.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_PopupMenu = global::Carpool.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Carpool.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_PopupWindow = global::Carpool.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ProgressBar = global::Carpool.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Carpool.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_RatingBar = global::Carpool.Resource.Style.Widget_AppCompat_RatingBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_SearchView = global::Carpool.Resource.Style.Widget_AppCompat_SearchView;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Carpool.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner = global::Carpool.Resource.Style.Widget_AppCompat_Spinner;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Carpool.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Carpool.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Carpool.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Carpool.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Toolbar = global::Carpool.Resource.Style.Widget_AppCompat_Toolbar;
+			global::XLabs.Forms.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Carpool.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::XLabs.Forms.Resource.Style.Widget_Design_AppBarLayout = global::Carpool.Resource.Style.Widget_Design_AppBarLayout;
+			global::XLabs.Forms.Resource.Style.Widget_Design_CollapsingToolbar = global::Carpool.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::XLabs.Forms.Resource.Style.Widget_Design_CoordinatorLayout = global::Carpool.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::XLabs.Forms.Resource.Style.Widget_Design_FloatingActionButton = global::Carpool.Resource.Style.Widget_Design_FloatingActionButton;
+			global::XLabs.Forms.Resource.Style.Widget_Design_NavigationView = global::Carpool.Resource.Style.Widget_Design_NavigationView;
+			global::XLabs.Forms.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Carpool.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::XLabs.Forms.Resource.Style.Widget_Design_Snackbar = global::Carpool.Resource.Style.Widget_Design_Snackbar;
+			global::XLabs.Forms.Resource.Style.Widget_Design_TabLayout = global::Carpool.Resource.Style.Widget_Design_TabLayout;
+			global::XLabs.Forms.Resource.Style.Widget_Design_TextInputLayout = global::Carpool.Resource.Style.Widget_Design_TextInputLayout;
+			global::XLabs.Forms.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Carpool.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::XLabs.Forms.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Carpool.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::XLabs.Forms.Resource.Styleable.ActionBar = global::Carpool.Resource.Styleable.ActionBar;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_background = global::Carpool.Resource.Styleable.ActionBar_background;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_backgroundSplit = global::Carpool.Resource.Styleable.ActionBar_backgroundSplit;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_backgroundStacked = global::Carpool.Resource.Styleable.ActionBar_backgroundStacked;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetEnd = global::Carpool.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetLeft = global::Carpool.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetRight = global::Carpool.Resource.Styleable.ActionBar_contentInsetRight;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_contentInsetStart = global::Carpool.Resource.Styleable.ActionBar_contentInsetStart;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_customNavigationLayout = global::Carpool.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_displayOptions = global::Carpool.Resource.Styleable.ActionBar_displayOptions;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_divider = global::Carpool.Resource.Styleable.ActionBar_divider;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_elevation = global::Carpool.Resource.Styleable.ActionBar_elevation;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_height = global::Carpool.Resource.Styleable.ActionBar_height;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_hideOnContentScroll = global::Carpool.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Carpool.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_homeLayout = global::Carpool.Resource.Styleable.ActionBar_homeLayout;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_icon = global::Carpool.Resource.Styleable.ActionBar_icon;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Carpool.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_itemPadding = global::Carpool.Resource.Styleable.ActionBar_itemPadding;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_logo = global::Carpool.Resource.Styleable.ActionBar_logo;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_navigationMode = global::Carpool.Resource.Styleable.ActionBar_navigationMode;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_popupTheme = global::Carpool.Resource.Styleable.ActionBar_popupTheme;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_progressBarPadding = global::Carpool.Resource.Styleable.ActionBar_progressBarPadding;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_progressBarStyle = global::Carpool.Resource.Styleable.ActionBar_progressBarStyle;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_subtitle = global::Carpool.Resource.Styleable.ActionBar_subtitle;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_subtitleTextStyle = global::Carpool.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_title = global::Carpool.Resource.Styleable.ActionBar_title;
+			global::XLabs.Forms.Resource.Styleable.ActionBar_titleTextStyle = global::Carpool.Resource.Styleable.ActionBar_titleTextStyle;
+			global::XLabs.Forms.Resource.Styleable.ActionBarLayout = global::Carpool.Resource.Styleable.ActionBarLayout;
+			global::XLabs.Forms.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Carpool.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::XLabs.Forms.Resource.Styleable.ActionMenuItemView = global::Carpool.Resource.Styleable.ActionMenuItemView;
+			global::XLabs.Forms.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Carpool.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::XLabs.Forms.Resource.Styleable.ActionMenuView = global::Carpool.Resource.Styleable.ActionMenuView;
+			global::XLabs.Forms.Resource.Styleable.ActionMode = global::Carpool.Resource.Styleable.ActionMode;
+			global::XLabs.Forms.Resource.Styleable.ActionMode_background = global::Carpool.Resource.Styleable.ActionMode_background;
+			global::XLabs.Forms.Resource.Styleable.ActionMode_backgroundSplit = global::Carpool.Resource.Styleable.ActionMode_backgroundSplit;
+			global::XLabs.Forms.Resource.Styleable.ActionMode_closeItemLayout = global::Carpool.Resource.Styleable.ActionMode_closeItemLayout;
+			global::XLabs.Forms.Resource.Styleable.ActionMode_height = global::Carpool.Resource.Styleable.ActionMode_height;
+			global::XLabs.Forms.Resource.Styleable.ActionMode_subtitleTextStyle = global::Carpool.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::XLabs.Forms.Resource.Styleable.ActionMode_titleTextStyle = global::Carpool.Resource.Styleable.ActionMode_titleTextStyle;
+			global::XLabs.Forms.Resource.Styleable.ActivityChooserView = global::Carpool.Resource.Styleable.ActivityChooserView;
+			global::XLabs.Forms.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Carpool.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::XLabs.Forms.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Carpool.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog = global::Carpool.Resource.Styleable.AlertDialog;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog_android_layout = global::Carpool.Resource.Styleable.AlertDialog_android_layout;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Carpool.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog_listItemLayout = global::Carpool.Resource.Styleable.AlertDialog_listItemLayout;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog_listLayout = global::Carpool.Resource.Styleable.AlertDialog_listLayout;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Carpool.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::XLabs.Forms.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Carpool.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout = global::Carpool.Resource.Styleable.AppBarLayout;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout_android_background = global::Carpool.Resource.Styleable.AppBarLayout_android_background;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout_elevation = global::Carpool.Resource.Styleable.AppBarLayout_elevation;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout_expanded = global::Carpool.Resource.Styleable.AppBarLayout_expanded;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout_LayoutParams = global::Carpool.Resource.Styleable.AppBarLayout_LayoutParams;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags = global::Carpool.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags;
+			global::XLabs.Forms.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator = global::Carpool.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator;
+			global::XLabs.Forms.Resource.Styleable.AppCompatTextView = global::Carpool.Resource.Styleable.AppCompatTextView;
+			global::XLabs.Forms.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Carpool.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::XLabs.Forms.Resource.Styleable.AppCompatTextView_textAllCaps = global::Carpool.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::XLabs.Forms.Resource.Styleable.CardView = global::Carpool.Resource.Styleable.CardView;
+			global::XLabs.Forms.Resource.Styleable.CardView_cardBackgroundColor = global::Carpool.Resource.Styleable.CardView_cardBackgroundColor;
+			global::XLabs.Forms.Resource.Styleable.CardView_cardCornerRadius = global::Carpool.Resource.Styleable.CardView_cardCornerRadius;
+			global::XLabs.Forms.Resource.Styleable.CardView_cardElevation = global::Carpool.Resource.Styleable.CardView_cardElevation;
+			global::XLabs.Forms.Resource.Styleable.CardView_cardMaxElevation = global::Carpool.Resource.Styleable.CardView_cardMaxElevation;
+			global::XLabs.Forms.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Carpool.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::XLabs.Forms.Resource.Styleable.CardView_cardUseCompatPadding = global::Carpool.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::XLabs.Forms.Resource.Styleable.CardView_contentPadding = global::Carpool.Resource.Styleable.CardView_contentPadding;
+			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingBottom = global::Carpool.Resource.Styleable.CardView_contentPaddingBottom;
+			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingLeft = global::Carpool.Resource.Styleable.CardView_contentPaddingLeft;
+			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingRight = global::Carpool.Resource.Styleable.CardView_contentPaddingRight;
+			global::XLabs.Forms.Resource.Styleable.CardView_contentPaddingTop = global::Carpool.Resource.Styleable.CardView_contentPaddingTop;
+			global::XLabs.Forms.Resource.Styleable.CollapsingAppBarLayout_LayoutParams = global::Carpool.Resource.Styleable.CollapsingAppBarLayout_LayoutParams;
+			global::XLabs.Forms.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode = global::Carpool.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode;
+			global::XLabs.Forms.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = global::Carpool.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout = global::Carpool.Resource.Styleable.CollapsingToolbarLayout;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_title = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::XLabs.Forms.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Carpool.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::XLabs.Forms.Resource.Styleable.CompoundButton = global::Carpool.Resource.Styleable.CompoundButton;
+			global::XLabs.Forms.Resource.Styleable.CompoundButton_android_button = global::Carpool.Resource.Styleable.CompoundButton_android_button;
+			global::XLabs.Forms.Resource.Styleable.CompoundButton_buttonTint = global::Carpool.Resource.Styleable.CompoundButton_buttonTint;
+			global::XLabs.Forms.Resource.Styleable.CompoundButton_buttonTintMode = global::Carpool.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout = global::Carpool.Resource.Styleable.CoordinatorLayout;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_keylines = global::Carpool.Resource.Styleable.CoordinatorLayout_keylines;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Carpool.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams = global::Carpool.Resource.Styleable.CoordinatorLayout_LayoutParams;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity = global::Carpool.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor = global::Carpool.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity = global::Carpool.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior = global::Carpool.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior;
+			global::XLabs.Forms.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline = global::Carpool.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle = global::Carpool.Resource.Styleable.DrawerArrowToggle;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Carpool.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Carpool.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_barLength = global::Carpool.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_color = global::Carpool.Resource.Styleable.DrawerArrowToggle_color;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Carpool.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Carpool.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_spinBars = global::Carpool.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::XLabs.Forms.Resource.Styleable.DrawerArrowToggle_thickness = global::Carpool.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton = global::Carpool.Resource.Styleable.FloatingActionButton;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_android_background = global::Carpool.Resource.Styleable.FloatingActionButton_android_background;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_backgroundTint = global::Carpool.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Carpool.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_borderWidth = global::Carpool.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_elevation = global::Carpool.Resource.Styleable.FloatingActionButton_elevation;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_fabSize = global::Carpool.Resource.Styleable.FloatingActionButton_fabSize;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Carpool.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::XLabs.Forms.Resource.Styleable.FloatingActionButton_rippleColor = global::Carpool.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat = global::Carpool.Resource.Styleable.LinearLayoutCompat;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Carpool.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Carpool.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Carpool.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Carpool.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Carpool.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_divider = global::Carpool.Resource.Styleable.LinearLayoutCompat_divider;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Carpool.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Carpool.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_showDividers = global::Carpool.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout = global::Carpool.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Carpool.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Carpool.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Carpool.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::XLabs.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Carpool.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::XLabs.Forms.Resource.Styleable.ListPopupWindow = global::Carpool.Resource.Styleable.ListPopupWindow;
+			global::XLabs.Forms.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Carpool.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::XLabs.Forms.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Carpool.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::XLabs.Forms.Resource.Styleable.MediaRouteButton = global::Carpool.Resource.Styleable.MediaRouteButton;
+			global::XLabs.Forms.Resource.Styleable.MediaRouteButton_android_minHeight = global::Carpool.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::XLabs.Forms.Resource.Styleable.MediaRouteButton_android_minWidth = global::Carpool.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::XLabs.Forms.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Carpool.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup = global::Carpool.Resource.Styleable.MenuGroup;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Carpool.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_enabled = global::Carpool.Resource.Styleable.MenuGroup_android_enabled;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_id = global::Carpool.Resource.Styleable.MenuGroup_android_id;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_menuCategory = global::Carpool.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_orderInCategory = global::Carpool.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::XLabs.Forms.Resource.Styleable.MenuGroup_android_visible = global::Carpool.Resource.Styleable.MenuGroup_android_visible;
+			global::XLabs.Forms.Resource.Styleable.MenuItem = global::Carpool.Resource.Styleable.MenuItem;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_actionLayout = global::Carpool.Resource.Styleable.MenuItem_actionLayout;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_actionProviderClass = global::Carpool.Resource.Styleable.MenuItem_actionProviderClass;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_actionViewClass = global::Carpool.Resource.Styleable.MenuItem_actionViewClass;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Carpool.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_checkable = global::Carpool.Resource.Styleable.MenuItem_android_checkable;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_checked = global::Carpool.Resource.Styleable.MenuItem_android_checked;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_enabled = global::Carpool.Resource.Styleable.MenuItem_android_enabled;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_icon = global::Carpool.Resource.Styleable.MenuItem_android_icon;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_id = global::Carpool.Resource.Styleable.MenuItem_android_id;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_menuCategory = global::Carpool.Resource.Styleable.MenuItem_android_menuCategory;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_numericShortcut = global::Carpool.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_onClick = global::Carpool.Resource.Styleable.MenuItem_android_onClick;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_orderInCategory = global::Carpool.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_title = global::Carpool.Resource.Styleable.MenuItem_android_title;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_titleCondensed = global::Carpool.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_android_visible = global::Carpool.Resource.Styleable.MenuItem_android_visible;
+			global::XLabs.Forms.Resource.Styleable.MenuItem_showAsAction = global::Carpool.Resource.Styleable.MenuItem_showAsAction;
+			global::XLabs.Forms.Resource.Styleable.MenuView = global::Carpool.Resource.Styleable.MenuView;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_headerBackground = global::Carpool.Resource.Styleable.MenuView_android_headerBackground;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_horizontalDivider = global::Carpool.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_itemBackground = global::Carpool.Resource.Styleable.MenuView_android_itemBackground;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Carpool.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_itemTextAppearance = global::Carpool.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_verticalDivider = global::Carpool.Resource.Styleable.MenuView_android_verticalDivider;
+			global::XLabs.Forms.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Carpool.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::XLabs.Forms.Resource.Styleable.MenuView_preserveIconSpacing = global::Carpool.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::XLabs.Forms.Resource.Styleable.NavigationView = global::Carpool.Resource.Styleable.NavigationView;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_android_background = global::Carpool.Resource.Styleable.NavigationView_android_background;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Carpool.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_android_maxWidth = global::Carpool.Resource.Styleable.NavigationView_android_maxWidth;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_elevation = global::Carpool.Resource.Styleable.NavigationView_elevation;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_headerLayout = global::Carpool.Resource.Styleable.NavigationView_headerLayout;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_itemBackground = global::Carpool.Resource.Styleable.NavigationView_itemBackground;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_itemIconTint = global::Carpool.Resource.Styleable.NavigationView_itemIconTint;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_itemTextAppearance = global::Carpool.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_itemTextColor = global::Carpool.Resource.Styleable.NavigationView_itemTextColor;
+			global::XLabs.Forms.Resource.Styleable.NavigationView_menu = global::Carpool.Resource.Styleable.NavigationView_menu;
+			global::XLabs.Forms.Resource.Styleable.PopupWindow = global::Carpool.Resource.Styleable.PopupWindow;
+			global::XLabs.Forms.Resource.Styleable.PopupWindow_android_popupBackground = global::Carpool.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::XLabs.Forms.Resource.Styleable.PopupWindow_overlapAnchor = global::Carpool.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::XLabs.Forms.Resource.Styleable.PopupWindowBackgroundState = global::Carpool.Resource.Styleable.PopupWindowBackgroundState;
+			global::XLabs.Forms.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Carpool.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::XLabs.Forms.Resource.Styleable.ScrimInsetsFrameLayout = global::Carpool.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::XLabs.Forms.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Carpool.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::XLabs.Forms.Resource.Styleable.ScrollingViewBehavior_Params = global::Carpool.Resource.Styleable.ScrollingViewBehavior_Params;
+			global::XLabs.Forms.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop = global::Carpool.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop;
+			global::XLabs.Forms.Resource.Styleable.SearchView = global::Carpool.Resource.Styleable.SearchView;
+			global::XLabs.Forms.Resource.Styleable.SearchView_android_focusable = global::Carpool.Resource.Styleable.SearchView_android_focusable;
+			global::XLabs.Forms.Resource.Styleable.SearchView_android_imeOptions = global::Carpool.Resource.Styleable.SearchView_android_imeOptions;
+			global::XLabs.Forms.Resource.Styleable.SearchView_android_inputType = global::Carpool.Resource.Styleable.SearchView_android_inputType;
+			global::XLabs.Forms.Resource.Styleable.SearchView_android_maxWidth = global::Carpool.Resource.Styleable.SearchView_android_maxWidth;
+			global::XLabs.Forms.Resource.Styleable.SearchView_closeIcon = global::Carpool.Resource.Styleable.SearchView_closeIcon;
+			global::XLabs.Forms.Resource.Styleable.SearchView_commitIcon = global::Carpool.Resource.Styleable.SearchView_commitIcon;
+			global::XLabs.Forms.Resource.Styleable.SearchView_defaultQueryHint = global::Carpool.Resource.Styleable.SearchView_defaultQueryHint;
+			global::XLabs.Forms.Resource.Styleable.SearchView_goIcon = global::Carpool.Resource.Styleable.SearchView_goIcon;
+			global::XLabs.Forms.Resource.Styleable.SearchView_iconifiedByDefault = global::Carpool.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::XLabs.Forms.Resource.Styleable.SearchView_layout = global::Carpool.Resource.Styleable.SearchView_layout;
+			global::XLabs.Forms.Resource.Styleable.SearchView_queryBackground = global::Carpool.Resource.Styleable.SearchView_queryBackground;
+			global::XLabs.Forms.Resource.Styleable.SearchView_queryHint = global::Carpool.Resource.Styleable.SearchView_queryHint;
+			global::XLabs.Forms.Resource.Styleable.SearchView_searchHintIcon = global::Carpool.Resource.Styleable.SearchView_searchHintIcon;
+			global::XLabs.Forms.Resource.Styleable.SearchView_searchIcon = global::Carpool.Resource.Styleable.SearchView_searchIcon;
+			global::XLabs.Forms.Resource.Styleable.SearchView_submitBackground = global::Carpool.Resource.Styleable.SearchView_submitBackground;
+			global::XLabs.Forms.Resource.Styleable.SearchView_suggestionRowLayout = global::Carpool.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::XLabs.Forms.Resource.Styleable.SearchView_voiceIcon = global::Carpool.Resource.Styleable.SearchView_voiceIcon;
+			global::XLabs.Forms.Resource.Styleable.SnackbarLayout = global::Carpool.Resource.Styleable.SnackbarLayout;
+			global::XLabs.Forms.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Carpool.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::XLabs.Forms.Resource.Styleable.SnackbarLayout_elevation = global::Carpool.Resource.Styleable.SnackbarLayout_elevation;
+			global::XLabs.Forms.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Carpool.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::XLabs.Forms.Resource.Styleable.Spinner = global::Carpool.Resource.Styleable.Spinner;
+			global::XLabs.Forms.Resource.Styleable.Spinner_android_dropDownWidth = global::Carpool.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::XLabs.Forms.Resource.Styleable.Spinner_android_popupBackground = global::Carpool.Resource.Styleable.Spinner_android_popupBackground;
+			global::XLabs.Forms.Resource.Styleable.Spinner_android_prompt = global::Carpool.Resource.Styleable.Spinner_android_prompt;
+			global::XLabs.Forms.Resource.Styleable.Spinner_popupTheme = global::Carpool.Resource.Styleable.Spinner_popupTheme;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat = global::Carpool.Resource.Styleable.SwitchCompat;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_android_textOff = global::Carpool.Resource.Styleable.SwitchCompat_android_textOff;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_android_textOn = global::Carpool.Resource.Styleable.SwitchCompat_android_textOn;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_android_thumb = global::Carpool.Resource.Styleable.SwitchCompat_android_thumb;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_showText = global::Carpool.Resource.Styleable.SwitchCompat_showText;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_splitTrack = global::Carpool.Resource.Styleable.SwitchCompat_splitTrack;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_switchMinWidth = global::Carpool.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_switchPadding = global::Carpool.Resource.Styleable.SwitchCompat_switchPadding;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Carpool.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Carpool.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::XLabs.Forms.Resource.Styleable.SwitchCompat_track = global::Carpool.Resource.Styleable.SwitchCompat_track;
+			global::XLabs.Forms.Resource.Styleable.TabLayout = global::Carpool.Resource.Styleable.TabLayout;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabBackground = global::Carpool.Resource.Styleable.TabLayout_tabBackground;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabContentStart = global::Carpool.Resource.Styleable.TabLayout_tabContentStart;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabGravity = global::Carpool.Resource.Styleable.TabLayout_tabGravity;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabIndicatorColor = global::Carpool.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Carpool.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabMaxWidth = global::Carpool.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabMinWidth = global::Carpool.Resource.Styleable.TabLayout_tabMinWidth;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabMode = global::Carpool.Resource.Styleable.TabLayout_tabMode;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPadding = global::Carpool.Resource.Styleable.TabLayout_tabPadding;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingBottom = global::Carpool.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingEnd = global::Carpool.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingStart = global::Carpool.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabPaddingTop = global::Carpool.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Carpool.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabTextAppearance = global::Carpool.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.TabLayout_tabTextColor = global::Carpool.Resource.Styleable.TabLayout_tabTextColor;
+			global::XLabs.Forms.Resource.Styleable.TextAppearance = global::Carpool.Resource.Styleable.TextAppearance;
+			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_textColor = global::Carpool.Resource.Styleable.TextAppearance_android_textColor;
+			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_textSize = global::Carpool.Resource.Styleable.TextAppearance_android_textSize;
+			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_textStyle = global::Carpool.Resource.Styleable.TextAppearance_android_textStyle;
+			global::XLabs.Forms.Resource.Styleable.TextAppearance_android_typeface = global::Carpool.Resource.Styleable.TextAppearance_android_typeface;
+			global::XLabs.Forms.Resource.Styleable.TextAppearance_textAllCaps = global::Carpool.Resource.Styleable.TextAppearance_textAllCaps;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout = global::Carpool.Resource.Styleable.TextInputLayout;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout_android_hint = global::Carpool.Resource.Styleable.TextInputLayout_android_hint;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout_android_textColorHint = global::Carpool.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout_errorEnabled = global::Carpool.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Carpool.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Carpool.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::XLabs.Forms.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Carpool.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.Theme = global::Carpool.Resource.Styleable.Theme;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarDivider = global::Carpool.Resource.Styleable.Theme_actionBarDivider;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarItemBackground = global::Carpool.Resource.Styleable.Theme_actionBarItemBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarPopupTheme = global::Carpool.Resource.Styleable.Theme_actionBarPopupTheme;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarSize = global::Carpool.Resource.Styleable.Theme_actionBarSize;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarSplitStyle = global::Carpool.Resource.Styleable.Theme_actionBarSplitStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarStyle = global::Carpool.Resource.Styleable.Theme_actionBarStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTabBarStyle = global::Carpool.Resource.Styleable.Theme_actionBarTabBarStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTabStyle = global::Carpool.Resource.Styleable.Theme_actionBarTabStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTabTextStyle = global::Carpool.Resource.Styleable.Theme_actionBarTabTextStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarTheme = global::Carpool.Resource.Styleable.Theme_actionBarTheme;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionBarWidgetTheme = global::Carpool.Resource.Styleable.Theme_actionBarWidgetTheme;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionButtonStyle = global::Carpool.Resource.Styleable.Theme_actionButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionDropDownStyle = global::Carpool.Resource.Styleable.Theme_actionDropDownStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionMenuTextAppearance = global::Carpool.Resource.Styleable.Theme_actionMenuTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionMenuTextColor = global::Carpool.Resource.Styleable.Theme_actionMenuTextColor;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeBackground = global::Carpool.Resource.Styleable.Theme_actionModeBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCloseButtonStyle = global::Carpool.Resource.Styleable.Theme_actionModeCloseButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCloseDrawable = global::Carpool.Resource.Styleable.Theme_actionModeCloseDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCopyDrawable = global::Carpool.Resource.Styleable.Theme_actionModeCopyDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeCutDrawable = global::Carpool.Resource.Styleable.Theme_actionModeCutDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeFindDrawable = global::Carpool.Resource.Styleable.Theme_actionModeFindDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModePasteDrawable = global::Carpool.Resource.Styleable.Theme_actionModePasteDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModePopupWindowStyle = global::Carpool.Resource.Styleable.Theme_actionModePopupWindowStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeSelectAllDrawable = global::Carpool.Resource.Styleable.Theme_actionModeSelectAllDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeShareDrawable = global::Carpool.Resource.Styleable.Theme_actionModeShareDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeSplitBackground = global::Carpool.Resource.Styleable.Theme_actionModeSplitBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeStyle = global::Carpool.Resource.Styleable.Theme_actionModeStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionModeWebSearchDrawable = global::Carpool.Resource.Styleable.Theme_actionModeWebSearchDrawable;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionOverflowButtonStyle = global::Carpool.Resource.Styleable.Theme_actionOverflowButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_actionOverflowMenuStyle = global::Carpool.Resource.Styleable.Theme_actionOverflowMenuStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_activityChooserViewStyle = global::Carpool.Resource.Styleable.Theme_activityChooserViewStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogButtonGroupStyle = global::Carpool.Resource.Styleable.Theme_alertDialogButtonGroupStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogCenterButtons = global::Carpool.Resource.Styleable.Theme_alertDialogCenterButtons;
+			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogStyle = global::Carpool.Resource.Styleable.Theme_alertDialogStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_alertDialogTheme = global::Carpool.Resource.Styleable.Theme_alertDialogTheme;
+			global::XLabs.Forms.Resource.Styleable.Theme_android_windowAnimationStyle = global::Carpool.Resource.Styleable.Theme_android_windowAnimationStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_android_windowIsFloating = global::Carpool.Resource.Styleable.Theme_android_windowIsFloating;
+			global::XLabs.Forms.Resource.Styleable.Theme_autoCompleteTextViewStyle = global::Carpool.Resource.Styleable.Theme_autoCompleteTextViewStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_borderlessButtonStyle = global::Carpool.Resource.Styleable.Theme_borderlessButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarButtonStyle = global::Carpool.Resource.Styleable.Theme_buttonBarButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarNegativeButtonStyle = global::Carpool.Resource.Styleable.Theme_buttonBarNegativeButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarNeutralButtonStyle = global::Carpool.Resource.Styleable.Theme_buttonBarNeutralButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarPositiveButtonStyle = global::Carpool.Resource.Styleable.Theme_buttonBarPositiveButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonBarStyle = global::Carpool.Resource.Styleable.Theme_buttonBarStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonStyle = global::Carpool.Resource.Styleable.Theme_buttonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_buttonStyleSmall = global::Carpool.Resource.Styleable.Theme_buttonStyleSmall;
+			global::XLabs.Forms.Resource.Styleable.Theme_checkboxStyle = global::Carpool.Resource.Styleable.Theme_checkboxStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_checkedTextViewStyle = global::Carpool.Resource.Styleable.Theme_checkedTextViewStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorAccent = global::Carpool.Resource.Styleable.Theme_colorAccent;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorButtonNormal = global::Carpool.Resource.Styleable.Theme_colorButtonNormal;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorControlActivated = global::Carpool.Resource.Styleable.Theme_colorControlActivated;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorControlHighlight = global::Carpool.Resource.Styleable.Theme_colorControlHighlight;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorControlNormal = global::Carpool.Resource.Styleable.Theme_colorControlNormal;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorPrimary = global::Carpool.Resource.Styleable.Theme_colorPrimary;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorPrimaryDark = global::Carpool.Resource.Styleable.Theme_colorPrimaryDark;
+			global::XLabs.Forms.Resource.Styleable.Theme_colorSwitchThumbNormal = global::Carpool.Resource.Styleable.Theme_colorSwitchThumbNormal;
+			global::XLabs.Forms.Resource.Styleable.Theme_controlBackground = global::Carpool.Resource.Styleable.Theme_controlBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_dialogPreferredPadding = global::Carpool.Resource.Styleable.Theme_dialogPreferredPadding;
+			global::XLabs.Forms.Resource.Styleable.Theme_dialogTheme = global::Carpool.Resource.Styleable.Theme_dialogTheme;
+			global::XLabs.Forms.Resource.Styleable.Theme_dividerHorizontal = global::Carpool.Resource.Styleable.Theme_dividerHorizontal;
+			global::XLabs.Forms.Resource.Styleable.Theme_dividerVertical = global::Carpool.Resource.Styleable.Theme_dividerVertical;
+			global::XLabs.Forms.Resource.Styleable.Theme_dropDownListViewStyle = global::Carpool.Resource.Styleable.Theme_dropDownListViewStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_dropdownListPreferredItemHeight = global::Carpool.Resource.Styleable.Theme_dropdownListPreferredItemHeight;
+			global::XLabs.Forms.Resource.Styleable.Theme_editTextBackground = global::Carpool.Resource.Styleable.Theme_editTextBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_editTextColor = global::Carpool.Resource.Styleable.Theme_editTextColor;
+			global::XLabs.Forms.Resource.Styleable.Theme_editTextStyle = global::Carpool.Resource.Styleable.Theme_editTextStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_homeAsUpIndicator = global::Carpool.Resource.Styleable.Theme_homeAsUpIndicator;
+			global::XLabs.Forms.Resource.Styleable.Theme_listChoiceBackgroundIndicator = global::Carpool.Resource.Styleable.Theme_listChoiceBackgroundIndicator;
+			global::XLabs.Forms.Resource.Styleable.Theme_listDividerAlertDialog = global::Carpool.Resource.Styleable.Theme_listDividerAlertDialog;
+			global::XLabs.Forms.Resource.Styleable.Theme_listPopupWindowStyle = global::Carpool.Resource.Styleable.Theme_listPopupWindowStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemHeight = global::Carpool.Resource.Styleable.Theme_listPreferredItemHeight;
+			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemHeightLarge = global::Carpool.Resource.Styleable.Theme_listPreferredItemHeightLarge;
+			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemHeightSmall = global::Carpool.Resource.Styleable.Theme_listPreferredItemHeightSmall;
+			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemPaddingLeft = global::Carpool.Resource.Styleable.Theme_listPreferredItemPaddingLeft;
+			global::XLabs.Forms.Resource.Styleable.Theme_listPreferredItemPaddingRight = global::Carpool.Resource.Styleable.Theme_listPreferredItemPaddingRight;
+			global::XLabs.Forms.Resource.Styleable.Theme_panelBackground = global::Carpool.Resource.Styleable.Theme_panelBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_panelMenuListTheme = global::Carpool.Resource.Styleable.Theme_panelMenuListTheme;
+			global::XLabs.Forms.Resource.Styleable.Theme_panelMenuListWidth = global::Carpool.Resource.Styleable.Theme_panelMenuListWidth;
+			global::XLabs.Forms.Resource.Styleable.Theme_popupMenuStyle = global::Carpool.Resource.Styleable.Theme_popupMenuStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_popupWindowStyle = global::Carpool.Resource.Styleable.Theme_popupWindowStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_radioButtonStyle = global::Carpool.Resource.Styleable.Theme_radioButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_ratingBarStyle = global::Carpool.Resource.Styleable.Theme_ratingBarStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_searchViewStyle = global::Carpool.Resource.Styleable.Theme_searchViewStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_selectableItemBackground = global::Carpool.Resource.Styleable.Theme_selectableItemBackground;
+			global::XLabs.Forms.Resource.Styleable.Theme_selectableItemBackgroundBorderless = global::Carpool.Resource.Styleable.Theme_selectableItemBackgroundBorderless;
+			global::XLabs.Forms.Resource.Styleable.Theme_spinnerDropDownItemStyle = global::Carpool.Resource.Styleable.Theme_spinnerDropDownItemStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_spinnerStyle = global::Carpool.Resource.Styleable.Theme_spinnerStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_switchStyle = global::Carpool.Resource.Styleable.Theme_switchStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceLargePopupMenu = global::Carpool.Resource.Styleable.Theme_textAppearanceLargePopupMenu;
+			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceListItem = global::Carpool.Resource.Styleable.Theme_textAppearanceListItem;
+			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceListItemSmall = global::Carpool.Resource.Styleable.Theme_textAppearanceListItemSmall;
+			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle = global::Carpool.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle;
+			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceSearchResultTitle = global::Carpool.Resource.Styleable.Theme_textAppearanceSearchResultTitle;
+			global::XLabs.Forms.Resource.Styleable.Theme_textAppearanceSmallPopupMenu = global::Carpool.Resource.Styleable.Theme_textAppearanceSmallPopupMenu;
+			global::XLabs.Forms.Resource.Styleable.Theme_textColorAlertDialogListItem = global::Carpool.Resource.Styleable.Theme_textColorAlertDialogListItem;
+			global::XLabs.Forms.Resource.Styleable.Theme_textColorSearchUrl = global::Carpool.Resource.Styleable.Theme_textColorSearchUrl;
+			global::XLabs.Forms.Resource.Styleable.Theme_toolbarNavigationButtonStyle = global::Carpool.Resource.Styleable.Theme_toolbarNavigationButtonStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_toolbarStyle = global::Carpool.Resource.Styleable.Theme_toolbarStyle;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowActionBar = global::Carpool.Resource.Styleable.Theme_windowActionBar;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowActionBarOverlay = global::Carpool.Resource.Styleable.Theme_windowActionBarOverlay;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowActionModeOverlay = global::Carpool.Resource.Styleable.Theme_windowActionModeOverlay;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedHeightMajor = global::Carpool.Resource.Styleable.Theme_windowFixedHeightMajor;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedHeightMinor = global::Carpool.Resource.Styleable.Theme_windowFixedHeightMinor;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedWidthMajor = global::Carpool.Resource.Styleable.Theme_windowFixedWidthMajor;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowFixedWidthMinor = global::Carpool.Resource.Styleable.Theme_windowFixedWidthMinor;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowMinWidthMajor = global::Carpool.Resource.Styleable.Theme_windowMinWidthMajor;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowMinWidthMinor = global::Carpool.Resource.Styleable.Theme_windowMinWidthMinor;
+			global::XLabs.Forms.Resource.Styleable.Theme_windowNoTitle = global::Carpool.Resource.Styleable.Theme_windowNoTitle;
+			global::XLabs.Forms.Resource.Styleable.Toolbar = global::Carpool.Resource.Styleable.Toolbar;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_android_gravity = global::Carpool.Resource.Styleable.Toolbar_android_gravity;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_android_minHeight = global::Carpool.Resource.Styleable.Toolbar_android_minHeight;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_collapseContentDescription = global::Carpool.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_collapseIcon = global::Carpool.Resource.Styleable.Toolbar_collapseIcon;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetEnd = global::Carpool.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetLeft = global::Carpool.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetRight = global::Carpool.Resource.Styleable.Toolbar_contentInsetRight;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_contentInsetStart = global::Carpool.Resource.Styleable.Toolbar_contentInsetStart;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_logo = global::Carpool.Resource.Styleable.Toolbar_logo;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_logoDescription = global::Carpool.Resource.Styleable.Toolbar_logoDescription;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_maxButtonHeight = global::Carpool.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_navigationContentDescription = global::Carpool.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_navigationIcon = global::Carpool.Resource.Styleable.Toolbar_navigationIcon;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_popupTheme = global::Carpool.Resource.Styleable.Toolbar_popupTheme;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_subtitle = global::Carpool.Resource.Styleable.Toolbar_subtitle;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Carpool.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_subtitleTextColor = global::Carpool.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_title = global::Carpool.Resource.Styleable.Toolbar_title;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginBottom = global::Carpool.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginEnd = global::Carpool.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginStart = global::Carpool.Resource.Styleable.Toolbar_titleMarginStart;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMarginTop = global::Carpool.Resource.Styleable.Toolbar_titleMarginTop;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleMargins = global::Carpool.Resource.Styleable.Toolbar_titleMargins;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleTextAppearance = global::Carpool.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::XLabs.Forms.Resource.Styleable.Toolbar_titleTextColor = global::Carpool.Resource.Styleable.Toolbar_titleTextColor;
+			global::XLabs.Forms.Resource.Styleable.View = global::Carpool.Resource.Styleable.View;
+			global::XLabs.Forms.Resource.Styleable.View_android_focusable = global::Carpool.Resource.Styleable.View_android_focusable;
+			global::XLabs.Forms.Resource.Styleable.View_android_theme = global::Carpool.Resource.Styleable.View_android_theme;
+			global::XLabs.Forms.Resource.Styleable.View_paddingEnd = global::Carpool.Resource.Styleable.View_paddingEnd;
+			global::XLabs.Forms.Resource.Styleable.View_paddingStart = global::Carpool.Resource.Styleable.View_paddingStart;
+			global::XLabs.Forms.Resource.Styleable.View_theme = global::Carpool.Resource.Styleable.View_theme;
+			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper = global::Carpool.Resource.Styleable.ViewBackgroundHelper;
+			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper_android_background = global::Carpool.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Carpool.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::XLabs.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Carpool.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::XLabs.Forms.Resource.Styleable.ViewStubCompat = global::Carpool.Resource.Styleable.ViewStubCompat;
+			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_id = global::Carpool.Resource.Styleable.ViewStubCompat_android_id;
+			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Carpool.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_layout = global::Carpool.Resource.Styleable.ViewStubCompat_android_layout;
+			global::XLabs.Platform.Resource.String.ApplicationName = global::Carpool.Resource.String.ApplicationName;
+			global::XLabs.Platform.Resource.String.Hello = global::Carpool.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -974,32 +2551,32 @@ namespace Carpool
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f080047
-			public const int abc_background_cache_hint_selector_material_dark = 2131230791;
+			// aapt resource value: 0x7f080052
+			public const int abc_background_cache_hint_selector_material_dark = 2131230802;
 			
-			// aapt resource value: 0x7f080048
-			public const int abc_background_cache_hint_selector_material_light = 2131230792;
+			// aapt resource value: 0x7f080053
+			public const int abc_background_cache_hint_selector_material_light = 2131230803;
 			
-			// aapt resource value: 0x7f080049
-			public const int abc_color_highlight_material = 2131230793;
+			// aapt resource value: 0x7f080054
+			public const int abc_color_highlight_material = 2131230804;
 			
 			// aapt resource value: 0x7f080004
 			public const int abc_input_method_navigation_guard = 2131230724;
 			
-			// aapt resource value: 0x7f08004a
-			public const int abc_primary_text_disable_only_material_dark = 2131230794;
+			// aapt resource value: 0x7f080055
+			public const int abc_primary_text_disable_only_material_dark = 2131230805;
 			
-			// aapt resource value: 0x7f08004b
-			public const int abc_primary_text_disable_only_material_light = 2131230795;
+			// aapt resource value: 0x7f080056
+			public const int abc_primary_text_disable_only_material_light = 2131230806;
 			
-			// aapt resource value: 0x7f08004c
-			public const int abc_primary_text_material_dark = 2131230796;
+			// aapt resource value: 0x7f080057
+			public const int abc_primary_text_material_dark = 2131230807;
 			
-			// aapt resource value: 0x7f08004d
-			public const int abc_primary_text_material_light = 2131230797;
+			// aapt resource value: 0x7f080058
+			public const int abc_primary_text_material_light = 2131230808;
 			
-			// aapt resource value: 0x7f08004e
-			public const int abc_search_url_text = 2131230798;
+			// aapt resource value: 0x7f080059
+			public const int abc_search_url_text = 2131230809;
 			
 			// aapt resource value: 0x7f080005
 			public const int abc_search_url_text_normal = 2131230725;
@@ -1010,11 +2587,11 @@ namespace Carpool
 			// aapt resource value: 0x7f080007
 			public const int abc_search_url_text_selected = 2131230727;
 			
-			// aapt resource value: 0x7f08004f
-			public const int abc_secondary_text_material_dark = 2131230799;
+			// aapt resource value: 0x7f08005a
+			public const int abc_secondary_text_material_dark = 2131230810;
 			
-			// aapt resource value: 0x7f080050
-			public const int abc_secondary_text_material_light = 2131230800;
+			// aapt resource value: 0x7f08005b
+			public const int abc_secondary_text_material_light = 2131230811;
 			
 			// aapt resource value: 0x7f080008
 			public const int accent_material_dark = 2131230728;
@@ -1057,6 +2634,42 @@ namespace Carpool
 			
 			// aapt resource value: 0x7f080015
 			public const int button_material_light = 2131230741;
+			
+			// aapt resource value: 0x7f080047
+			public const int calendar_active_month_bg = 2131230791;
+			
+			// aapt resource value: 0x7f080048
+			public const int calendar_bg = 2131230792;
+			
+			// aapt resource value: 0x7f080049
+			public const int calendar_divider = 2131230793;
+			
+			// aapt resource value: 0x7f08004c
+			public const int calendar_highlighted_day_bg = 2131230796;
+			
+			// aapt resource value: 0x7f08004a
+			public const int calendar_inactive_month_bg = 2131230794;
+			
+			// aapt resource value: 0x7f08004b
+			public const int calendar_selected_day_bg = 2131230795;
+			
+			// aapt resource value: 0x7f08004d
+			public const int calendar_selected_range_bg = 2131230797;
+			
+			// aapt resource value: 0x7f08004f
+			public const int calendar_text_active = 2131230799;
+			
+			// aapt resource value: 0x7f08004e
+			public const int calendar_text_inactive = 2131230798;
+			
+			// aapt resource value: 0x7f080050
+			public const int calendar_text_selected = 2131230800;
+			
+			// aapt resource value: 0x7f08005c
+			public const int calendar_text_selector = 2131230812;
+			
+			// aapt resource value: 0x7f080051
+			public const int calendar_text_unselectable = 2131230801;
 			
 			// aapt resource value: 0x7f080000
 			public const int cardview_dark_background = 2131230720;
@@ -1211,11 +2824,11 @@ namespace Carpool
 			// aapt resource value: 0x7f08003b
 			public const int switch_thumb_disabled_material_light = 2131230779;
 			
-			// aapt resource value: 0x7f080051
-			public const int switch_thumb_material_dark = 2131230801;
+			// aapt resource value: 0x7f08005d
+			public const int switch_thumb_material_dark = 2131230813;
 			
-			// aapt resource value: 0x7f080052
-			public const int switch_thumb_material_light = 2131230802;
+			// aapt resource value: 0x7f08005e
+			public const int switch_thumb_material_light = 2131230814;
 			
 			// aapt resource value: 0x7f08003c
 			public const int switch_thumb_normal_material_dark = 2131230780;
@@ -1415,6 +3028,21 @@ namespace Carpool
 			
 			// aapt resource value: 0x7f060008
 			public const int abc_text_size_title_material_toolbar = 2131099656;
+			
+			// aapt resource value: 0x7f060066
+			public const int calendar_day_headers_paddingbottom = 2131099750;
+			
+			// aapt resource value: 0x7f060068
+			public const int calendar_month_title_bottommargin = 2131099752;
+			
+			// aapt resource value: 0x7f060067
+			public const int calendar_month_topmargin = 2131099751;
+			
+			// aapt resource value: 0x7f060069
+			public const int calendar_text_medium = 2131099753;
+			
+			// aapt resource value: 0x7f06006a
+			public const int calendar_text_small = 2131099754;
 			
 			// aapt resource value: 0x7f060001
 			public const int cardview_compat_inset_shadow = 2131099649;
@@ -1760,205 +3388,211 @@ namespace Carpool
 			public const int abc_textfield_search_material = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int btn_cab_done_default_example = 2130837572;
+			public const int ad16 = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int btn_cab_done_example = 2130837573;
+			public const int btn_cab_done_default_example = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int btn_cab_done_focused_example = 2130837574;
+			public const int btn_cab_done_example = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int btn_cab_done_pressed_example = 2130837575;
+			public const int btn_cab_done_focused_example = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int cab_background_bottom_example = 2130837576;
+			public const int btn_cab_done_pressed_example = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int cab_background_top_example = 2130837577;
+			public const int cab_background_bottom_example = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int design_fab_background = 2130837578;
+			public const int cab_background_top_example = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int design_snackbar_background = 2130837579;
+			public const int calendar_bg_selector = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ic_cast_dark = 2130837580;
+			public const int design_fab_background = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_cast_disabled_light = 2130837581;
+			public const int design_snackbar_background = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_cast_light = 2130837582;
+			public const int ic_cast_dark = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_cast_off_light = 2130837583;
+			public const int ic_cast_disabled_light = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_cast_on_0_light = 2130837584;
+			public const int ic_cast_light = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_cast_on_1_light = 2130837585;
+			public const int ic_cast_off_light = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_cast_on_2_light = 2130837586;
+			public const int ic_cast_on_0_light = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_cast_on_light = 2130837587;
+			public const int ic_cast_on_1_light = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_media_pause = 2130837588;
+			public const int ic_cast_on_2_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_media_play = 2130837589;
+			public const int ic_cast_on_light = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_media_route_disabled_mono_dark = 2130837590;
+			public const int ic_media_pause = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_media_route_off_mono_dark = 2130837591;
+			public const int ic_media_play = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_media_route_on_0_mono_dark = 2130837592;
+			public const int ic_media_route_disabled_mono_dark = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_media_route_on_1_mono_dark = 2130837593;
+			public const int ic_media_route_off_mono_dark = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_media_route_on_2_mono_dark = 2130837594;
+			public const int ic_media_route_on_0_mono_dark = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_media_route_on_mono_dark = 2130837595;
+			public const int ic_media_route_on_1_mono_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_pause_dark = 2130837596;
+			public const int ic_media_route_on_2_mono_dark = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_pause_light = 2130837597;
+			public const int ic_media_route_on_mono_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_play_dark = 2130837598;
+			public const int ic_pause_dark = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_play_light = 2130837599;
+			public const int ic_pause_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_setting_dark = 2130837600;
+			public const int ic_play_dark = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_setting_light = 2130837601;
+			public const int ic_play_light = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int Icon = 2130837602;
+			public const int ic_setting_dark = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int list_focused_example = 2130837603;
+			public const int ic_setting_light = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int list_pressed_example = 2130837604;
+			public const int Icon = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int map = 2130837605;
+			public const int list_focused_example = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int menu_dropdown_panel_example = 2130837606;
+			public const int list_pressed_example = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int monoandroidsplash = 2130837607;
+			public const int map = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int mr_ic_cast_dark = 2130837608;
+			public const int menu_dropdown_panel_example = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int mr_ic_cast_light = 2130837609;
+			public const int monoandroidsplash = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837610;
+			public const int mr_ic_cast_dark = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int mr_ic_media_route_connecting_mono_light = 2130837611;
+			public const int mr_ic_cast_light = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int mr_ic_media_route_mono_dark = 2130837612;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int mr_ic_media_route_mono_light = 2130837613;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int mr_ic_pause_dark = 2130837614;
+			public const int mr_ic_media_route_mono_dark = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int mr_ic_pause_light = 2130837615;
+			public const int mr_ic_media_route_mono_light = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int mr_ic_play_dark = 2130837616;
+			public const int mr_ic_pause_dark = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int mr_ic_play_light = 2130837617;
+			public const int mr_ic_pause_light = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int mr_ic_settings_dark = 2130837618;
+			public const int mr_ic_play_dark = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int mr_ic_settings_light = 2130837619;
-			
-			// aapt resource value: 0x7f020086
-			public const int notification_template_icon_bg = 2130837638;
+			public const int mr_ic_play_light = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int profile = 2130837620;
+			public const int mr_ic_settings_dark = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int progress_bg_example = 2130837621;
+			public const int mr_ic_settings_light = 2130837621;
+			
+			// aapt resource value: 0x7f020088
+			public const int notification_template_icon_bg = 2130837640;
 			
 			// aapt resource value: 0x7f020076
-			public const int progress_horizontal_example = 2130837622;
+			public const int profile = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int progress_primary_example = 2130837623;
+			public const int progress_bg_example = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int progress_secondary_example = 2130837624;
+			public const int progress_horizontal_example = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int selectable_background_example = 2130837625;
+			public const int progress_primary_example = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int spinner_ab_default_example = 2130837626;
+			public const int progress_secondary_example = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int spinner_ab_disabled_example = 2130837627;
+			public const int selectable_background_example = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int spinner_ab_focused_example = 2130837628;
+			public const int spinner_ab_default_example = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int spinner_ab_pressed_example = 2130837629;
+			public const int spinner_ab_disabled_example = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int spinner_background_ab_example = 2130837630;
+			public const int spinner_ab_focused_example = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int tab_indicator_ab_example = 2130837631;
+			public const int spinner_ab_pressed_example = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int tab_selected_example = 2130837632;
+			public const int spinner_background_ab_example = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int tab_selected_focused_example = 2130837633;
+			public const int tab_indicator_ab_example = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int tab_selected_pressed_example = 2130837634;
+			public const int tab_selected_example = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int tab_unselected_example = 2130837635;
+			public const int tab_selected_focused_example = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int tab_unselected_focused_example = 2130837636;
+			public const int tab_selected_pressed_example = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int tab_unselected_pressed_example = 2130837637;
+			public const int tab_unselected_example = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int tab_unselected_focused_example = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int tab_unselected_pressed_example = 2130837639;
 			
 			static Drawable()
 			{
@@ -1973,8 +3607,8 @@ namespace Carpool
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0074
-			public const int action0 = 2131427444;
+			// aapt resource value: 0x7f0b0078
+			public const int action0 = 2131427448;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int action_bar = 2131427413;
@@ -2000,8 +3634,8 @@ namespace Carpool
 			// aapt resource value: 0x7f0b0056
 			public const int action_context_bar = 2131427414;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int action_divider = 2131427448;
+			// aapt resource value: 0x7f0b007c
+			public const int action_divider = 2131427452;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -2027,8 +3661,8 @@ namespace Carpool
 			// aapt resource value: 0x7f0b001c
 			public const int always = 2131427356;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int art = 2131427436;
+			// aapt resource value: 0x7f0b0070
+			public const int art = 2131427440;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int beginning = 2131427353;
@@ -2039,11 +3673,17 @@ namespace Carpool
 			// aapt resource value: 0x7f0b004b
 			public const int buttonPanel = 2131427403;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int buttons = 2131427441;
-			
 			// aapt resource value: 0x7f0b0075
-			public const int cancel_action = 2131427445;
+			public const int buttons = 2131427445;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int calendar_grid = 2131427433;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int calendar_view = 2131427428;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int cancel_action = 2131427449;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int center = 2131427369;
@@ -2057,8 +3697,8 @@ namespace Carpool
 			// aapt resource value: 0x7f0b004d
 			public const int checkbox = 2131427405;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int chronometer = 2131427451;
+			// aapt resource value: 0x7f0b007f
+			public const int chronometer = 2131427455;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int clip_horizontal = 2131427377;
@@ -2084,14 +3724,14 @@ namespace Carpool
 			// aapt resource value: 0x7f0b003e
 			public const int default_activity_button = 2131427390;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int default_control_frame = 2131427435;
+			// aapt resource value: 0x7f0b006f
+			public const int default_control_frame = 2131427439;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int disableHome = 2131427341;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int disconnect = 2131427442;
+			// aapt resource value: 0x7f0b0076
+			public const int disconnect = 2131427446;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int edit_query = 2131427415;
@@ -2099,8 +3739,8 @@ namespace Carpool
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int end_padder = 2131427456;
+			// aapt resource value: 0x7f0b0084
+			public const int end_padder = 2131427460;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int enterAlways = 2131427362;
@@ -2144,17 +3784,20 @@ namespace Carpool
 			// aapt resource value: 0x7f0b003d
 			public const int image = 2131427389;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int info = 2131427455;
+			// aapt resource value: 0x7f0b0083
+			public const int info = 2131427459;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int left = 2131427373;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int line1 = 2131427449;
+			// aapt resource value: 0x7f0b0066
+			public const int left_arrow = 2131427430;
 			
 			// aapt resource value: 0x7f0b007d
-			public const int line3 = 2131427453;
+			public const int line1 = 2131427453;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int line3 = 2131427457;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int listMode = 2131427338;
@@ -2162,20 +3805,20 @@ namespace Carpool
 			// aapt resource value: 0x7f0b003f
 			public const int list_item = 2131427391;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int media_actions = 2131427447;
+			// aapt resource value: 0x7f0b007b
+			public const int media_actions = 2131427451;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int media_route_control_frame = 2131427438;
 			
 			// aapt resource value: 0x7f0b006a
-			public const int media_route_control_frame = 2131427434;
+			public const int media_route_list = 2131427434;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int media_route_list = 2131427430;
+			// aapt resource value: 0x7f0b0073
+			public const int media_route_volume_layout = 2131427443;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int media_route_volume_layout = 2131427439;
-			
-			// aapt resource value: 0x7f0b0070
-			public const int media_route_volume_slider = 2131427440;
+			// aapt resource value: 0x7f0b0074
+			public const int media_route_volume_slider = 2131427444;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -2204,8 +3847,8 @@ namespace Carpool
 			// aapt resource value: 0x7f0b0027
 			public const int pin = 2131427367;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int play_pause = 2131427437;
+			// aapt resource value: 0x7f0b0071
+			public const int play_pause = 2131427441;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -2219,8 +3862,11 @@ namespace Carpool
 			// aapt resource value: 0x7f0b002e
 			public const int right = 2131427374;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int route_name = 2131427432;
+			// aapt resource value: 0x7f0b0065
+			public const int right_arrow = 2131427429;
+			
+			// aapt resource value: 0x7f0b006c
+			public const int route_name = 2131427436;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
@@ -2267,8 +3913,8 @@ namespace Carpool
 			// aapt resource value: 0x7f0b0063
 			public const int select_dialog_listview = 2131427427;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int settings = 2131427433;
+			// aapt resource value: 0x7f0b006d
+			public const int settings = 2131427437;
 			
 			// aapt resource value: 0x7f0b004e
 			public const int shortcut = 2131427406;
@@ -2282,11 +3928,11 @@ namespace Carpool
 			// aapt resource value: 0x7f0b0012
 			public const int showTitle = 2131427346;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int snackbar_action = 2131427429;
+			// aapt resource value: 0x7f0b0068
+			public const int snackbar_action = 2131427432;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int snackbar_text = 2131427428;
+			// aapt resource value: 0x7f0b0067
+			public const int snackbar_text = 2131427431;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int split_action_bar = 2131427335;
@@ -2303,38 +3949,38 @@ namespace Carpool
 			// aapt resource value: 0x7f0b002f
 			public const int start = 2131427375;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int status_bar_latest_event_content = 2131427446;
+			// aapt resource value: 0x7f0b007a
+			public const int status_bar_latest_event_content = 2131427450;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int stop = 2131427443;
+			// aapt resource value: 0x7f0b0077
+			public const int stop = 2131427447;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int submit_area = 2131427424;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int subtitle = 2131427438;
+			// aapt resource value: 0x7f0b0072
+			public const int subtitle = 2131427442;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int tabMode = 2131427340;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int text = 2131427454;
+			// aapt resource value: 0x7f0b0082
+			public const int text = 2131427458;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int text2 = 2131427452;
+			// aapt resource value: 0x7f0b0080
+			public const int text2 = 2131427456;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int textSpacerNoButtons = 2131427400;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int time = 2131427450;
+			// aapt resource value: 0x7f0b007e
+			public const int time = 2131427454;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int title = 2131427393;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int title_bar = 2131427431;
+			// aapt resource value: 0x7f0b006b
+			public const int title_bar = 2131427435;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int title_template = 2131427396;
@@ -2477,76 +4123,91 @@ namespace Carpool
 			public const int abc_select_dialog_material = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int design_layout_snackbar = 2130903064;
+			public const int calendar_pager_layout = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int design_layout_snackbar_include = 2130903065;
+			public const int calendar_picker = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int design_layout_tab_icon = 2130903066;
+			public const int design_layout_snackbar = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_layout_tab_text = 2130903067;
+			public const int design_layout_snackbar_include = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_navigation_item = 2130903068;
+			public const int design_layout_tab_icon = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_navigation_item_header = 2130903069;
+			public const int design_layout_tab_text = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_navigation_item_separator = 2130903070;
+			public const int design_navigation_item = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_navigation_item_subheader = 2130903071;
+			public const int design_navigation_item_header = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_navigation_menu = 2130903072;
+			public const int design_navigation_item_separator = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int mr_media_route_chooser_dialog = 2130903073;
+			public const int design_navigation_item_subheader = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int mr_media_route_controller_material_dialog_b = 2130903074;
+			public const int design_navigation_menu = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int mr_media_route_list_item = 2130903075;
+			public const int dialog = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int notification_media_action = 2130903076;
+			public const int month = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_media_cancel_action = 2130903077;
+			public const int mr_media_route_chooser_dialog = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_template_big_media = 2130903078;
+			public const int mr_media_route_controller_material_dialog_b = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_big_media_narrow = 2130903079;
+			public const int mr_media_route_list_item = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_lines = 2130903080;
+			public const int notification_media_action = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_media = 2130903081;
+			public const int notification_media_cancel_action = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_part_chronometer = 2130903082;
+			public const int notification_template_big_media = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_part_time = 2130903083;
+			public const int notification_template_big_media_narrow = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int select_dialog_item_material = 2130903084;
+			public const int notification_template_lines = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_multichoice_material = 2130903085;
+			public const int notification_template_media = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_singlechoice_material = 2130903086;
+			public const int notification_template_part_chronometer = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int support_simple_spinner_dropdown_item = 2130903087;
+			public const int notification_template_part_time = 2130903087;
+			
+			// aapt resource value: 0x7f030030
+			public const int select_dialog_item_material = 2130903088;
+			
+			// aapt resource value: 0x7f030031
+			public const int select_dialog_multichoice_material = 2130903089;
+			
+			// aapt resource value: 0x7f030032
+			public const int select_dialog_singlechoice_material = 2130903090;
+			
+			// aapt resource value: 0x7f030033
+			public const int support_simple_spinner_dropdown_item = 2130903091;
+			
+			// aapt resource value: 0x7f030034
+			public const int week = 2130903092;
 			
 			static Layout()
 			{
@@ -2560,6 +4221,12 @@ namespace Carpool
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f05001f
+			public const int ApplicationName = 2131034143;
+			
+			// aapt resource value: 0x7f05001e
+			public const int Hello = 2131034142;
 			
 			// aapt resource value: 0x7f05000b
 			public const int abc_action_bar_home_description = 2131034123;
@@ -2615,6 +4282,21 @@ namespace Carpool
 			// aapt resource value: 0x7f05001d
 			public const int appbar_scrolling_view_behavior = 2131034141;
 			
+			// aapt resource value: 0x7f050021
+			public const int day_name_format = 2131034145;
+			
+			// aapt resource value: 0x7f050024
+			public const int full_date_format = 2131034148;
+			
+			// aapt resource value: 0x7f050022
+			public const int invalid_date = 2131034146;
+			
+			// aapt resource value: 0x7f050020
+			public const int library_name = 2131034144;
+			
+			// aapt resource value: 0x7f050023
+			public const int month_name_format = 2131034147;
+			
 			// aapt resource value: 0x7f050000
 			public const int mr_media_route_button_content_description = 2131034112;
 			
@@ -2664,17 +4346,17 @@ namespace Carpool
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f070145
-			public const int ActionBar_Solid_Example = 2131165509;
-			
-			// aapt resource value: 0x7f070146
-			public const int ActionBar_Transparent_Example = 2131165510;
-			
 			// aapt resource value: 0x7f070149
-			public const int ActionBarTabStyle_Example = 2131165513;
+			public const int ActionBar_Solid_Example = 2131165513;
 			
-			// aapt resource value: 0x7f07014c
-			public const int ActionButton_CloseMode_Example = 2131165516;
+			// aapt resource value: 0x7f07014a
+			public const int ActionBar_Transparent_Example = 2131165514;
+			
+			// aapt resource value: 0x7f07014d
+			public const int ActionBarTabStyle_Example = 2131165517;
+			
+			// aapt resource value: 0x7f070150
+			public const int ActionButton_CloseMode_Example = 2131165520;
 			
 			// aapt resource value: 0x7f070081
 			public const int AlertDialog_AppCompat = 2131165313;
@@ -3105,6 +4787,18 @@ namespace Carpool
 			// aapt resource value: 0x7f070136
 			public const int Base_Widget_Design_TabLayout = 2131165494;
 			
+			// aapt resource value: 0x7f070145
+			public const int CalendarCell = 2131165509;
+			
+			// aapt resource value: 0x7f070147
+			public const int CalendarCell_CalendarDate = 2131165511;
+			
+			// aapt resource value: 0x7f070146
+			public const int CalendarCell_DayHeader = 2131165510;
+			
+			// aapt resource value: 0x7f070144
+			public const int CalendarTitle = 2131165508;
+			
 			// aapt resource value: 0x7f070004
 			public const int CardView = 2131165188;
 			
@@ -3114,14 +4808,14 @@ namespace Carpool
 			// aapt resource value: 0x7f070006
 			public const int CardView_Light = 2131165190;
 			
-			// aapt resource value: 0x7f070148
-			public const int DropDownListView_Example = 2131165512;
-			
-			// aapt resource value: 0x7f07014a
-			public const int DropDownNav_Example = 2131165514;
+			// aapt resource value: 0x7f07014c
+			public const int DropDownListView_Example = 2131165516;
 			
 			// aapt resource value: 0x7f07014e
-			public const int Mono_Android_Theme_Splash = 2131165518;
+			public const int DropDownNav_Example = 2131165518;
+			
+			// aapt resource value: 0x7f070152
+			public const int Mono_Android_Theme_Splash = 2131165522;
 			
 			// aapt resource value: 0x7f070016
 			public const int Platform_AppCompat = 2131165206;
@@ -3153,11 +4847,11 @@ namespace Carpool
 			// aapt resource value: 0x7f07001a
 			public const int Platform_Widget_AppCompat_Spinner = 2131165210;
 			
-			// aapt resource value: 0x7f070147
-			public const int PopupMenu_Example = 2131165511;
-			
 			// aapt resource value: 0x7f07014b
-			public const int ProgressBar_Example = 2131165515;
+			public const int PopupMenu_Example = 2131165515;
+			
+			// aapt resource value: 0x7f07014f
+			public const int ProgressBar_Example = 2131165519;
 			
 			// aapt resource value: 0x7f070027
 			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131165223;
@@ -3411,11 +5105,11 @@ namespace Carpool
 			// aapt resource value: 0x7f0700ed
 			public const int Theme_AppCompat_NoActionBar = 2131165421;
 			
-			// aapt resource value: 0x7f070144
-			public const int Theme_Example = 2131165508;
+			// aapt resource value: 0x7f070148
+			public const int Theme_Example = 2131165512;
 			
-			// aapt resource value: 0x7f07014d
-			public const int Theme_Example_Widget = 2131165517;
+			// aapt resource value: 0x7f070151
+			public const int Theme_Example_Widget = 2131165521;
 			
 			// aapt resource value: 0x7f070000
 			public const int Theme_MediaRouter = 2131165184;

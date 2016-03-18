@@ -24,7 +24,8 @@ namespace Carpool.iOS
 		{
             SetStyles();
 			global::Xamarin.Forms.Forms.Init ();
-			LoadApplication (new Carpool.AppStart ());
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            LoadApplication (new Carpool.AppStart ());
 
 			return base.FinishedLaunching (app, options);
 		}
