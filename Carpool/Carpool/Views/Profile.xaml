@@ -19,6 +19,9 @@
             <x:String>Female</x:String>
           </Picker.Items>
         </Picker>
+        
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False"></ActivityIndicator>
+        
         <Button Text="Save" Style="{StaticResource buttonSuccessStyle}" Clicked="Dashboard"></Button>
         
 

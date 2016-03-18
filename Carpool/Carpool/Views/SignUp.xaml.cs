@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -19,7 +21,11 @@ namespace Carpool
 
         async Task AddUser(Users user)
         {
-            await manager.SaveUserAsync(user);
+            //await manager.SaveUserAsync(user);
+
+            Users userResponse = await manager.SaveGetUserAsync(user);
+
+            Application.Current.Properties["user"] = userResponse;
 
         }
 
@@ -45,7 +51,7 @@ namespace Carpool
                 };
 
                 await AddUser(user);
-
+                
                 await Navigation.PushModalAsync(new Profile());
                 await Navigation.PopAsync();
             }
