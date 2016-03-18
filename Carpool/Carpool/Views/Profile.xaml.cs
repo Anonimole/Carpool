@@ -13,12 +13,19 @@ namespace Carpool
 	public partial class Profile : ContentPage
 	{
         private string genderSelected;
+	    private Users currentUser;
+        UsersManager manager;
 
         public Profile ()
         {
 	        genderSelected = "";
             
 			InitializeComponent ();
+
+            manager = new UsersManager();
+
+
+            currentUser =(Users) Application.Current.Properties["user"];
 
             genderPicker.SelectedIndexChanged += (sender, args) =>
             {
@@ -36,17 +43,36 @@ namespace Carpool
             
         }
 
+	    async Task UpdateUser(Users user)
+	    {
+	        await manager.SaveUserAsync(user);
+	    }
+
+
         async void Dashboard(object sender, EventArgs e)
         {
 
             string name = this.nameEntry.Text;
-            string age = this.ageEntry.Text;
+            int age = Int32.Parse(this.ageEntry.Text);
             string phone = this.phoneEntry.Text;
 
-	        
-            Debug.WriteLine("{0} {1} {2} {3} " ,name,age,phone,genderSelected);
 
-            //Application.Current.MainPage = new NavigationPage(new Dashboard());
+            var user = new Users
+            {
+                ID = currentUser.ID,
+                Email = currentUser.Email,
+                Password = currentUser.Password,
+                Name = name,
+                Age = age,
+                Phone = phone,
+                Gender = genderSelected
+            };
+
+            activityIndicator.IsRunning = true;
+
+            await UpdateUser(user);
+
+            Application.Current.MainPage = new NavigationPage(new Dashboard());
         }
 	}
 }

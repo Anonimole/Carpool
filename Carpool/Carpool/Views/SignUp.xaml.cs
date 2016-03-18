@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -45,7 +47,13 @@ namespace Carpool
                 };
 
                 await AddUser(user);
+                
+                Collection<Users> usersCollection= await manager.SearchUserAsync(email);
 
+                Users userObject = usersCollection.First();
+                Application.Current.Properties["user"]= userObject;
+                Debug.WriteLine(userObject.ID);
+                
                 await Navigation.PushModalAsync(new Profile());
                 await Navigation.PopAsync();
             }

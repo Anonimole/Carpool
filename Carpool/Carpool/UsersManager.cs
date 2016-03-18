@@ -56,6 +56,28 @@ namespace Carpool
             return null;
         }
 
+
+        public async Task<Collection<Users>> SearchUserAsync(string email)
+        {
+            try
+            {
+                return new ObservableCollection<Users>
+                (
+                    await usersTable.Where(user => user.Email == email).ToListAsync()
+                );
+            }
+            catch (MobileServiceInvalidOperationException msioe)
+            {
+                Debug.WriteLine(@"INVALID {0}", msioe.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(@"ERROR {0}", e.Message);
+            }
+            return null;
+        }
+
+
         public async Task SaveUserAsync(Users user)
         {
             if (user.ID == null)
