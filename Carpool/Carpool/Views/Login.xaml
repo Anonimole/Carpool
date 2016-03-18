@@ -18,6 +18,8 @@
         </Entry>
         
         <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True" />
+        
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False"></ActivityIndicator>
         <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" Clicked="SignIn" />
         <!--IsEnabled="{Binding Source={x:Reference EmailValidatorBehavior}, Path=IsValid}"-->
 

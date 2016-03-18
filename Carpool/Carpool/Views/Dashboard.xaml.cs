@@ -10,24 +10,15 @@ namespace Carpool
 {
     public partial class Dashboard : ContentPage
     {
+        private Users currentUser;
+
         public Dashboard()
         {
 
             InitializeComponent();
 
-            /*this.routesList.ItemsSource = new string[]{
-              "Cluster - Catedral",
-              "Cluster - Av. Ventura Puente",
-              "Cluster - Plaza Las Americas",
-              "Cluster - Plaza la Huerta",
-              "Cluster - Catedral",
-              "Cluster - Av. Ventura Puente",
-              "Cluster - Plaza Las Americas",
-              "Cluster - Plaza la Huerta",
-              "Cluster - Av. Ventura Puente",
-              "Cluster - Plaza Las Americas",
-              "Cluster - Plaza la Huerta"
-            };*/
+            currentUser =(Users) Application.Current.Properties["user"];
+
         }
 
         async void RouteDetails(object sender, EventArgs e)

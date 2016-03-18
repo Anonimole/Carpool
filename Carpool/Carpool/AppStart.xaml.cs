@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.Diagnostics;
 using Xamarin.Forms;
+using Application = Xamarin.Forms.Application;
 
 namespace Carpool
 {
@@ -20,5 +16,21 @@ namespace Carpool
             MainPage = loginPage;
             //MainPage = new Dashboard();
 		}
-	}
+
+	    protected override void OnSleep()
+	    {
+	        Debug.WriteLine("sleep");
+	    }
+
+        protected override void OnStart()
+        {
+            Debug.WriteLine("start");
+        }
+
+        protected override void OnResume()
+        {
+            Debug.WriteLine("resume");
+        }
+
+    }
 }
