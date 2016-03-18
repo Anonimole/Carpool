@@ -24,9 +24,6 @@
         
         <Button Text="Save" Style="{StaticResource buttonSuccessStyle}" Clicked="Dashboard"></Button>
         
-
-
-
       </StackLayout>
     </StackLayout>
 

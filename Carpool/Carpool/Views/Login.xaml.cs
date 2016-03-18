@@ -1,27 +1,62 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
+using System.Diagnostics;
+
 
 namespace Carpool
 {
-	public partial class Login : ContentPage
-	{
-		public Login ()
-		{
-			InitializeComponent ();
+    public partial class Login : ContentPage
+    {
+        private Users currentUser;
+        private UsersManager manager;
+
+        public Login()
+        {
+
+
+            InitializeComponent();
+
+            manager = new UsersManager();
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            this.IsBusy = true;
+
+            //if (Application.Current.Properties.ContainsKey("user"))
+            //{
+            //    DisplayAlert("alerta", "ya estas logeado", "aceptar");
+            //}
+
         }
 
-        void SignIn(object sender, EventArgs e)
+        async void SignIn(object sender, EventArgs e)
         {
-            var page = new NavigationPage(new Dashboard());
-            
-            Application.Current.MainPage = page;
+            string email = this.emailEntry.Text;
+            string password = this.passwordEntry.Text;
+            var user = new Users { Email = email, Password = password };
+
+            activityIndicator.IsRunning = true;
+            Users userResponse = await manager.SearchUserAsync(user);
+            activityIndicator.IsRunning = false;
+
+            if (userResponse != null)
+            {
+                Debug.WriteLine("Si esta");
+                if (userResponse.Password.Equals(password))
+                {
+                    Application.Current.Properties["user"] = userResponse;
+                    Application.Current.MainPage = new NavigationPage(new Dashboard());
+                }
+                else
+                {
+                    await DisplayAlert("Incorrect", "Incorrect Password", "Close");
+                }
+            }
+            else
+            {
+                await DisplayAlert("Incorrect", "Incorrect Username", "Close");
+            }
+
 
         }
 
@@ -30,6 +65,7 @@ namespace Carpool
             var signUpPage = new SignUp();
             await Navigation.PushAsync(signUpPage);
         }
-        
-	}
+
+
+    }
 }
