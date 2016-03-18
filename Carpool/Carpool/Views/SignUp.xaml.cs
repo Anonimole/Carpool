@@ -21,7 +21,11 @@ namespace Carpool
 
         async Task AddUser(Users user)
         {
-            await manager.SaveUserAsync(user);
+            //await manager.SaveUserAsync(user);
+
+            Users userResponse = await manager.SaveGetUserAsync(user);
+
+            Application.Current.Properties["user"] = userResponse;
 
         }
 
@@ -47,12 +51,6 @@ namespace Carpool
                 };
 
                 await AddUser(user);
-                
-                Collection<Users> usersCollection= await manager.SearchUserAsync(email);
-
-                Users userObject = usersCollection.First();
-                Application.Current.Properties["user"]= userObject;
-                Debug.WriteLine(userObject.ID);
                 
                 await Navigation.PushModalAsync(new Profile());
                 await Navigation.PopAsync();

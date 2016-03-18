@@ -3,35 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using  System.Diagnostics;
+using System.Diagnostics;
 
 using Xamarin.Forms;
 using XLabs.Forms.Controls;
 
 namespace Carpool
 {
-	public partial class Profile : ContentPage
-	{
+    public partial class Profile : ContentPage
+    {
         private string genderSelected;
-	    private Users currentUser;
+        private Users currentUser;
         UsersManager manager;
 
-        public Profile ()
+        public Profile()
         {
-	        genderSelected = "";
-            
-			InitializeComponent ();
+            genderSelected = "";
+
+            InitializeComponent();
 
             manager = new UsersManager();
 
-
-            currentUser =(Users) Application.Current.Properties["user"];
+            currentUser = (Users)Application.Current.Properties["user"];
 
             genderPicker.SelectedIndexChanged += (sender, args) =>
             {
                 if (genderPicker.SelectedIndex == -1)
                 {
-                    genderSelected="";
+                    genderSelected = "";
                 }
                 else
                 {
@@ -40,14 +39,14 @@ namespace Carpool
 
                 }
             };
-            
+
         }
 
-	    async Task UpdateUser(Users user)
-	    {
-	        await manager.SaveUserAsync(user);
-	    }
-
+        async Task UpdateUser(Users user)
+        {
+            Users userResponse = await manager.SaveGetUserAsync(user);
+            Application.Current.Properties["user"] = userResponse;
+        }
 
         async void Dashboard(object sender, EventArgs e)
         {
@@ -74,5 +73,5 @@ namespace Carpool
 
             Application.Current.MainPage = new NavigationPage(new Dashboard());
         }
-	}
+    }
 }
