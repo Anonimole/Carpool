@@ -24,13 +24,9 @@
         <Setter Property="HeightRequest" Value="42"/>
       </Style>
 
-
       <Style TargetType="Picker">
         <Setter Property="BackgroundColor" Value="White"/>
-
       </Style>
-
-      
 
       <Style TargetType="SearchBar">
         <Setter Property="PlaceholderColor" Value="White"/>        
@@ -40,9 +36,20 @@
         <Setter Property="TextColor" Value="White"/>
       </Style>
 
+      <Style x:Key="labelDark" TargetType="Label">
+        <Setter Property="TextColor" Value="#004D40"/>
+      </Style>
+
       <Style x:Key="labelBoldStyle" TargetType="Label">
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="TextColor" Value="White"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="FontSize" Value="Medium"/>
+      </Style>
+
+      <Style x:Key="labelErrorStyle" TargetType="Label">
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="#e53935"/>
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="FontSize" Value="Medium"/>
       </Style>

@@ -2,32 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Profile"
-             Title="Profile"
-             >
-  
-  <!--<ContentPage.Padding>
-    <OnPlatform x:TypeArguments="Thickness">
-      <OnPlatform.iOS>
-        0,20,0,0
-      </OnPlatform.iOS>
-    </OnPlatform>
-  </ContentPage.Padding>-->
+             xmlns:controls="using:XLabs.Forms.Controls"
+             xmlns:controls1="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             Title="Profile">
+
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
       <StackLayout Style="{StaticResource stackContent}">
         <Image Source="profile.jpg"  Aspect="AspectFit"></Image>
-        <Entry Placeholder="Name"/>
-        <Entry Placeholder="Age" Keyboard="Numeric"/>
-        <Entry Placeholder="Phone" Keyboard="Telephone"/>
-
-        <Picker Title="Gender">
+        <Entry x:Name="nameEntry" Placeholder="Name"/>
+        <Entry x:Name="ageEntry" Placeholder="Age" Keyboard="Numeric"/>
+        <Entry x:Name="phoneEntry" Placeholder="Phone" Keyboard="Telephone"/>
+        <Picker x:Name="genderPicker" Title="Gender" >
           <Picker.Items>
             <x:String>Male</x:String>
             <x:String>Female</x:String>
           </Picker.Items>
         </Picker>
-
         <Button Text="Save" Style="{StaticResource buttonSuccessStyle}" Clicked="Dashboard"></Button>
+        
+
+
 
       </StackLayout>
     </StackLayout>
