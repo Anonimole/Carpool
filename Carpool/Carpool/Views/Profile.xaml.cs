@@ -18,16 +18,18 @@ namespace Carpool
 
         public Profile()
         {
-            genderSelected = "";
-
+            
             InitializeComponent();
 
+            genderSelected = "";
             manager = new UsersManager();
-
             currentUser = (Users)Application.Current.Properties["user"];
+
+            loadData();
 
             genderPicker.SelectedIndexChanged += (sender, args) =>
             {
+                
                 if (genderPicker.SelectedIndex == -1)
                 {
                     genderSelected = "";
@@ -40,6 +42,21 @@ namespace Carpool
                 }
             };
 
+        }
+
+
+        void loadData()
+        {
+            string[] genders = { "Male", "Female" };
+
+            if (currentUser != null)
+            {
+                nameEntry.Text = currentUser.Name;
+                ageEntry.Text = currentUser.Age+"";
+                phoneEntry.Text = currentUser.Phone;
+                genderPicker.SelectedIndex= Array.IndexOf(genders, currentUser.Gender);
+
+            }
         }
 
         async Task UpdateUser(Users user)
@@ -68,9 +85,7 @@ namespace Carpool
             };
 
             activityIndicator.IsRunning = true;
-
             await UpdateUser(user);
-
             Application.Current.MainPage = new NavigationPage(new Dashboard());
         }
     }
