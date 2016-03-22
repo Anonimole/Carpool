@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carpool.AddRoute"
+             Title="New Route">
+  <ScrollView>
+    <StackLayout Style="{StaticResource contentPageStyle}">
+      <StackLayout Style="{StaticResource stackContent}">
+        <StackLayout Orientation="Horizontal">
+          <Picker Title="Car" HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+              <x:String>Car example1</x:String>
+              <x:String>Car example2</x:String>
+            </Picker.Items>
+          </Picker>
+          <Button Style="{StaticResource buttonSuccessStyle}" Text="+"></Button>
+        </StackLayout>
+        <Button Text="Choose starting point" Style="{StaticResource buttonActionStyle}"></Button>
+        <Button Text="Choose Destination" Style="{StaticResource buttonActionStyle}"></Button>
+
+        <StackLayout Orientation="Horizontal">
+          <Label Text="Departure time " Style="{StaticResource labelBoldStyle}"></Label>
+          <TimePicker HorizontalOptions="FillAndExpand"></TimePicker>
+        </StackLayout>
+
+        <Button Style="{StaticResource buttonSuccessStyle}" Text="Add"></Button>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -58,6 +58,11 @@
         <Setter Property="BackgroundColor" Value="#4CAF50"/>
         <Setter Property="TextColor" Value="White"/>
       </Style>
+      
+      <Style x:Key="buttonActionStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#009688"/>
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
 
       <Style x:Key="linkStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="Transparent"/>

@@ -24,6 +24,11 @@ namespace Carpool
             await Navigation.PushAsync(new Route());
         }
 
+        async void MyRoutes(object sende, EventArgs e)
+        {
+            await Navigation.PushAsync(new MyRoutes());
+        }
+
         async void ProfileDetails(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Profile());
