@@ -2,8 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Profile"
-             xmlns:controls="using:XLabs.Forms.Controls"
-             xmlns:controls1="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              Title="Profile">
 
   <ScrollView>
@@ -19,6 +17,7 @@
             <x:String>Female</x:String>
           </Picker.Items>
         </Picker>
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False"></ActivityIndicator>
         <Button Text="Save" Style="{StaticResource buttonSuccessStyle}" Clicked="Dashboard"></Button>
       </StackLayout>
     </StackLayout>

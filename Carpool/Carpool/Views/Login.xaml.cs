@@ -12,21 +12,11 @@ namespace Carpool
 
         public Login()
         {
-
-
             InitializeComponent();
 
             manager = new UsersManager();
 
             NavigationPage.SetHasNavigationBar(this, false);
-
-            this.IsBusy = true;
-
-            //if (Application.Current.Properties.ContainsKey("user"))
-            //{
-            //    DisplayAlert("alerta", "ya estas logeado", "aceptar");
-            //}
-
         }
 
         async void SignIn(object sender, EventArgs e)
@@ -41,7 +31,6 @@ namespace Carpool
 
             if (userResponse != null)
             {
-                Debug.WriteLine("Si esta");
                 if (userResponse.Password.Equals(password))
                 {
                     Application.Current.Properties["user"] = userResponse;
@@ -56,8 +45,6 @@ namespace Carpool
             {
                 await DisplayAlert("Incorrect", "Incorrect Username", "Close");
             }
-
-
         }
 
         async void SignUp(object sender, EventArgs e)

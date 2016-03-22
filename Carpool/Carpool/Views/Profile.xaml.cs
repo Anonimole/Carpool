@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Diagnostics;
-
 using Xamarin.Forms;
-using XLabs.Forms.Controls;
 
 namespace Carpool
 {
@@ -51,10 +45,21 @@ namespace Carpool
 
             if (currentUser != null)
             {
-                nameEntry.Text = currentUser.Name;
-                ageEntry.Text = currentUser.Age+"";
-                phoneEntry.Text = currentUser.Phone;
-                genderPicker.SelectedIndex= Array.IndexOf(genders, currentUser.Gender);
+
+                if (!string.IsNullOrEmpty(currentUser.Name))
+                    nameEntry.Text = currentUser.Name;
+
+                if (currentUser.Age!=0)
+                    ageEntry.Text = currentUser.Age + "";
+
+                if (!string.IsNullOrEmpty(currentUser.Phone))
+                    phoneEntry.Text = currentUser.Phone;
+
+                if (!string.IsNullOrEmpty(currentUser.Phone))
+                {
+                    genderPicker.SelectedIndex = Array.IndexOf(genders, currentUser.Gender);
+                    genderPicker.BackgroundColor = Color.FromHex("#004D40");
+                }
 
             }
         }
@@ -83,9 +88,10 @@ namespace Carpool
                 Phone = phone,
                 Gender = genderSelected
             };
-
-            this.IsBusy = true;
+            
+            activityIndicator.IsRunning = true;
             await UpdateUser(user);
+            activityIndicator.IsRunning = false;
             Application.Current.MainPage = new NavigationPage(new Dashboard());
         }
     }
