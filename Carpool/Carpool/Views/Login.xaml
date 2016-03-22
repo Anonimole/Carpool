@@ -8,8 +8,9 @@
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
 
-      <Label Text="AppName" FontSize="30" BackgroundColor="#004D40" HeightRequest="100" WidthRequest="100" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
-
+      <StackLayout BackgroundColor="#004D40" >
+        <Image Source="logo2.png"></Image>
+      </StackLayout>
       <StackLayout Style="{StaticResource stackContent}">
         <Entry x:Name="emailEntry" Placeholder="Email" >
           <!--<Entry.Behaviors>

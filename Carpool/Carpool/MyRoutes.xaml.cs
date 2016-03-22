@@ -14,5 +14,16 @@ namespace Carpool
 		{
 			InitializeComponent ();
 		}
-	}
+
+        async void RouteDetails(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Route());
+        }
+
+        async void AddRoute(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddRoute());
+        }
+
+    }
 }
