@@ -6,8 +6,9 @@ using Xamarin.Forms;
 namespace Carpool
 {
     public class LengthValidatorBehavior : Behavior<Entry>
-
+        
     {
+        
         static readonly BindablePropertyKey IsValidPropertyKey = BindableProperty.CreateReadOnly("IsValid", typeof(bool), typeof(LengthValidatorBehavior), false);
 
         public static readonly BindableProperty IsValidProperty = IsValidPropertyKey.BindableProperty;
