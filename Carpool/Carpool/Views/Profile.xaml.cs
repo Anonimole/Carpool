@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Diagnostics;
-
 using Xamarin.Forms;
-using XLabs.Forms.Controls;
 
 namespace Carpool
 {
@@ -18,16 +12,18 @@ namespace Carpool
 
         public Profile()
         {
-            genderSelected = "";
-
+            
             InitializeComponent();
 
+            genderSelected = "";
             manager = new UsersManager();
-
             currentUser = (Users)Application.Current.Properties["user"];
+
+            loadData();
 
             genderPicker.SelectedIndexChanged += (sender, args) =>
             {
+                
                 if (genderPicker.SelectedIndex == -1)
                 {
                     genderSelected = "";
@@ -40,6 +36,32 @@ namespace Carpool
                 }
             };
 
+        }
+
+
+        void loadData()
+        {
+            string[] genders = { "Male", "Female" };
+
+            if (currentUser != null)
+            {
+
+                if (!string.IsNullOrEmpty(currentUser.Name))
+                    nameEntry.Text = currentUser.Name;
+
+                if (currentUser.Age!=0)
+                    ageEntry.Text = currentUser.Age + "";
+
+                if (!string.IsNullOrEmpty(currentUser.Phone))
+                    phoneEntry.Text = currentUser.Phone;
+
+                if (!string.IsNullOrEmpty(currentUser.Phone))
+                {
+                    genderPicker.SelectedIndex = Array.IndexOf(genders, currentUser.Gender);
+                    genderPicker.BackgroundColor = Color.FromHex("#004D40");
+                }
+
+            }
         }
 
         async Task UpdateUser(Users user)
@@ -66,11 +88,10 @@ namespace Carpool
                 Phone = phone,
                 Gender = genderSelected
             };
-
+            
             activityIndicator.IsRunning = true;
-
             await UpdateUser(user);
-
+            activityIndicator.IsRunning = false;
             Application.Current.MainPage = new NavigationPage(new Dashboard());
         }
     }
