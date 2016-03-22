@@ -84,7 +84,7 @@ namespace Carpool
                 Gender = genderSelected
             };
 
-            activityIndicator.IsRunning = true;
+            this.IsBusy = true;
             await UpdateUser(user);
             Application.Current.MainPage = new NavigationPage(new Dashboard());
         }
