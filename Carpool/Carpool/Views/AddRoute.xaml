@@ -7,13 +7,9 @@
     <StackLayout Style="{StaticResource contentPageStyle}">
       <StackLayout Style="{StaticResource stackContent}">
         <StackLayout Orientation="Horizontal">
-          <Picker Title="Car" HorizontalOptions="FillAndExpand">
-            <Picker.Items>
-              <x:String>Car example1</x:String>
-              <x:String>Car example2</x:String>
-            </Picker.Items>
+          <Picker x:Name="carPicker" Title="Car" HorizontalOptions="FillAndExpand" IsEnabled="False">
           </Picker>
-          <Button Style="{StaticResource buttonSuccessStyle}" Text="+"></Button>
+          <Button Style="{StaticResource buttonSuccessStyle}" Text="+" Clicked="OnAdd"></Button>
         </StackLayout>
         <Button Text="Choose starting point" Style="{StaticResource buttonActionStyle}"></Button>
         <Button Text="Choose Destination" Style="{StaticResource buttonActionStyle}"></Button>
