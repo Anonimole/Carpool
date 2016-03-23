@@ -16,8 +16,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Azure\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\EmailValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\LengthValidatorBehavior.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Cars.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CarsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Cars.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CarsManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Users.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UsersManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\AddCar.xaml.cs">
