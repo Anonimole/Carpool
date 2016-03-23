@@ -7,8 +7,8 @@
     <StackLayout Style="{StaticResource stackContent}">
       <Entry Placeholder="Model" x:Name="modelEntry"></Entry>
       <Entry Placeholder="Color" x:Name="colorEntry"></Entry>
-      <ActivityIndicator IsRunning="False" ></ActivityIndicator>
-      <Button Text="Add" x:Name="activityIndicator" Style="{StaticResource buttonSuccessStyle}" Clicked="OnAdd"></Button>
+      <ActivityIndicator x:Name="activityIndicator" IsRunning="False" ></ActivityIndicator>
+      <Button Text="Add" x:Name="addButton" Style="{StaticResource buttonSuccessStyle}" Clicked="OnAdd"></Button>
     </StackLayout>
   </StackLayout>
 </ContentPage>

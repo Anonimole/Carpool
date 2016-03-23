@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -6,7 +7,7 @@ namespace Carpool
 {
     public partial class Profile : ContentPage
     {
-        private string genderSelected;
+        
         private Users currentUser;
         UsersManager manager;
 
@@ -15,13 +16,13 @@ namespace Carpool
             
             InitializeComponent();
 
-            genderSelected = "";
+            
             manager = new UsersManager();
             currentUser = (Users)Application.Current.Properties["user"];
 
             loadData();
 
-            genderPicker.SelectedIndexChanged += (sender, args) =>
+            /*genderPicker.SelectedIndexChanged += (sender, args) =>
             {
                 
                 if (genderPicker.SelectedIndex == -1)
@@ -34,7 +35,7 @@ namespace Carpool
                     genderPicker.BackgroundColor = Color.FromHex("#004D40");
 
                 }
-            };
+            };*/
 
         }
 
@@ -55,7 +56,9 @@ namespace Carpool
                 if (!string.IsNullOrEmpty(currentUser.Phone))
                     phoneEntry.Text = currentUser.Phone;
 
-                if (!string.IsNullOrEmpty(currentUser.Phone))
+                Debug.WriteLine(currentUser.Gender);
+
+                if (!string.IsNullOrEmpty(currentUser.Gender))
                 {
                     genderPicker.SelectedIndex = Array.IndexOf(genders, currentUser.Gender);
                     genderPicker.BackgroundColor = Color.FromHex("#004D40");
@@ -77,16 +80,18 @@ namespace Carpool
             int age = Int32.Parse(this.ageEntry.Text);
             string phone = this.phoneEntry.Text;
 
+            string genderSelected = genderPicker.Items[genderPicker.SelectedIndex];
+
 
             var user = new Users
             {
                 ID = currentUser.ID,
                 Email = currentUser.Email,
                 Password = currentUser.Password,
-                Name = name,
+                Name = name+"",
                 Age = age,
-                Phone = phone,
-                Gender = genderSelected
+                Phone = phone+"",
+                Gender = genderSelected+""
             };
             
             activityIndicator.IsRunning = true;
