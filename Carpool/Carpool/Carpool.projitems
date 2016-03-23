@@ -15,13 +15,19 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Azure\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\EmailValidatorBehavior.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)LengthValidatorBehavior.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MyRoutes.xaml.cs">
-      <DependentUpon>MyRoutes.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\LengthValidatorBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cars.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CarsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Users.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UsersManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AddCar.xaml.cs">
       <SubType>Code</SubType>
+      <DependentUpon>AddCar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Users.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UsersManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AddRoute.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>AddRoute.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Dashboard.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>Dashboard.xaml</DependentUpon>
@@ -29,6 +35,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Login.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MyRoutes.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>MyRoutes.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Profile.xaml.cs">
       <SubType>Code</SubType>
@@ -48,11 +58,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AddCar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AddRoute.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Dashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MyRoutes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -65,15 +87,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SignUp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyRoutes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
