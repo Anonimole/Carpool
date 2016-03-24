@@ -42,16 +42,21 @@ namespace Carpool
                     {
                         await
                             DisplayAlert("Incorrect", "Your password is incorrect, please try again.", "Close");
+                            this.passwordEntry.Text = "";
                     }
                 }
                 else
                 {
                     await DisplayAlert("Incorrect", "Your email is incorrect, please try again.", "Close");
+                    this.emailEntry.Text = "";
+                    this.passwordEntry.Text = "";
                 }
             }
             else
             {
                 await DisplayAlert("Incorrect", "The fields Email or Password can't be empty, please insert valid values.", "Close");
+                this.emailEntry.Text = "";
+                this.passwordEntry.Text = "";
             }
         }
 
