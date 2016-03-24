@@ -53,6 +53,12 @@ namespace Carpool
             await Navigation.PushAsync(signUpPage);
         }
 
+        async void Test(object sender, EventArgs e)
+        {
+            var signUpPage = new MapStartingPoint();
+            await Navigation.PushAsync(signUpPage);
+        }
+
 
     }
 }

@@ -1,10 +1,5 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 
 namespace Carpool.Droid
@@ -17,6 +12,7 @@ namespace Carpool.Droid
 			base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
+            Xamarin.FormsMaps.Init(this,bundle);
 			LoadApplication (new Carpool.AppStart ());
 		}
 	}

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Login"
-             xmlns:local="clr-namespace:Carpool2;assembly=Carpool2"
+             xmlns:local="clr-namespace:Carpool;assembly=Carpool2"
              >
   
   <ScrollView>
@@ -34,7 +34,7 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
 
-          <!--<Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}"  ></Button>-->
+          <Button x:Name="forgotPasswordButton" Text="Forgot your Password?" Style="{StaticResource linkStyle}"  Clicked="Test"></Button>
 
         </StackLayout>
       </StackLayout>
