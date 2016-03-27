@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.MapStartingPoint" Title="Starting Point">
-    <StackLayout x:Name="stackMap" VerticalOptions="FillAndExpand">
-      <Label Style="{StaticResource labelErrorStyle}" x:Name="infoLabel"> Select starting point in the Map</Label>
+    <StackLayout x:Name="stackMap" VerticalOptions="FillAndExpand" Style="{StaticResource contentPageStyle}" Padding="0,10,0,0">
+      <Label Style="{StaticResource labelBoldStyle}" x:Name="infoLabel" HorizontalTextAlignment="Center"> Loading map and location...</Label>
     </StackLayout>  
 </ContentPage>

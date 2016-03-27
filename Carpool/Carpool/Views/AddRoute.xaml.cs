@@ -21,6 +21,7 @@ namespace Carpool
 
         async void OnAdd(object sender, EventArgs e)
         {
+            carSelected = false;
             await Navigation.PushAsync(new AddCar());
         }
 
@@ -52,7 +53,7 @@ namespace Carpool
             await Navigation.PushAsync(new MapStartingPoint());
         }
 
-        public async void OnCarPicker(object sender, EventArgs e)
+        public void OnCarPicker(object sender, EventArgs e)
         {
             carSelected = true;
         }

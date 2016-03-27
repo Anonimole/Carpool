@@ -15,6 +15,7 @@ namespace Carpool
     {
         private ExtMap myMap;
         private bool pinFlag;
+        private Route newRoute;
         public MapStartingPoint()
         {
             InitializeComponent();
@@ -26,25 +27,43 @@ namespace Carpool
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 IsShowingUser = true
             };
-
-            stackMap.Children.Add(myMap);
             myMap.Tapped += MyMap_Tapped;
-            locator();
 
-            var saveButton = new ToolbarItem
+            this.IsBusy = true;
+            this.Locator();
+
+            if (Application.Current.Properties["route"] != null)
             {
-                Name = "Save",
-                Command = new Command(this.Save),
-            };
-
-            this.ToolbarItems.Add(saveButton);
+                newRoute = (Route)Application.Current.Properties["route"];
+            }
+            else
+            {
+                newRoute = new Route();
+            }
 
         }
 
 
         private async void Save()
         {
+            string latitude = "" + myMap.Pins.First().Position.Latitude;
+            string longitude = "" + myMap.Pins.First().Position.Longitude;
+
+            newRoute.From_Latitude = latitude;
+            newRoute.From_Longitude = longitude;
+
+            Application.Current.Properties["route"] = newRoute;
+
             await Navigation.PopAsync(true);
+
+        }
+
+        private void Cancel()
+        {
+            pinFlag = false;
+            infoLabel.Text = "Tap starting point in the Map";
+            this.myMap.Pins.Clear();
+            this.ToolbarItems.Clear();
         }
 
         private async void MyMap_Tapped(object sender, MapTapEventArgs e)
@@ -59,7 +78,6 @@ namespace Carpool
 
                 var position = new Position(latitude, longitude);
 
-                
                 var pin = new Pin
                 {
                     Type = PinType.Place,
@@ -68,16 +86,26 @@ namespace Carpool
                     Address = "",
                 };
 
-                pin.Clicked += Pin_Clicked;
                 myMap.Pins.Add(pin);
+
+                var saveButton = new ToolbarItem
+                {
+                    Name = "Save",
+                    Command = new Command(this.Save),
+                };
+
+                var cancelButton = new ToolbarItem
+                {
+                    Name = "Cancel",
+                    Command = new Command(this.Cancel),
+                };
+                
+                this.ToolbarItems.Add(saveButton);
+                this.ToolbarItems.Add(cancelButton);
+
+                infoLabel.Text = "";
             }
-            infoLabel.Text = "";
 
-        }
-
-        private void Pin_Clicked(object sender, EventArgs e)
-        {
-            
         }
 
         async void searchAdress()
@@ -88,22 +116,22 @@ namespace Carpool
 
         }
 
-        async void locator()
+        async void Locator()
         {
             try
             {
                 var locator = CrossGeolocator.Current;
                 locator.DesiredAccuracy = 50;
                 var position = await locator.GetPositionAsync(timeoutMilliseconds: 40000);
-                Console.WriteLine("Position Status: {0}", position.Timestamp);
-                Console.WriteLine("Position Latitude: {0}", position.Latitude);
-                Console.WriteLine("Position Longitude: {0}", position.Longitude);
                 var pos = new Position(position.Latitude, position.Longitude);
                 myMap.MoveToRegion(new MapSpan(pos, 0.01, 0.01));
+                stackMap.Children.Add(myMap);
+                this.IsBusy = false;
+                infoLabel.Text = "Tap starting point in the Map";
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("Unable to get location, may need to increase timeout: " + ex);
+                infoLabel.Text = "Unable to get location, check GPS connection";
             }
         }
     }

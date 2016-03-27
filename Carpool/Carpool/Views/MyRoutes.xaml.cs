@@ -17,7 +17,7 @@ namespace Carpool
 
         async void RouteDetails(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Route());
+            await Navigation.PushAsync(new Routes());
         }
 
         async void AddRoute(object sender, EventArgs e)
