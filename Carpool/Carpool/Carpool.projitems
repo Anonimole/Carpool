@@ -17,6 +17,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\EmailValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\LengthValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapEndingPoint.xaml.cs">
+      <DependentUpon>MapEndingPoint.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MapStartingPoint.xaml.cs">
       <DependentUpon>MapStartingPoint.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -99,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MapStartingPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MapEndingPoint.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
