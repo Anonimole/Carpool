@@ -25,25 +25,38 @@ namespace Carpool
             string password = this.passwordEntry.Text;
             var user = new Users { Email = email, Password = password };
 
-            activityIndicator.IsRunning = true;
-            Users userResponse = await manager.SearchUserAsync(user);
-            activityIndicator.IsRunning = false;
-
-            if (userResponse != null)
+            if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
-                if (userResponse.Password.Equals(password))
+                activityIndicator.IsRunning = true;
+                Users userResponse = await manager.SearchUserAsync(user);
+                activityIndicator.IsRunning = false;
+
+                if (userResponse != null)
                 {
-                    Application.Current.Properties["user"] = userResponse;
-                    Application.Current.MainPage = new NavigationPage(new Dashboard());
+                    if (userResponse.Password.Equals(password))
+                    {
+                        Application.Current.Properties["user"] = userResponse;
+                        Application.Current.MainPage = new NavigationPage(new Dashboard());
+                    }
+                    else
+                    {
+                        await
+                            DisplayAlert("Incorrect", "Your password is incorrect, please try again.", "Close");
+                            this.passwordEntry.Text = "";
+                    }
                 }
                 else
                 {
-                    await DisplayAlert("Incorrect", "Incorrect Username or Password", "Close");
+                    await DisplayAlert("Incorrect", "Your email is incorrect, please try again.", "Close");
+                    this.emailEntry.Text = "";
+                    this.passwordEntry.Text = "";
                 }
             }
             else
             {
-                await DisplayAlert("Incorrect", "Incorrect Username or Password", "Close");
+                await DisplayAlert("Incorrect", "The fields Email or Password can't be empty, please insert valid values.", "Close");
+                this.emailEntry.Text = "";
+                this.passwordEntry.Text = "";
             }
         }
 
@@ -52,13 +65,6 @@ namespace Carpool
             var signUpPage = new SignUp();
             await Navigation.PushAsync(signUpPage);
         }
-
-        async void Test(object sender, EventArgs e)
-        {
-            var signUpPage = new MapStartingPoint();
-            await Navigation.PushAsync(signUpPage);
-        }
-
 
     }
 }

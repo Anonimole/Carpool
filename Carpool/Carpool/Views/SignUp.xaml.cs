@@ -59,6 +59,9 @@ namespace Carpool
             {
                 this.emailEntry.PlaceholderColor = this.emailEntry.TextColor = Color.FromHex("#f44336");
                 this.passwordEntry.PlaceholderColor = this.passwordEntry.TextColor = Color.FromHex("#f44336");
+                await DisplayAlert("Incorrect", "The fields Email or Password can't be empty, please insert valid values.", "Close");
+                this.emailEntry.Text = "";
+                this.passwordEntry.Text = "";
             }
 
         }
