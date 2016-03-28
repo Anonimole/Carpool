@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Carpool
 {
-    class Routes
+     public class Routes
     {
         [JsonProperty(PropertyName = "id")]
         public string ID { get; set; }
@@ -42,6 +42,21 @@ namespace Carpool
         [JsonProperty(PropertyName = "depart_time")]
         public string Depart_Time { get; set; }
 
-
+        public override string ToString()
+        {
+            return string.Format("[Routes: ID={0}, " +
+                                 "ID_User={1}, " +
+                                 "ID_Car={2}, " +
+                                 "From={3}, " +
+                                 "From_Longitude={4}," +
+                                 "From_Latitude={5}, " +
+                                 "To={6}," +
+                                 "To_Latitude={7}," +
+                                 "To_Longitude={8}," +
+                                 "Capacity={9}," +
+                                 "Comments={10}," +
+                                 "depart_time={11}]", 
+                                 ID,ID_User,ID_Car,From,From_Longitude,From_Latitude,To,To_Latitude,To_Longitude,Capacity,Comments,Depart_Time);
+        }
     }
 }

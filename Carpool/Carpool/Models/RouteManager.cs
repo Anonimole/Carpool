@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System;
 
@@ -27,6 +27,26 @@ namespace Carpool
             {
                 await routesTable.UpdateAsync(route);
             }
+        }
+
+        public async Task<ObservableCollection<Routes>> GetRoutesAsync()
+        {
+            try
+            {
+                return new ObservableCollection<Routes>
+                (
+                    await routesTable.Where(route=>route.ID!=null).ToListAsync()
+                );
+            }
+            catch (MobileServiceInvalidOperationException msioe)
+            {
+                Debug.WriteLine(@"INVALID {0}", msioe.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(@"ERROR {0}", e.Message);
+            }
+            return null;
         }
 
     }
