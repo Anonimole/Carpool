@@ -14,7 +14,7 @@ namespace Carpool
         private Routes newRoute;
         private bool carSelected;
         private IDictionary<string, object> properties;
-        private List<Cars> carsList; 
+        private List<Cars> carsList;
 
         public AddRoute()
         {
@@ -85,24 +85,24 @@ namespace Carpool
         public async void OnSaveRoute(object sender, EventArgs e)
         {
 
-            newRoute = (Routes) properties["route"];
+            newRoute = (Routes)properties["route"];
             newRoute.From = startingNameEntry.Text;
             newRoute.To = endingNameEntry.Text;
-            newRoute.Capacity = Int32.Parse(""+seatsEntry.Text);
+            newRoute.Capacity = Int32.Parse("" + seatsEntry.Text);
             newRoute.Comments = commentsEditor.Text;
-            newRoute.Depart_Time=departurePicker.Time.ToString();
+            newRoute.Depart_Time = departurePicker.Time.ToString();
             newRoute.ID_User = currentUser.ID;
-            
-            string carSelected=carPicker.Items.ElementAt(carPicker.SelectedIndex);
+
+            string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
 
 
-            Cars car =carsList.Where(cars => cars.Model==carSelected).First();
+            Cars car = carsList.Where(cars => cars.Model == carSelected).First();
 
             newRoute.ID_Car = car.ID;
 
             activityIndicator.IsRunning = true;
             await routeManager.SaveRouteAsync(newRoute);
-            
+
         }
 
     }
