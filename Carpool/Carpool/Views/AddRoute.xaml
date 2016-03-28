@@ -7,26 +7,27 @@
     <StackLayout Style="{StaticResource contentPageStyle}">
       <StackLayout Style="{StaticResource stackContent}">
 
-        <Entry Placeholder="Starting point name"></Entry>
+        <Entry x:Name="startingNameEntry" Placeholder="Starting point name"></Entry>
         <Button x:Name="startingPointButton" Text="Select starting point" Style="{StaticResource buttonActionStyle}" Clicked="OnStartingPoint"></Button>
-        <Entry Placeholder="Destination point name"></Entry>
-        <Button Text="Select destination" Style="{StaticResource buttonActionStyle}" Clicked="OnEndingPoint"></Button>
+        <Entry x:Name="endingNameEntry" Placeholder="Destination point name"></Entry>
+        <Button x:Name="endingPointButton" Text="Select destination" Style="{StaticResource buttonActionStyle}" Clicked="OnEndingPoint"></Button>
 
         <StackLayout Orientation="Horizontal">
           <Label Text="Departure time " Style="{StaticResource labelBoldStyle}"></Label>
-          <TimePicker HorizontalOptions="FillAndExpand"  InputTransparent="False" ></TimePicker>
+          <TimePicker x:Name="departurePicker" HorizontalOptions="FillAndExpand"  InputTransparent="False" ></TimePicker>
         </StackLayout>
-        <Entry Placeholder="Available Seats" Keyboard="Numeric"></Entry>
+        <Entry x:Name="seatsEntry" Placeholder="Available Seats" Keyboard="Numeric"></Entry>
         <StackLayout Orientation="Vertical" Spacing="0">
           <Label Style="{StaticResource labelBoldStyle}" Text="Comments"></Label>
-          <Editor ></Editor>
+          <Editor x:Name="commentsEditor" ></Editor>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
           <Picker x:Name="carPicker" Title="Car" HorizontalOptions="FillAndExpand" IsEnabled="False" SelectedIndexChanged="OnCarPicker">
           </Picker>
           <Button Style="{StaticResource buttonSuccessStyle}" Text="+" Clicked="OnAdd"></Button>
         </StackLayout>
-        <Button Style="{StaticResource buttonSuccessStyle}" Text="Add"></Button>
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False"></ActivityIndicator>
+        <Button Style="{StaticResource buttonSuccessStyle}" Text="Save Route" Clicked="OnSaveRoute"></Button>
       </StackLayout>
     </StackLayout>
   </ScrollView>
