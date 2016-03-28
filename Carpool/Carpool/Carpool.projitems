@@ -17,6 +17,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\EmailValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\LengthValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapEndingPoint.xaml.cs">
+      <DependentUpon>MapEndingPoint.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MapStartingPoint.xaml.cs">
       <DependentUpon>MapStartingPoint.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -25,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\CarsManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Users.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UsersManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Route.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\AddCar.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>AddCar.xaml</DependentUpon>
@@ -49,9 +54,9 @@
       <SubType>Code</SubType>
       <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\Route.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Routes.xaml.cs">
       <SubType>Code</SubType>
-      <DependentUpon>Route.xaml</DependentUpon>
+      <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\SignUp.xaml.cs">
       <SubType>Code</SubType>
@@ -87,7 +92,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Route.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Routes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -98,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MapStartingPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MapEndingPoint.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

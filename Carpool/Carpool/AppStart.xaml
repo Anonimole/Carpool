@@ -23,6 +23,12 @@
         <Setter Property="PlaceholderColor" Value="#004D40"/>
         <Setter Property="HeightRequest" Value="42"/>
       </Style>
+      
+      <Style TargetType="Editor">
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="TextColor" Value="#00695C" />
+        <Setter Property="HeightRequest" Value="50"/>
+      </Style>
 
       <Style TargetType="Picker">
         <Setter Property="BackgroundColor" Value="White"/>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using Xamarin.Forms;
 
@@ -8,19 +9,24 @@ namespace Carpool
     {
         private CarsManager carsManager;
         private Users currentUser;
+        private Route newRoute;
         private bool carSelected;
+        private IDictionary<string,object> properties;
 
         public AddRoute()
         {
             carSelected = false;
             carsManager = new CarsManager();
+            properties = Application.Current.Properties;
             currentUser = (Users)Application.Current.Properties["user"];
             this.IsBusy = true;
             InitializeComponent();
+            
         }
 
         async void OnAdd(object sender, EventArgs e)
         {
+            carSelected = false;
             await Navigation.PushAsync(new AddCar());
         }
 
@@ -44,6 +50,13 @@ namespace Carpool
                 this.IsBusy = false;
             }
 
+            if (properties.ContainsKey("route"))
+            {
+                newRoute = (Route)Application.Current.Properties["route"];
+
+                if(!string.IsNullOrEmpty(newRoute.From_Latitude))
+                startingPointButton.Text = "Change Starting point";
+            }
         }
 
 
@@ -52,7 +65,12 @@ namespace Carpool
             await Navigation.PushAsync(new MapStartingPoint());
         }
 
-        public async void OnCarPicker(object sender, EventArgs e)
+        public async void OnEndingPoint(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MapEndingPoint());
+        }
+
+        public void OnCarPicker(object sender, EventArgs e)
         {
             carSelected = true;
         }
