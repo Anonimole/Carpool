@@ -38,12 +38,12 @@ namespace Carpool
                 }
                 else
                 {
-                    await DisplayAlert("Incorrect", "Incorrect Password", "Close");
+                    await DisplayAlert("Incorrect", "Incorrect Username or Password", "Close");
                 }
             }
             else
             {
-                await DisplayAlert("Incorrect", "Incorrect Username", "Close");
+                await DisplayAlert("Incorrect", "Incorrect Username or Password", "Close");
             }
         }
 
