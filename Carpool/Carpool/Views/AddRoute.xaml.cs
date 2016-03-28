@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace Carpool
@@ -8,20 +9,24 @@ namespace Carpool
     public partial class AddRoute : ContentPage
     {
         private CarsManager carsManager;
+        private RouteManager routeManager;
         private Users currentUser;
-        private Route newRoute;
+        private Routes newRoute;
         private bool carSelected;
-        private IDictionary<string,object> properties;
+        private IDictionary<string, object> properties;
+        private List<Cars> carsList;
 
         public AddRoute()
         {
             carSelected = false;
             carsManager = new CarsManager();
+            routeManager = new RouteManager();
+
             properties = Application.Current.Properties;
             currentUser = (Users)Application.Current.Properties["user"];
             this.IsBusy = true;
             InitializeComponent();
-            
+
         }
 
         async void OnAdd(object sender, EventArgs e)
@@ -36,7 +41,7 @@ namespace Carpool
 
             if (carSelected == false)
             {
-                var carsList = await carsManager.GetMyCarsAsync(currentUser);
+                carsList = await carsManager.GetMyCarsAsync(currentUser);
 
                 carPicker.Items.Clear();
 
@@ -52,10 +57,12 @@ namespace Carpool
 
             if (properties.ContainsKey("route"))
             {
-                newRoute = (Route)Application.Current.Properties["route"];
+                newRoute = (Routes)Application.Current.Properties["route"];
 
-                if(!string.IsNullOrEmpty(newRoute.From_Latitude))
-                startingPointButton.Text = "Change Starting point";
+                if (!string.IsNullOrEmpty(newRoute.From_Latitude))
+                    startingPointButton.Text = "Change Starting point";
+                if (!string.IsNullOrEmpty(newRoute.To_Latitude))
+                    endingPointButton.Text = "Change Ending point";
             }
         }
 
@@ -73,6 +80,29 @@ namespace Carpool
         public void OnCarPicker(object sender, EventArgs e)
         {
             carSelected = true;
+        }
+
+        public async void OnSaveRoute(object sender, EventArgs e)
+        {
+
+            newRoute = (Routes)properties["route"];
+            newRoute.From = startingNameEntry.Text;
+            newRoute.To = endingNameEntry.Text;
+            newRoute.Capacity = Int32.Parse("" + seatsEntry.Text);
+            newRoute.Comments = commentsEditor.Text;
+            newRoute.Depart_Time = departurePicker.Time.ToString();
+            newRoute.ID_User = currentUser.ID;
+
+            string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
+
+
+            Cars car = carsList.Where(cars => cars.Model == carSelected).First();
+
+            newRoute.ID_Car = car.ID;
+
+            activityIndicator.IsRunning = true;
+            await routeManager.SaveRouteAsync(newRoute);
+
         }
 
     }

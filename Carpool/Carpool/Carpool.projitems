@@ -30,6 +30,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Users.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UsersManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Route.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RouteManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\AddCar.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>AddCar.xaml</DependentUpon>

@@ -12,7 +12,7 @@ namespace Carpool
 	{
         private ExtMap myMap;
         private bool pinFlag;
-        private Route newRoute;
+        private Routes newRoute;
         private IDictionary<string, object> properties;
 
         public MapEndingPoint ()
@@ -30,6 +30,15 @@ namespace Carpool
 
             this.IsBusy = true;
             this.Locator();
+
+            if (properties.ContainsKey("route"))
+            {
+                newRoute = (Routes) properties["route"];
+            }
+            else
+            {
+                newRoute=new Routes();
+            }
         }
 
         private async void MyMap_Tapped(object sender, MapTapEventArgs e)
@@ -98,8 +107,8 @@ namespace Carpool
             string latitude = "" + myMap.Pins.First().Position.Latitude;
             string longitude = "" + myMap.Pins.First().Position.Longitude;
 
-            newRoute.From_Latitude = latitude;
-            newRoute.From_Longitude = longitude;
+            newRoute.To_Latitude = latitude;
+            newRoute.To_Longitude = longitude;
 
             Application.Current.Properties["route"] = newRoute;
 

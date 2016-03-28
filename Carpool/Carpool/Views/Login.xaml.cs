@@ -41,13 +41,13 @@ namespace Carpool
                     else
                     {
                         await
-                            DisplayAlert("Incorrect", "Your password is incorrect, please try again.", "Close");
+                            DisplayAlert("Incorrect", "Your email or password is incorrect, please try again.", "Close");
                             this.passwordEntry.Text = "";
                     }
                 }
                 else
                 {
-                    await DisplayAlert("Incorrect", "Your email is incorrect, please try again.", "Close");
+                    await DisplayAlert("Incorrect", "Your email or password is incorrect, please try again.", "Close");
                     this.emailEntry.Text = "";
                     this.passwordEntry.Text = "";
                 }
