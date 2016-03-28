@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace Carpool
 {
-	public partial class Routes : ContentPage
+	public partial class RoutesView : ContentPage
 	{
-		public Routes ()
+		public RoutesView ()
 		{
 			InitializeComponent ();
 		}
