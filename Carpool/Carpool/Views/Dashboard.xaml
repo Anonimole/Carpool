@@ -4,15 +4,6 @@
              x:Class="Carpool.Dashboard"
              Title=" Dashboard"
              >
-  <!--<ContentPage.Padding>
-    <OnPlatform x:TypeArguments="Thickness">
-      <OnPlatform.iOS>
-        0,20,0,0
-      </OnPlatform.iOS>
-    </OnPlatform>
-  </ContentPage.Padding>-->
-
-
   <ContentPage.ToolbarItems >
     <ToolbarItem Name="Profile" Order="Secondary" Priority="0" Clicked="ProfileDetails"/>
     <ToolbarItem Name="My Routes"   Order="Secondary" Priority="1" Clicked="MyRoutes" />
@@ -21,8 +12,8 @@
 
   <StackLayout Style="{StaticResource contentPageStyle}">
     <SearchBar Placeholder="Search" ></SearchBar>
-    
-    
+
+
     <ScrollView>
 
       <StackLayout>
@@ -31,7 +22,7 @@
           <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
           <Button Text=">" Style="{StaticResource linkStyle}" FontAttributes="Bold" FontSize="25" Clicked="RouteDetails"></Button>
         </StackLayout>
-        
+
         <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
           <Image Source="profile.jpg" WidthRequest="70"></Image>
           <Label Text="Cluster - Catedral" FontSize="Medium" FontAttributes="Bold" TextColor="#26A69A" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
@@ -79,6 +70,6 @@
     </ScrollView>
 
   </StackLayout>
-  
+
 
 </ContentPage>

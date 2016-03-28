@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
 
 namespace Carpool.iOS
@@ -24,6 +20,7 @@ namespace Carpool.iOS
 		{
             SetStyles();
 			global::Xamarin.Forms.Forms.Init ();
+            Xamarin.FormsMaps.Init();
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             LoadApplication (new Carpool.AppStart ());
 

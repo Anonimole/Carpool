@@ -2,23 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.AddRoute"
-             Title="New Route">
+             Title=" Add New Route">
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
       <StackLayout Style="{StaticResource stackContent}">
-        <StackLayout Orientation="Horizontal">
-          <Picker x:Name="carPicker" Title="Car" HorizontalOptions="FillAndExpand" IsEnabled="False">
-          </Picker>
-          <Button Style="{StaticResource buttonSuccessStyle}" Text="+" Clicked="OnAdd"></Button>
-        </StackLayout>
-        <Button Text="Choose starting point" Style="{StaticResource buttonActionStyle}"></Button>
-        <Button Text="Choose Destination" Style="{StaticResource buttonActionStyle}"></Button>
+
+        <Entry Placeholder="Starting point name"></Entry>
+        <Button x:Name="startingPointButton" Text="Select starting point" Style="{StaticResource buttonActionStyle}" Clicked="OnStartingPoint"></Button>
+        <Entry Placeholder="Destination point name"></Entry>
+        <Button Text="Select destination" Style="{StaticResource buttonActionStyle}" Clicked="OnEndingPoint"></Button>
 
         <StackLayout Orientation="Horizontal">
           <Label Text="Departure time " Style="{StaticResource labelBoldStyle}"></Label>
-          <TimePicker HorizontalOptions="FillAndExpand"></TimePicker>
+          <TimePicker HorizontalOptions="FillAndExpand"  InputTransparent="False" ></TimePicker>
         </StackLayout>
-
+        <Entry Placeholder="Available Seats" Keyboard="Numeric"></Entry>
+        <StackLayout Orientation="Vertical" Spacing="0">
+          <Label Style="{StaticResource labelBoldStyle}" Text="Comments"></Label>
+          <Editor ></Editor>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+          <Picker x:Name="carPicker" Title="Car" HorizontalOptions="FillAndExpand" IsEnabled="False" SelectedIndexChanged="OnCarPicker">
+          </Picker>
+          <Button Style="{StaticResource buttonSuccessStyle}" Text="+" Clicked="OnAdd"></Button>
+        </StackLayout>
         <Button Style="{StaticResource buttonSuccessStyle}" Text="Add"></Button>
       </StackLayout>
     </StackLayout>
