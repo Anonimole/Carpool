@@ -37,8 +37,23 @@ namespace Carpool
 
         private async void LoadRoutes()
         {
-            ObservableCollection<Routes> routesCollection= await routeManager.GetRoutesAsync();
-            routesListView.ItemsSource = routesCollection;
+            ObservableCollection<Routes> routesCollection= await routeManager.GetRoutesAsync(currentUser);
+            if (routesCollection.Count==0)
+            {
+                errorLayout.Children.Add(new Label
+                {
+                    Text = "No routes available",
+                    TextColor = Color.White,
+                    FontSize = 25,
+                    HorizontalTextAlignment = TextAlignment.Center
+                });
+            }
+            else
+            {
+                errorLayout.Children.Clear();
+                routesListView.ItemsSource = routesCollection;
+            }
+            
         }
 
         async void RouteDetails(object sender, EventArgs e)
