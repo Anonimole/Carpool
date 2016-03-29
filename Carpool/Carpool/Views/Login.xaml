@@ -4,7 +4,7 @@
              x:Class="Carpool.Login"
              xmlns:local="clr-namespace:Carpool;assembly=Carpool2"
              >
-  
+
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
 
@@ -12,14 +12,14 @@
         <Image Source="logo2.png"></Image>
       </StackLayout>
       <StackLayout Style="{StaticResource stackContent}">
-        <Entry x:Name="emailEntry" Placeholder="Email" >
+        <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email">
           <!--<Entry.Behaviors>
             <local:EmailValidatorBehavior x:Name="EmailValidatorBehavior"/>
           </Entry.Behaviors>-->
         </Entry>
-        
+
         <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True" />
-        
+
         <ActivityIndicator x:Name="activityIndicator" IsRunning="False"></ActivityIndicator>
         <Button x:Name="signInButton" Text="Sign In" Style="{StaticResource buttonSuccessStyle}" Clicked="SignIn" />
         <!--IsEnabled="{Binding Source={x:Reference EmailValidatorBehavior}, Path=IsValid}"-->

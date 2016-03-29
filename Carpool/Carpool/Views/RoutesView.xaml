@@ -18,14 +18,12 @@
 
         </StackLayout>
         <Label Text="Route Information" FontAttributes="Bold" FontSize="Large"></Label>
-        
         <Label x:Name="descriptionLabel"  FontSize="Medium"></Label>
         <Label x:Name="departureLabel" FontSize="Large"></Label>
         <Label x:Name="seatsLabel" FontSize="Large"></Label>
-      
-        <Image Source="map.jpg"></Image>
-
-
+        
+        <Button Style="{StaticResource buttonActionStyle}" Text="Show Starting point" Clicked="OnStartingPoint"></Button>
+        <Button Style="{StaticResource buttonActionStyle}" Text="Show Ending point" Clicked="OnEndingPoint"></Button>
       </StackLayout>
     </StackLayout>
 

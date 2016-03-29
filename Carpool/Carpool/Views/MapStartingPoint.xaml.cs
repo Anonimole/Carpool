@@ -46,6 +46,33 @@ namespace Carpool
 
         }
 
+        public MapStartingPoint(Position pos)
+        {
+            InitializeComponent();
+            this.Title = "Starting Point";
+            infoLabel.Text = "";
+
+            pinFlag = true;
+            myMap = new ExtMap
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                IsShowingUser = true
+            };
+            this.IsBusy = true;
+
+            myMap.MoveToRegion(new MapSpan(pos, 0.01, 0.01));
+            var pin = new Pin
+            {
+                Type = PinType.Place,
+                Position = pos,
+                Label = "Start",
+                Address = "",
+            };
+
+            myMap.Pins.Add(pin);
+            stackMap.Children.Add(myMap);
+        }
+
         private async void Save()
         {
             string latitude = "" + myMap.Pins.First().Position.Latitude;

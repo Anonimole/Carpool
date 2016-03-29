@@ -8,18 +8,18 @@ using Xamarin.Forms.Maps;
 namespace Carpool
 {
 
-	public partial class MapEndingPoint : ContentPage
-	{
+    public partial class MapEndingPoint : ContentPage
+    {
         private ExtMap myMap;
         private bool pinFlag;
         private Routes newRoute;
         private IDictionary<string, object> properties;
 
-        public MapEndingPoint ()
-		{
+        public MapEndingPoint()
+        {
             properties = Application.Current.Properties;
             pinFlag = false;
-            InitializeComponent ();
+            InitializeComponent();
 
             myMap = new ExtMap
             {
@@ -33,12 +33,39 @@ namespace Carpool
 
             if (properties.ContainsKey("route"))
             {
-                newRoute = (Routes) properties["route"];
+                newRoute = (Routes)properties["route"];
             }
             else
             {
-                newRoute=new Routes();
+                newRoute = new Routes();
             }
+        }
+
+        public MapEndingPoint(Position pos)
+        {
+            InitializeComponent();
+            this.Title = "Ending Point";
+            infoLabel.Text = "";
+
+            pinFlag = true;
+            myMap = new ExtMap
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                IsShowingUser = true
+            };
+            this.IsBusy = true;
+
+            myMap.MoveToRegion(new MapSpan(pos, 0.01, 0.01));
+            var pin = new Pin
+            {
+                Type = PinType.Place,
+                Position = pos,
+                Label = "Ending",
+                Address = "",
+            };
+
+            myMap.Pins.Add(pin);
+            stackMap.Children.Add(myMap);
         }
 
         private async void MyMap_Tapped(object sender, MapTapEventArgs e)
@@ -57,7 +84,7 @@ namespace Carpool
                 {
                     Type = PinType.Place,
                     Position = position,
-                    Label = "Start",
+                    Label = "Ending",
                     Address = "",
                 };
 
