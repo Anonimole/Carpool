@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
@@ -19,14 +16,22 @@ namespace Carpool
         {
             InitializeComponent();
 
+            
+
             routesList=new List<Routes>();
             routeManager=new RouteManager();
 
             currentUser =(Users) Application.Current.Properties["user"];
             routesListView.ItemTemplate=new DataTemplate(typeof(RoutesCell));
-            this.LoadRoutes();
 
-            routesListView.ItemTapped += RoutesListView_ItemTapped; ;
+            routesListView.ItemTapped += RoutesListView_ItemTapped;
+            
+            routesListView.Refreshing += RoutesListView_Refreshing;
+        }
+
+        private async void RoutesListView_Refreshing(object sender, EventArgs e)
+        {
+            LoadRoutes();
         }
 
         private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -37,9 +42,13 @@ namespace Carpool
 
         private async void LoadRoutes()
         {
+
+            routesListView.IsRefreshing = true;
             ObservableCollection<Routes> routesCollection= await routeManager.GetRoutesAsync(currentUser);
+            errorLayout.Children.Clear();
             if (routesCollection.Count==0)
             {
+
                 errorLayout.Children.Add(new Label
                 {
                     Text = "No routes available",
@@ -50,10 +59,10 @@ namespace Carpool
             }
             else
             {
-                errorLayout.Children.Clear();
                 routesListView.ItemsSource = routesCollection;
             }
             
+            routesListView.IsRefreshing = false;
         }
 
         async void RouteDetails(object sender, EventArgs e)
@@ -74,6 +83,13 @@ namespace Carpool
         void LogOut(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new Login());
+        }
+
+        protected override void OnAppearing()
+        {
+            routesListView.IsRefreshing = true;
+            base.OnAppearing();
+            this.LoadRoutes();
         }
 
     }
