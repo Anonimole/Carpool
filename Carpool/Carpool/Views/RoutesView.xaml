@@ -11,16 +11,17 @@
           
           <Image Source="profile.jpg" WidthRequest="100"></Image>
           <StackLayout Orientation="Vertical" Padding="15,0,0,0">
-            <Label Text="Luis Manuel Rodriguez" FontSize="Large" ></Label>
-            <Label Text="Age: 22"></Label>
-            <Label Text="Phone: 4433623685"></Label>
+            <Label x:Name="nameLabel" FontSize="Large" ></Label>
+            <Label x:Name="ageLabel" ></Label>
+            <Label x:Name="phoneLabel" ></Label>
           </StackLayout>
 
         </StackLayout>
         <Label Text="Route Information" FontAttributes="Bold" FontSize="Large"></Label>
         
-        <Label Text="This is the route information only for debug purposes, i dont know what to put here so i invented something" FontSize="Medium"></Label>
-        <Label Text="Depart 14:00" FontSize="Large"></Label>
+        <Label x:Name="descriptionLabel"  FontSize="Medium"></Label>
+        <Label x:Name="departureLabel" FontSize="Large"></Label>
+        <Label x:Name="seatsLabel" FontSize="Large"></Label>
       
         <Image Source="map.jpg"></Image>
 
