@@ -12,9 +12,9 @@
 
   <StackLayout Style="{StaticResource contentPageStyle}">
     <SearchBar Placeholder="Search" ></SearchBar>
+    <ListView x:Name="routesListView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowHeight="100" BackgroundColor="White" SeparatorColor="#009688"></ListView>
 
-
-    <ScrollView>
+    <!--<ScrollView>
 
       <StackLayout>
         <StackLayout Orientation="Horizontal" Style="{StaticResource listCustomized}" Padding="15" Spacing="10" >
@@ -67,7 +67,7 @@
       </StackLayout>
 
 
-    </ScrollView>
+    </ScrollView>-->
 
   </StackLayout>
 

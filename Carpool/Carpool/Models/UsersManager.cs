@@ -80,6 +80,25 @@ namespace Carpool
             return null;
         }
 
+        public async Task<Users> SearchIDUserAsync(Users user)
+        {
+            try
+            {
+                List<Users> newUser = await usersTable.Where(userSelect => userSelect.ID == user.ID).Take(1).ToListAsync();
+                return newUser.First();
+            }
+            catch (MobileServiceInvalidOperationException msioe)
+            {
+                Debug.WriteLine(@"INVALID {0}", msioe.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(@"ERROR {0}", e.Message);
+            }
+
+            return null;
+        }
+
 
         //public async Task SaveUserAsync(Users user)
         //{

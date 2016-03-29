@@ -31,9 +31,9 @@ namespace Carpool
                 Users userResponse = await manager.SearchUserAsync(user);
                 activityIndicator.IsRunning = false;
 
-                if (userResponse != null)
+                if (userResponse != null&&userResponse.Email.Equals(email,StringComparison.Ordinal))
                 {
-                    if (userResponse.Password.Equals(password))
+                    if (userResponse.Password.Equals(password,StringComparison.Ordinal))
                     {
                         Application.Current.Properties["user"] = userResponse;
                         Application.Current.MainPage = new NavigationPage(new Dashboard());
