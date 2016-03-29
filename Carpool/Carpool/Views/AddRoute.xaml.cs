@@ -96,7 +96,6 @@ namespace Carpool
 
             string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
 
-
             Cars car = carsList.Where(cars => cars.Model == carSelected).First();
 
             newRoute.ID_Car = car.ID;
@@ -105,7 +104,7 @@ namespace Carpool
             await routeManager.SaveRouteAsync(newRoute);
             activityIndicator.IsRunning = false;
 
-            await DisplayAlert("Success", "Route added succesful","Accept");
+            await DisplayAlert("Success", "Route added successfully", "Accept");
             properties.Remove("route");
             await Navigation.PopAsync(true);
 
