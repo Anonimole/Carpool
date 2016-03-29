@@ -42,6 +42,7 @@ namespace Carpool
                 await AddNewCar(car);
                 activityIndicator.IsRunning = false;
 
+                await DisplayAlert("Success", "Car added successfully", "Accept");
                 await Navigation.PopAsync(true);
             }
             else
