@@ -80,6 +80,7 @@ namespace Carpool
         public void OnCarPicker(object sender, EventArgs e)
         {
             carSelected = true;
+            carPicker.BackgroundColor = Color.FromHex("#004D40");
         }
 
         public async void OnSaveRoute(object sender, EventArgs e)
@@ -102,6 +103,11 @@ namespace Carpool
 
             activityIndicator.IsRunning = true;
             await routeManager.SaveRouteAsync(newRoute);
+            activityIndicator.IsRunning = false;
+
+            await DisplayAlert("Success", "Route added succesful","Accept");
+            properties.Remove("route");
+            await Navigation.PopAsync(true);
 
         }
 

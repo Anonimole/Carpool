@@ -12,6 +12,7 @@
 
   <StackLayout Style="{StaticResource contentPageStyle}">
     <SearchBar Placeholder="Search" ></SearchBar>
+    <StackLayout x:Name="errorLayout" HorizontalOptions="FillAndExpand"></StackLayout>
     <ListView x:Name="routesListView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowHeight="100" BackgroundColor="White" SeparatorColor="#009688"></ListView>
 
     <!--<ScrollView>

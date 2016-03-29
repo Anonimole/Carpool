@@ -29,13 +29,33 @@ namespace Carpool
             }
         }
 
-        public async Task<ObservableCollection<Routes>> GetRoutesAsync()
+        public async Task<ObservableCollection<Routes>> GetRoutesAsync(Users user)
         {
             try
             {
                 return new ObservableCollection<Routes>
                 (
-                    await routesTable.Where(route=>route.ID!=null).ToListAsync()
+                    await routesTable.Where(route=>route.ID_User!=user.ID).ToListAsync()
+                );
+            }
+            catch (MobileServiceInvalidOperationException msioe)
+            {
+                Debug.WriteLine(@"INVALID {0}", msioe.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(@"ERROR {0}", e.Message);
+            }
+            return null;
+        }
+
+        public async Task<ObservableCollection<Routes>> GetMyRoutesAsync(Users user)
+        {
+            try
+            {
+                return new ObservableCollection<Routes>
+                (
+                    await routesTable.Where(route => route.ID_User == user.ID).ToListAsync()
                 );
             }
             catch (MobileServiceInvalidOperationException msioe)
