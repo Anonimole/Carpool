@@ -21,6 +21,13 @@ namespace Carpool
             currentUser = (Users)Application.Current.Properties["user"];
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
             routesListView.Refreshing += RoutesListView_Refreshing;
+            routesListView.ItemTapped += RoutesListView_ItemTapped;
+        }
+
+        private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var route = e.Item as Routes;
+            await Navigation.PushAsync(new MyRoutesDetail(route));
         }
 
         private void RoutesListView_Refreshing(object sender, EventArgs e)

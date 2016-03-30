@@ -16,7 +16,7 @@
           <Label Text="Departure time " Style="{StaticResource labelBoldStyle}"></Label>
           <TimePicker x:Name="departurePicker" HorizontalOptions="FillAndExpand"  InputTransparent="False" ></TimePicker>
         </StackLayout>
-        <Entry x:Name="seatsEntry" Placeholder="Available Seats" Keyboard="Numeric"></Entry>
+        <Entry x:Name="seatsEntry" Placeholder="Available seats" Keyboard="Numeric"></Entry>
         <StackLayout Orientation="Vertical" Spacing="0">
           <Label Style="{StaticResource labelBoldStyle}" Text="Comments"></Label>
           <Editor x:Name="commentsEditor" ></Editor>
