@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
+using System.Linq;
 using Xamarin.Forms;
 
 namespace Carpool
@@ -11,26 +11,26 @@ namespace Carpool
         private Users currentUser;
         private List<Routes> routesList;
         private RouteManager routeManager;
+        private ObservableCollection<Routes> routesCollection;
 
         public Dashboard()
         {
             InitializeComponent();
-
             
+            routesList = new List<Routes>();
+            routeManager = new RouteManager();
 
-            routesList=new List<Routes>();
-            routeManager=new RouteManager();
-
-            currentUser =(Users) Application.Current.Properties["user"];
-            routesListView.ItemTemplate=new DataTemplate(typeof(RoutesCell));
+            currentUser = (Users)Application.Current.Properties["user"];
+            routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
 
             routesListView.ItemTapped += RoutesListView_ItemTapped;
-            
+
             routesListView.Refreshing += RoutesListView_Refreshing;
         }
 
-        private async void RoutesListView_Refreshing(object sender, EventArgs e)
+        private void RoutesListView_Refreshing(object sender, EventArgs e)
         {
+            searchBar.Text = "";
             LoadRoutes();
         }
 
@@ -42,13 +42,11 @@ namespace Carpool
 
         private async void LoadRoutes()
         {
-
             routesListView.IsRefreshing = true;
-            ObservableCollection<Routes> routesCollection= await routeManager.GetRoutesAsync(currentUser);
+            routesCollection = await routeManager.GetRoutesAsync(currentUser);
             errorLayout.Children.Clear();
-            if (routesCollection.Count==0)
+            if (routesCollection.Count == 0)
             {
-
                 errorLayout.Children.Add(new Label
                 {
                     Text = "No routes available",
@@ -61,13 +59,7 @@ namespace Carpool
             {
                 routesListView.ItemsSource = routesCollection;
             }
-            
             routesListView.IsRefreshing = false;
-        }
-
-        async void RouteDetails(object sender, EventArgs e)
-        {
-            //await Navigation.PushAsync(new RoutesView());
         }
 
         async void MyRoutes(object sende, EventArgs e)
@@ -90,6 +82,18 @@ namespace Carpool
             routesListView.IsRefreshing = true;
             base.OnAppearing();
             this.LoadRoutes();
+        }
+
+        private void OnSearch(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
+            {
+                routesListView.ItemsSource = routesCollection;
+            }
+            else
+            {
+                routesListView.ItemsSource = routesCollection.Where(route => route.From.Contains(e.NewTextValue) || route.To.Contains(e.NewTextValue));
+            }
         }
 
     }
