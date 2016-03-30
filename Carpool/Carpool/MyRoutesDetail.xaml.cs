@@ -1,40 +1,45 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
 namespace Carpool
 {
-    public partial class RoutesView : ContentPage
-    {
-        private UsersManager usersManager;
-        private Users userRoute;
-        private ExtMap myMap;
+	public partial class MyRoutesDetail : ContentPage
+	{
         private Routes routes;
+	    private Users userRoute;
+	    private UsersManager usersManager;
 
-        public RoutesView(Routes routes)
+
+        public MyRoutesDetail (Routes route)
         {
-            InitializeComponent();
-            this.routes = routes;
-            userRoute=new Users
+            this.routes = route;
+			InitializeComponent ();
+
+            userRoute = new Users
             {
                 ID = routes.ID_User
             };
-            
+
             usersManager = new UsersManager();
-            
+
             this.LoadData();
-            
         }
 
         private async void LoadData()
         {
             this.IsBusy = true;
             userRoute = await usersManager.SearchIDUserAsync(userRoute);
-            nameLabel.Text =userRoute.Name;
+            nameLabel.Text = userRoute.Name;
             ageLabel.Text = "Age: " + userRoute.Age;
             phoneLabel.Text = "Phone: " + userRoute.Phone;
             descriptionLabel.Text = routes.Comments;
-            departureLabel.Text ="Departure Hour:"+ routes.Depart_Time;
+            departureLabel.Text = "Departure Hour:" + routes.Depart_Time;
             seatsLabel.Text = "Seats Available: " + routes.Capacity;
             this.IsBusy = false;
         }
@@ -59,6 +64,7 @@ namespace Carpool
 
             await Navigation.PushAsync(new MapEndingPoint(position));
         }
+
 
     }
 }

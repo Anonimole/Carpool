@@ -37,7 +37,7 @@ namespace Carpool
         private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var route = e.Item as Routes;
-            await Navigation.PushAsync(new RoutesView(route));
+            await Navigation.PushAsync(new RoutesDetail(route));
         }
 
         private async void LoadRoutes()

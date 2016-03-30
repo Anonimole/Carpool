@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carpool.Dashboard"
-             Title=" Dashboard">
+             Title=" All Routes">
   <ContentPage.ToolbarItems >
     <ToolbarItem Name="Profile" Order="Secondary" Priority="0" Clicked="ProfileDetails"/>
     <ToolbarItem Name="My Routes"   Order="Secondary" Priority="1" Clicked="MyRoutes" />
