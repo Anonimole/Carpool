@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
 namespace Carpool
@@ -14,32 +11,31 @@ namespace Carpool
         private Users currentUser;
         private List<Routes> routesList;
         private RouteManager routeManager;
+        private ObservableCollection<Routes> routesCollection;
+
         public MyRoutes()
         {
             routesList = new List<Routes>();
             routeManager = new RouteManager();
             InitializeComponent();
-
             currentUser = (Users)Application.Current.Properties["user"];
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
-
             routesListView.Refreshing += RoutesListView_Refreshing;
-
         }
 
         private void RoutesListView_Refreshing(object sender, EventArgs e)
         {
+            searchBar.Text = "";
             LoadRoutes();
         }
 
         private async void LoadRoutes()
         {
             routesListView.IsRefreshing = true;
-            ObservableCollection<Routes> routesCollection = await routeManager.GetMyRoutesAsync(currentUser);
+            routesCollection = await routeManager.GetMyRoutesAsync(currentUser);
             errorLayout.Children.Clear();
             if (routesCollection.Count == 0)
             {
-
                 errorLayout.Children.Add(new Label
                 {
                     Text = "No routes available",
@@ -65,6 +61,18 @@ namespace Carpool
         {
             base.OnAppearing();
             this.LoadRoutes();
+        }
+
+        private void OnSearch(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(e.NewTextValue))
+            {
+                routesListView.ItemsSource = routesCollection;
+            }
+            else
+            {
+                routesListView.ItemsSource = routesCollection.Where(route => (route.From).ToLower().Contains(e.NewTextValue.ToLower()) || (route.To).ToLower().Contains(e.NewTextValue.ToLower()));
+            }
         }
     }
 }
