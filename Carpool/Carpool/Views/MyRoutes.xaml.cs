@@ -71,7 +71,7 @@ namespace Carpool
             }
             else
             {
-                routesListView.ItemsSource = routesCollection.Where(route => route.From.Contains(e.NewTextValue) || route.To.Contains(e.NewTextValue));
+                routesListView.ItemsSource = routesCollection.Where(route => (route.From).ToLower().Contains(e.NewTextValue.ToLower()) || (route.To).ToLower().Contains(e.NewTextValue.ToLower()));
             }
         }
     }
