@@ -9,6 +9,7 @@
     <ToolbarItem Name="Log Out"   Order="Secondary" Priority="2" Clicked="LogOut"/>
   </ContentPage.ToolbarItems>
 
+
   <StackLayout Style="{StaticResource contentPageStyle}">
     <SearchBar x:Name="searchBar" Placeholder="Search Route" TextChanged="OnSearch"></SearchBar>
     <StackLayout x:Name="errorLayout" HorizontalOptions="FillAndExpand"></StackLayout>

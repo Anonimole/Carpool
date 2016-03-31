@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using Xamarin.Forms;
 
@@ -13,19 +14,36 @@ namespace Carpool
         private RouteManager routeManager;
         private ObservableCollection<Routes> routesCollection;
 
+        private ReservationsManager reservationManager;
+
         public Dashboard()
         {
             InitializeComponent();
-            
+
             routesList = new List<Routes>();
             routeManager = new RouteManager();
+            reservationManager = new ReservationsManager();
+            
+            currentUser = (Users) Application.Current.Properties["user"];
 
-            currentUser = (Users)Application.Current.Properties["user"];
-            routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
+            this.LoadReservations();
+            routesListView.ItemTemplate = new DataTemplate(typeof (RoutesCell));
 
             routesListView.ItemTapped += RoutesListView_ItemTapped;
 
             routesListView.Refreshing += RoutesListView_Refreshing;
+        }
+
+        private async void LoadReservations()
+        {
+            var reservation= new Reservations
+            {
+                ID_User = currentUser.ID
+            };
+
+            List<Reservations> reservationsList = await reservationManager.GetReservationsWhere(reserv => reserv.ID_User == reservation.ID_User);
+
+            //Debug.WriteLine(reservationsList.First().ID_Route);
         }
 
         private void RoutesListView_Refreshing(object sender, EventArgs e)
@@ -43,7 +61,7 @@ namespace Carpool
         private async void LoadRoutes()
         {
             routesListView.IsRefreshing = true;
-            routesCollection = await routeManager.GetRoutesAsync(currentUser);
+            routesCollection = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID);
             errorLayout.Children.Clear();
             if (routesCollection.Count == 0)
             {
@@ -62,17 +80,17 @@ namespace Carpool
             routesListView.IsRefreshing = false;
         }
 
-        async void MyRoutes(object sende, EventArgs e)
+        private async void MyRoutes(object sende, EventArgs e)
         {
             await Navigation.PushAsync(new MyRoutes());
         }
 
-        async void ProfileDetails(object sender, EventArgs e)
+        private async void ProfileDetails(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Profile());
         }
 
-        void LogOut(object sender, EventArgs e)
+        private void LogOut(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new Login());
         }
@@ -92,9 +110,10 @@ namespace Carpool
             }
             else
             {
-                routesListView.ItemsSource = routesCollection.Where(route => route.From.Contains(e.NewTextValue) || route.To.Contains(e.NewTextValue));
+                routesListView.ItemsSource =
+                    routesCollection.Where(
+                        route => route.From.Contains(e.NewTextValue) || route.To.Contains(e.NewTextValue));
             }
         }
-
     }
 }

@@ -18,6 +18,7 @@ namespace Carpool
         {
             InitializeComponent();
             this.route = route;
+
             userRoute = new Users
             {
                 ID = route.ID_User
@@ -26,6 +27,7 @@ namespace Carpool
             usersManager = new UsersManager();
             reservationsManager = new ReservationsManager();
             currentUser = (Users)Application.Current.Properties["user"];
+
             this.LoadReservation();
             this.LoadData();
 
@@ -34,18 +36,22 @@ namespace Carpool
         private async void LoadData()
         {
             this.IsBusy = true;
-            userRoute = await usersManager.SearchIDUserAsync(userRoute);
+
+            userRoute = await usersManager.GetUserWhere(userSelect=>userSelect.ID== userRoute.ID);
+
             nameLabel.Text = userRoute.Name;
             ageLabel.Text = "Age: " + userRoute.Age;
             phoneLabel.Text = "Phone: " + userRoute.Phone;
             descriptionLabel.Text = route.Comments;
             departureLabel.Text = "Departure Hour:" + route.Depart_Time;
-
-            List<Reservations> reservations = await reservationsManager.GetRouteReservationsAsync(new Reservations
+            
+            Reservations reservation=new Reservations
             {
                 ID_Route = route.ID
-            });
+            };
 
+            List<Reservations> reservations = await reservationsManager.GetReservationsWhere(reserv => reserv.ID_Route == reservation.ID_Route);
+            
             seatsLabel.Text = "Seats Available: " + (route.Capacity-reservations.Count);
 
             this.IsBusy = false;
@@ -62,7 +68,8 @@ namespace Carpool
                 ID_Route = id_route
             };
 
-            List<Reservations> reservationResult = await reservationsManager.GetReservationsAsync(reservation);
+            List<Reservations> reservationResult = await reservationsManager.GetReservationsWhere(reserv => reserv.ID_Route == reservation.ID_Route && reserv.ID_User == reservation.ID_User);
+
             if (reservationResult.Count != 0)
             {
                 cancelButton.IsVisible = true;

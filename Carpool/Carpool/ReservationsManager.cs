@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,11 +34,11 @@ namespace Carpool
             }
         }
 
-        public async Task<List<Reservations>> GetReservationsAsync(Reservations reservations)
+        public async Task<List<Reservations>> GetReservationsWhere(Expression<Func<Reservations, bool>> linq)
         {
             try
             {
-                return await reservationsTable.Where(reserv => reserv.ID_Route == reservations.ID_Route&& reserv.ID_User==reservations.ID_User).ToListAsync();
+                return await reservationsTable.Where(linq).ToListAsync();
             }
             catch (MobileServiceInvalidOperationException msioe)
             {
@@ -50,21 +51,5 @@ namespace Carpool
             return null;
         }
 
-        public async Task<List<Reservations>> GetRouteReservationsAsync(Reservations reservations)
-        {
-            try
-            {
-                return await reservationsTable.Where(reserv => reserv.ID_Route == reservations.ID_Route).ToListAsync();
-            }
-            catch (MobileServiceInvalidOperationException msioe)
-            {
-                Debug.WriteLine(@"INVALID {0}", msioe.Message);
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(@"ERROR {0}", e.Message);
-            }
-            return null;
-        }
     }
 }

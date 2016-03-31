@@ -39,7 +39,9 @@ namespace Carpool
         private async void LoadRoutes()
         {
             routesListView.IsRefreshing = true;
-            routesCollection = await routeManager.GetMyRoutesAsync(currentUser);
+
+            routesCollection = await routeManager.ListRoutesWhere(route => route.ID_User == currentUser.ID);
+            
             errorLayout.Children.Clear();
             if (routesCollection.Count == 0)
             {

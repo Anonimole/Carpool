@@ -3,6 +3,9 @@ using Microsoft.WindowsAzure.MobileServices;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System;
+using System.Linq.Expressions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Carpool
 {
@@ -29,14 +32,12 @@ namespace Carpool
             }
         }
 
-        public async Task<ObservableCollection<Routes>> GetRoutesAsync(Users user)
+        public async Task<Routes> GetRouteWhere(Expression<Func<Routes,bool>> linq)
         {
             try
             {
-                return new ObservableCollection<Routes>
-                (
-                    await routesTable.Where(route=>route.ID_User!=user.ID).ToListAsync()
-                );
+                List<Routes> routesList = await routesTable.Where(linq).Take(1).ToListAsync();
+                return routesList.First();
             }
             catch (MobileServiceInvalidOperationException msioe)
             {
@@ -49,13 +50,13 @@ namespace Carpool
             return null;
         }
 
-        public async Task<ObservableCollection<Routes>> GetMyRoutesAsync(Users user)
+        public async Task<ObservableCollection<Routes>> ListRoutesWhere(Expression<Func<Routes, bool>> linq)
         {
             try
             {
                 return new ObservableCollection<Routes>
                 (
-                    await routesTable.Where(route => route.ID_User == user.ID).ToListAsync()
+                    await routesTable.Where(linq).ToListAsync()
                 );
             }
             catch (MobileServiceInvalidOperationException msioe)
@@ -68,6 +69,5 @@ namespace Carpool
             }
             return null;
         }
-
     }
 }
