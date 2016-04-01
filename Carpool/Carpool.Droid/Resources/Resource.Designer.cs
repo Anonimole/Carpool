@@ -3679,100 +3679,97 @@ namespace Carpool
 			public const int menu_dropdown_panel_example = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int monoandroidsplash = 2130837638;
+			public const int mr_ic_cast_dark = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int mr_ic_cast_dark = 2130837639;
+			public const int mr_ic_cast_light = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int mr_ic_cast_light = 2130837640;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837641;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int mr_ic_media_route_connecting_mono_light = 2130837642;
+			public const int mr_ic_media_route_mono_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int mr_ic_media_route_mono_dark = 2130837643;
+			public const int mr_ic_media_route_mono_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int mr_ic_media_route_mono_light = 2130837644;
+			public const int mr_ic_pause_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int mr_ic_pause_dark = 2130837645;
+			public const int mr_ic_pause_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int mr_ic_pause_light = 2130837646;
+			public const int mr_ic_play_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int mr_ic_play_dark = 2130837647;
+			public const int mr_ic_play_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int mr_ic_play_light = 2130837648;
+			public const int mr_ic_settings_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int mr_ic_settings_dark = 2130837649;
-			
-			// aapt resource value: 0x7f020092
-			public const int mr_ic_settings_light = 2130837650;
-			
-			// aapt resource value: 0x7f0200a5
-			public const int notification_template_icon_bg = 2130837669;
-			
-			// aapt resource value: 0x7f020093
-			public const int profile = 2130837651;
-			
-			// aapt resource value: 0x7f020094
-			public const int progress_bg_example = 2130837652;
-			
-			// aapt resource value: 0x7f020095
-			public const int progress_horizontal_example = 2130837653;
-			
-			// aapt resource value: 0x7f020096
-			public const int progress_primary_example = 2130837654;
-			
-			// aapt resource value: 0x7f020097
-			public const int progress_secondary_example = 2130837655;
-			
-			// aapt resource value: 0x7f020098
-			public const int selectable_background_example = 2130837656;
-			
-			// aapt resource value: 0x7f020099
-			public const int spinner_ab_default_example = 2130837657;
-			
-			// aapt resource value: 0x7f02009a
-			public const int spinner_ab_disabled_example = 2130837658;
-			
-			// aapt resource value: 0x7f02009b
-			public const int spinner_ab_focused_example = 2130837659;
-			
-			// aapt resource value: 0x7f02009c
-			public const int spinner_ab_pressed_example = 2130837660;
-			
-			// aapt resource value: 0x7f02009d
-			public const int spinner_background_ab_example = 2130837661;
-			
-			// aapt resource value: 0x7f02009e
-			public const int tab_indicator_ab_example = 2130837662;
-			
-			// aapt resource value: 0x7f02009f
-			public const int tab_selected_example = 2130837663;
-			
-			// aapt resource value: 0x7f0200a0
-			public const int tab_selected_focused_example = 2130837664;
-			
-			// aapt resource value: 0x7f0200a1
-			public const int tab_selected_pressed_example = 2130837665;
-			
-			// aapt resource value: 0x7f0200a2
-			public const int tab_unselected_example = 2130837666;
-			
-			// aapt resource value: 0x7f0200a3
-			public const int tab_unselected_focused_example = 2130837667;
+			public const int mr_ic_settings_light = 2130837649;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int tab_unselected_pressed_example = 2130837668;
+			public const int notification_template_icon_bg = 2130837668;
+			
+			// aapt resource value: 0x7f020092
+			public const int profile = 2130837650;
+			
+			// aapt resource value: 0x7f020093
+			public const int progress_bg_example = 2130837651;
+			
+			// aapt resource value: 0x7f020094
+			public const int progress_horizontal_example = 2130837652;
+			
+			// aapt resource value: 0x7f020095
+			public const int progress_primary_example = 2130837653;
+			
+			// aapt resource value: 0x7f020096
+			public const int progress_secondary_example = 2130837654;
+			
+			// aapt resource value: 0x7f020097
+			public const int selectable_background_example = 2130837655;
+			
+			// aapt resource value: 0x7f020098
+			public const int spinner_ab_default_example = 2130837656;
+			
+			// aapt resource value: 0x7f020099
+			public const int spinner_ab_disabled_example = 2130837657;
+			
+			// aapt resource value: 0x7f02009a
+			public const int spinner_ab_focused_example = 2130837658;
+			
+			// aapt resource value: 0x7f02009b
+			public const int spinner_ab_pressed_example = 2130837659;
+			
+			// aapt resource value: 0x7f02009c
+			public const int spinner_background_ab_example = 2130837660;
+			
+			// aapt resource value: 0x7f02009d
+			public const int tab_indicator_ab_example = 2130837661;
+			
+			// aapt resource value: 0x7f02009e
+			public const int tab_selected_example = 2130837662;
+			
+			// aapt resource value: 0x7f02009f
+			public const int tab_selected_focused_example = 2130837663;
+			
+			// aapt resource value: 0x7f0200a0
+			public const int tab_selected_pressed_example = 2130837664;
+			
+			// aapt resource value: 0x7f0200a1
+			public const int tab_unselected_example = 2130837665;
+			
+			// aapt resource value: 0x7f0200a2
+			public const int tab_unselected_focused_example = 2130837666;
+			
+			// aapt resource value: 0x7f0200a3
+			public const int tab_unselected_pressed_example = 2130837667;
 			
 			static Drawable()
 			{
@@ -5113,9 +5110,6 @@ namespace Carpool
 			
 			// aapt resource value: 0x7f09014e
 			public const int DropDownNav_Example = 2131296590;
-			
-			// aapt resource value: 0x7f090152
-			public const int Mono_Android_Theme_Splash = 2131296594;
 			
 			// aapt resource value: 0x7f090016
 			public const int Platform_AppCompat = 2131296278;
