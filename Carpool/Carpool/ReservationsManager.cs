@@ -73,5 +73,27 @@ namespace Carpool
 
         }
 
+        public async Task DeleteReservationAsync(Reservations reservation)
+        {
+            try
+            {
+                List<Reservations> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route&& res.ID_User==reservation.ID_User);
+                foreach (var res in reservationsList)
+                {
+                    await reservationsTable.DeleteAsync(res);
+                }
+
+            }
+            catch (MobileServiceInvalidOperationException msioe)
+            {
+                Debug.WriteLine(@"INVALID {0}", msioe.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(@"ERROR {0}", e.Message);
+            }
+
+        }
+
     }
 }

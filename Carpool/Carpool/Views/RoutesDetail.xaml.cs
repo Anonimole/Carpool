@@ -126,6 +126,16 @@ namespace Carpool
 
         private async void OnCancelReservation(object sender, EventArgs e)
         {
+            bool answer = await DisplayAlert("Cancel Reservation", "Are you sure?", "Accept", "Cancel");
+            if (answer)
+            {
+                var reservation = new Reservations { ID_Route = route.ID, ID_User = currentUser.ID };
+                IsBusy = true;
+                await reservationsManager.DeleteReservationAsync(reservation);
+                IsBusy = false;
+                await DisplayAlert("Success", "Reservation Canceled", "Accept");
+                await Navigation.PopAsync(true);
+            }
 
         }
     }

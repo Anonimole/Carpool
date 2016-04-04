@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,85 +14,104 @@ namespace Carpool
         private Users currentUser;
         private List<Routes> routesList;
         private RouteManager routeManager;
-        private List<Reservations> reservationsList;
         private List<Routes> routesReservations;
 
-
+        private List<Reservations> reservationsList;
         private ReservationsManager reservationManager;
+        private ToolbarItem reservationsButton;
 
         public Dashboard()
         {
             InitializeComponent();
 
-            routesList = new List<Routes>();
-            reservationsList = new List<Reservations>();
-            routesReservations = new List<Routes>();
-
-            routeManager = new RouteManager();
-            reservationManager = new ReservationsManager();
-
             currentUser = (Users)Application.Current.Properties["user"];
 
+            routesList = new List<Routes>();
+            routeManager = new RouteManager();
+
+            reservationsList = new List<Reservations>();
+            reservationManager = new ReservationsManager();
+
+            routesReservations = new List<Routes>();
+
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
-            reservationListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
 
             routesListView.ItemTapped += RoutesListView_ItemTapped;
-            reservationListView.ItemTapped += RoutesListView_ItemTapped;
+
             routesListView.Refreshing += RoutesListView_Refreshing;
+
+            reservationsButton = new ToolbarItem
+            {
+                Name = "Reservations",
+                Command = new Command(this.Reservations),
+                Order = ToolbarItemOrder.Primary,
+                Priority = 3
+            };
+
+
+
         }
 
-        private async void LoadRoutes()
+        private async void LoadRoutesList()
         {
             routesListView.IsRefreshing = true;
             routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID);
-            errorLayout.Children.Clear();
 
-            if (routesList.Count == 0)
+            reservationsList =
+                await reservationManager.GetReservationsWhere(reservation => reservation.ID_User == currentUser.ID);
+            foreach (var reservation in reservationsList)
             {
-                errorLayout.Children.Add(new Label
-                {
-                    Text = "No routes available",
-                    TextColor = Color.White,
-                    FontSize = 25,
-                    HorizontalTextAlignment = TextAlignment.Center
-                });
+                routesList.Remove(routesList.Find(route => route.ID == reservation.ID_Route));
+            }
+
+            if (routesList.Count != 0)
+            {
+                routesListView.BackgroundColor = Color.White;
+                errorLayout.IsVisible = false;
             }
             else
             {
-                //routesListView.ItemsSource = routesList;
+                errorLayout.IsVisible = true;
+                routesListView.BackgroundColor = Color.FromHex("#009688");
+
             }
-            routesListView.IsRefreshing = false;
-        }
-
-        private async void LoadReservations()
-        {
-            var reservation = new Reservations
-            {
-                ID_User = currentUser.ID
-            };
-
-            reservationsList = await reservationManager.GetReservationsWhere(reserv => reserv.ID_User == reservation.ID_User);
+            routesListView.ItemsSource = routesList;
 
             if (reservationsList.Count > 0)
             {
-                routesReservations.Clear();
-                foreach (var res in reservationsList)
-                {
-                    var listItem = routesList.Find(route => route.ID == res.ID_Route);
-                    routesReservations.Add(listItem);
-                    routesList.Remove(listItem);
-                }
+                ToolbarItems.Add(reservationsButton);
             }
 
-            routesListView.ItemsSource = routesList;
-            reservationListView.ItemsSource = routesReservations;
+            routesListView.IsRefreshing = false;
         }
 
         private void RoutesListView_Refreshing(object sender, EventArgs e)
         {
             searchBar.Text = "";
-            LoadRoutes();
+            if (ToolbarItems.Contains(reservationsButton))
+            {
+                ToolbarItems.Remove(reservationsButton);
+            }
+            LoadRoutesList();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            LoadRoutesList();
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            if (reservationsList.Count > 0)
+            {
+                ToolbarItems.Remove(reservationsButton);
+            }
+        }
+
+        /*Events*/
 
         private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
@@ -99,28 +119,21 @@ namespace Carpool
             await Navigation.PushAsync(new RoutesDetail(route));
         }
 
-        protected override void OnAppearing()
-        {
-            routesListView.IsRefreshing = true;
-            base.OnAppearing();
-            this.LoadRoutes();
-            this.LoadReservations();
-        }
-
         private void OnSearch(object sender, TextChangedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(e.NewTextValue))
-            {
-                routesListView.ItemsSource = routesList;
-            }
-            else
+            if (!string.IsNullOrWhiteSpace(e.NewTextValue))
             {
                 routesListView.ItemsSource =
                     routesList.Where(
                         route => route.From.Contains(e.NewTextValue) || route.To.Contains(e.NewTextValue));
             }
+            else
+            {
+                routesListView.ItemsSource = routesList;
+            }
         }
 
+        /*Menu Options*/
 
         private async void MyRoutes(object sende, EventArgs e)
         {
@@ -135,6 +148,11 @@ namespace Carpool
         private void LogOut(object sender, EventArgs e)
         {
             Application.Current.MainPage = new NavigationPage(new Login());
+        }
+
+        private async void Reservations()
+        {
+            await Navigation.PushAsync(new Profile());
         }
     }
 }
