@@ -61,7 +61,7 @@ namespace Carpool
                 if (!string.IsNullOrEmpty(currentUser.Gender))
                 {
                     genderPicker.SelectedIndex = Array.IndexOf(genders, currentUser.Gender);
-                    genderPicker.BackgroundColor = Color.FromHex("#004D40");
+                    genderPicker.BackgroundColor = Color.FromHex("#00897B");
                 }
 
             }

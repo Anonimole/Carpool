@@ -27,6 +27,9 @@ namespace Carpool
             this.IsBusy = true;
             InitializeComponent();
 
+            //departureDatePicker.MinimumDate = DateTime.Now;
+            departureTimePicker.Time = DateTime.Now.TimeOfDay;
+
         }
 
         async void OnAdd(object sender, EventArgs e)
@@ -39,6 +42,7 @@ namespace Carpool
         {
             base.OnAppearing();
 
+            
             if (carSelected == false)
             {
                 carsList = await carsManager.GetMyCarsAsync(currentUser);
@@ -80,26 +84,26 @@ namespace Carpool
         public void OnCarPicker(object sender, EventArgs e)
         {
             carSelected = true;
-            carPicker.BackgroundColor = Color.FromHex("#004D40");
+            carPicker.BackgroundColor = Color.FromHex("#00897B");
         }
 
         public async void OnSaveRoute(object sender, EventArgs e)
         {
-
             newRoute = (Routes)properties["route"];
             newRoute.From = startingNameEntry.Text;
             newRoute.To = endingNameEntry.Text;
             newRoute.Capacity = Int32.Parse("" + seatsEntry.Text);
             newRoute.Comments = commentsEditor.Text;
-            newRoute.Depart_Time = departurePicker.Time.ToString();
+            newRoute.Depart_Time = departureTimePicker.Time.ToString();
             newRoute.ID_User = currentUser.ID;
-
+            DateTimeOffset dateRoute = new DateTimeOffset(departureDatePicker.Date.Add(departureTimePicker.Time));
+            newRoute.Depart_Date = dateRoute.Date;
+            newRoute.Depart_Time = departureTimePicker.Time.ToString();
             string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
-
             Cars car = carsList.Where(cars => cars.Model == carSelected).First();
-
+            
             newRoute.ID_Car = car.ID;
-
+            
             activityIndicator.IsRunning = true;
             await routeManager.SaveRouteAsync(newRoute);
             activityIndicator.IsRunning = false;

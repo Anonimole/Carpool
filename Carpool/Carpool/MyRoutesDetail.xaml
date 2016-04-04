@@ -4,7 +4,7 @@
              x:Class="Carpool.MyRoutesDetail">
   <ScrollView>
     <StackLayout Style="{StaticResource contentPageStyle}">
-      <StackLayout x:Name="contentLayout" Style="{StaticResource stackContent}">
+      <StackLayout  Style="{StaticResource stackContent}">
         <Label Text="Driver Profile" FontAttributes="Bold" FontSize="Large"></Label>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 
@@ -24,6 +24,10 @@
         <Button Style="{StaticResource buttonActionStyle}" Text="Show Starting point" Clicked="OnStartingPoint"></Button>
         <Button Style="{StaticResource buttonActionStyle}" Text="Show Ending point" Clicked="OnEndingPoint"></Button>
 
+        <StackLayout x:Name="usersLayout" HorizontalOptions="FillAndExpand">
+          <Label x:Name="usersLabel" Style="{StaticResource labelBoldStyle}" Text="Users expected"></Label>
+        </StackLayout>
+        <Button x:Name="activateButton" Style="{StaticResource buttonSuccessStyle}" Text="Activate route" Clicked="OnActivate" IsVisible="False"></Button>
       </StackLayout>
     </StackLayout>
 
