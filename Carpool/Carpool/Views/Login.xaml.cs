@@ -15,7 +15,7 @@ namespace Carpool
             InitializeComponent();
 
             usersManager = new UsersManager();
-
+            
             NavigationPage.SetHasNavigationBar(this, false);
         }
 

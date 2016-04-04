@@ -96,8 +96,10 @@ namespace Carpool
             newRoute.Comments = commentsEditor.Text;
             newRoute.Depart_Time = departureTimePicker.Time.ToString();
             newRoute.ID_User = currentUser.ID;
+
             DateTimeOffset dateRoute = new DateTimeOffset(departureDatePicker.Date.Add(departureTimePicker.Time));
-            newRoute.Depart_Date = dateRoute.Date;
+
+            newRoute.Depart_Date = dateRoute.DateTime;
             newRoute.Depart_Time = departureTimePicker.Time.ToString();
             string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
             Cars car = carsList.Where(cars => cars.Model == carSelected).First();

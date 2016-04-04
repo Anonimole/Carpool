@@ -50,11 +50,11 @@ namespace Carpool
             return null;
         }
 
-        public async Task<ObservableCollection<Routes>> ListRoutesWhere(Expression<Func<Routes, bool>> linq)
+        public async Task<List<Routes>> ListRoutesWhere(Expression<Func<Routes, bool>> linq)
         {
             try
             {
-                return new ObservableCollection<Routes>
+                return new List<Routes>
                 (
                     await routesTable.Where(linq).ToListAsync()
                 );

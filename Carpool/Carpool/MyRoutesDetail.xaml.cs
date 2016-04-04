@@ -133,8 +133,17 @@ namespace Carpool
             usersLabel.Text = "";
             activateButton.IsVisible = false;
             IsBusy = false;
+
+
+            if (DateTime.Today.Add(TimeSpan.Parse(route.Depart_Time)).CompareTo(DateTime.Now) <= 0)
+            {
+                route.Depart_Date = DateTime.Today.Add(TimeSpan.Parse(route.Depart_Time)).AddDays(1);
+            }
+            else
+            {
+                route.Depart_Date = DateTime.Today.Add(TimeSpan.Parse(route.Depart_Time));
+            }
             
-            route.Depart_Date=DateTime.Today.Add(TimeSpan.Parse(route.Depart_Time));
             await routeManager.SaveRouteAsync(route);
             await DisplayAlert("Success", "Route activated", "Accept");
 

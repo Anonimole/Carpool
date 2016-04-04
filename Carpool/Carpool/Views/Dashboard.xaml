@@ -8,12 +8,18 @@
     <ToolbarItem Name="My Routes"   Order="Secondary" Priority="1" Clicked="MyRoutes" />
     <ToolbarItem Name="Log Out"   Order="Secondary" Priority="2" Clicked="LogOut"/>
   </ContentPage.ToolbarItems>
-
+  
+  
 
   <StackLayout Style="{StaticResource contentPageStyle}">
+
+    <StackLayout x:Name="reservationLayout">
+      <Label Text="Routes Reserved"></Label>
+      <ListView x:Name="reservationListView" RowHeight="100" HeightRequest="120" BackgroundColor="White" SeparatorColor="#009688"></ListView>
+    </StackLayout>
     <SearchBar x:Name="searchBar" Placeholder="Search Route" TextChanged="OnSearch"></SearchBar>
     <StackLayout x:Name="errorLayout" HorizontalOptions="FillAndExpand"></StackLayout>
-    <ListView x:Name="routesListView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowHeight="100" BackgroundColor="White" SeparatorColor="#009688" IsPullToRefreshEnabled="True" ></ListView>
+    <ListView x:Name="routesListView" HorizontalOptions="FillAndExpand"  HeightRequest="400" RowHeight="100" BackgroundColor="White" SeparatorColor="#009688" IsPullToRefreshEnabled="True" ></ListView>
   </StackLayout>
-  
+
 </ContentPage>

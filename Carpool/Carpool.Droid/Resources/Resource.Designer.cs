@@ -3714,8 +3714,8 @@ namespace Carpool
 			// aapt resource value: 0x7f020091
 			public const int mr_ic_settings_light = 2130837649;
 			
-			// aapt resource value: 0x7f0200a4
-			public const int notification_template_icon_bg = 2130837668;
+			// aapt resource value: 0x7f0200a5
+			public const int notification_template_icon_bg = 2130837669;
 			
 			// aapt resource value: 0x7f020092
 			public const int profile = 2130837650;
@@ -3751,25 +3751,28 @@ namespace Carpool
 			public const int spinner_background_ab_example = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int tab_indicator_ab_example = 2130837661;
+			public const int star = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int tab_selected_example = 2130837662;
+			public const int tab_indicator_ab_example = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int tab_selected_focused_example = 2130837663;
+			public const int tab_selected_example = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int tab_selected_pressed_example = 2130837664;
+			public const int tab_selected_focused_example = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int tab_unselected_example = 2130837665;
+			public const int tab_selected_pressed_example = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int tab_unselected_focused_example = 2130837666;
+			public const int tab_unselected_example = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int tab_unselected_pressed_example = 2130837667;
+			public const int tab_unselected_focused_example = 2130837667;
+			
+			// aapt resource value: 0x7f0200a4
+			public const int tab_unselected_pressed_example = 2130837668;
 			
 			static Drawable()
 			{
