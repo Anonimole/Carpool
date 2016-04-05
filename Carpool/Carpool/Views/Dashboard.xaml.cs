@@ -53,13 +53,23 @@ namespace Carpool
         private async void LoadRoutesList()
         {
             routesListView.IsRefreshing = true;
-            routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID&&route.Depart_Date>DateTime.Now);
+            routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID && route.Depart_Date > DateTime.Now);
 
             reservationsList =
                 await reservationManager.GetReservationsWhere(reservation => reservation.ID_User == currentUser.ID);
+
             foreach (var reservation in reservationsList)
             {
                 routesList.Remove(routesList.Find(route => route.ID == reservation.ID_Route));
+            }
+            
+            for (int i = 0; i < routesList.Count; i++)
+            {
+                List<Reservations> rl = await reservationManager.GetReservationsWhere(reservation => reservation.ID_Route == routesList.ElementAt(i).ID);
+                if (rl.Count == routesList.ElementAt(i).Capacity)
+                {
+                    routesList.RemoveAt(i);
+                }
             }
 
             if (routesList.Count != 0)
