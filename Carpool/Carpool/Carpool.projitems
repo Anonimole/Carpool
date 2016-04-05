@@ -29,6 +29,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Reservations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ReservationsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReservationsView.xaml.cs">
+      <DependentUpon>ReservationsView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)RoutesCell.xaml.cs">
       <DependentUpon>RoutesCell.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -128,6 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyRoutesDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ReservationsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

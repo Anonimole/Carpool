@@ -91,7 +91,7 @@ namespace Carpool
             ageLabel.Text = "Age: " + userRoute.Age;
             phoneLabel.Text = "Phone: " + userRoute.Phone;
             descriptionLabel.Text = route.Comments;
-            departureLabel.Text = "Departure Hour:" + route.Depart_Time;
+            departureLabel.Text = "Departure: \n" + route.Depart_Date.ToString("dd/MMMM H:mm ") + "h";
             if (reservationResult.Count != 0)
             {
                 seats = route.Capacity - reservationResult.Count;

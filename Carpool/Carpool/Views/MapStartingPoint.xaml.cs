@@ -71,6 +71,7 @@ namespace Carpool
 
             myMap.Pins.Add(pin);
             stackMap.Children.Add(myMap);
+            IsBusy = false;
         }
 
         private async void Save()

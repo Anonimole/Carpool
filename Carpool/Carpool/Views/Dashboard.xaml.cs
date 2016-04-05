@@ -48,14 +48,12 @@ namespace Carpool
                 Priority = 3
             };
 
-
-
         }
 
         private async void LoadRoutesList()
         {
             routesListView.IsRefreshing = true;
-            routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID);
+            routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID&&route.Depart_Date>DateTime.Now);
 
             reservationsList =
                 await reservationManager.GetReservationsWhere(reservation => reservation.ID_User == currentUser.ID);
@@ -71,9 +69,9 @@ namespace Carpool
             }
             else
             {
+                errorLabel.Text = "No routes available";
                 errorLayout.IsVisible = true;
                 routesListView.BackgroundColor = Color.FromHex("#009688");
-
             }
             routesListView.ItemsSource = routesList;
 
@@ -152,7 +150,7 @@ namespace Carpool
 
         private async void Reservations()
         {
-            await Navigation.PushAsync(new Profile());
+            await Navigation.PushAsync(new ReservationsView());
         }
     }
 }

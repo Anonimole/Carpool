@@ -66,6 +66,8 @@ namespace Carpool
 
             myMap.Pins.Add(pin);
             stackMap.Children.Add(myMap);
+
+            IsBusy = false;
         }
 
         private async void MyMap_Tapped(object sender, MapTapEventArgs e)

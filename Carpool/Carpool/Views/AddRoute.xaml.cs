@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using Xamarin.Forms;
 
@@ -15,10 +14,12 @@ namespace Carpool
         private bool carSelected;
         private IDictionary<string, object> properties;
         private List<Cars> carsList;
+        private bool savePoints;
 
         public AddRoute()
         {
             carSelected = false;
+            savePoints = false;
             carsManager = new CarsManager();
             routeManager = new RouteManager();
 
@@ -27,13 +28,13 @@ namespace Carpool
             this.IsBusy = true;
             InitializeComponent();
 
-            //departureDatePicker.MinimumDate = DateTime.Now;
+            departureDatePicker.MinimumDate = DateTime.Now;
             departureTimePicker.Time = DateTime.Now.TimeOfDay;
-
         }
 
         async void OnAdd(object sender, EventArgs e)
         {
+            savePoints = true;
             carSelected = false;
             await Navigation.PushAsync(new AddCar());
         }
@@ -42,7 +43,8 @@ namespace Carpool
         {
             base.OnAppearing();
 
-            
+            savePoints = false;
+
             if (carSelected == false)
             {
                 carsList = await carsManager.GetMyCarsAsync(currentUser);
@@ -51,7 +53,7 @@ namespace Carpool
 
                 foreach (var car in carsList)
                 {
-                    carPicker.Items.Add(car.Model);
+                    carPicker.Items.Add(car.Model + " " + car.Color);
                 }
 
                 carPicker.IsEnabled = carPicker.Items.Count > 0 ? true : false;
@@ -70,14 +72,15 @@ namespace Carpool
             }
         }
 
-
         public async void OnStartingPoint(object sender, EventArgs e)
         {
+            savePoints = true;
             await Navigation.PushAsync(new MapStartingPoint());
         }
 
         public async void OnEndingPoint(object sender, EventArgs e)
         {
+            savePoints = true;
             await Navigation.PushAsync(new MapEndingPoint());
         }
 
@@ -89,32 +92,84 @@ namespace Carpool
 
         public async void OnSaveRoute(object sender, EventArgs e)
         {
-            newRoute = (Routes)properties["route"];
-            newRoute.From = startingNameEntry.Text;
-            newRoute.To = endingNameEntry.Text;
-            newRoute.Capacity = Int32.Parse("" + seatsEntry.Text);
-            newRoute.Comments = commentsEditor.Text;
-            newRoute.Depart_Time = departureTimePicker.Time.ToString();
-            newRoute.ID_User = currentUser.ID;
+            bool validation = false;
 
-            DateTimeOffset dateRoute = new DateTimeOffset(departureDatePicker.Date.Add(departureTimePicker.Time));
+            if (!properties.ContainsKey("route"))
+            {
+                await DisplayAlert("Error", "Select points in map", "accept");
+            }
+            else
+            {
+                if (string.IsNullOrEmpty((properties["route"] as Routes).From_Latitude) ||
+                    string.IsNullOrEmpty((properties["route"] as Routes).To_Latitude))
+                {
+                    await DisplayAlert("Error", "Select points in map", "accept");
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(startingNameEntry.Text) || string.IsNullOrEmpty(endingNameEntry.Text) ||
+                    string.IsNullOrEmpty(commentsEditor.Text))
+                    {
+                        await DisplayAlert("Error", "fill blank fields", "accept");
+                    }
+                    else
+                    {
+                        if (string.IsNullOrEmpty(seatsEntry.Text))
+                        {
+                            await DisplayAlert("Error", "Seats can't be null", "accept");
+                        }
+                        else
+                        {
+                            if (carPicker.SelectedIndex == -1)
+                            {
+                                await DisplayAlert("error", "select a car", "accept");
+                            }
+                            else
+                            {
+                                validation = true;
+                            }
+                        }
+                    }
+                }
 
-            newRoute.Depart_Date = dateRoute.DateTime;
-            newRoute.Depart_Time = departureTimePicker.Time.ToString();
-            string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
-            Cars car = carsList.Where(cars => cars.Model == carSelected).First();
-            
-            newRoute.ID_Car = car.ID;
-            
-            activityIndicator.IsRunning = true;
-            await routeManager.SaveRouteAsync(newRoute);
-            activityIndicator.IsRunning = false;
+            }
 
-            await DisplayAlert("Success", "Route added successfully", "Accept");
-            properties.Remove("route");
-            await Navigation.PopAsync(true);
+            if (validation == true)
+            {
+                newRoute = (Routes)properties["route"];
+                newRoute.From = startingNameEntry.Text;
+                newRoute.To = endingNameEntry.Text;
+                newRoute.Capacity = Int32.Parse("" + seatsEntry.Text);
+                newRoute.Comments = commentsEditor.Text;
+                newRoute.Depart_Time = departureTimePicker.Time.ToString();
+                newRoute.ID_User = currentUser.ID;
 
+                DateTimeOffset dateRoute = new DateTimeOffset(departureDatePicker.Date.Add(departureTimePicker.Time));
+
+                newRoute.Depart_Date = dateRoute.DateTime;
+                newRoute.Depart_Time = departureTimePicker.Time.ToString();
+                string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
+                Cars car = carsList.Where(cars => cars.Model+" "+cars.Color == carSelected).First();
+
+                newRoute.ID_Car = car.ID;
+
+                activityIndicator.IsRunning = true;
+                await routeManager.SaveRouteAsync(newRoute);
+                activityIndicator.IsRunning = false;
+
+                await DisplayAlert("Success", "Route added successfully", "Accept");
+                properties.Remove("route");
+                await Navigation.PopAsync(true);
+            }
         }
 
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            if (savePoints == false)
+            {
+                Application.Current.Properties.Remove("route");
+            }
+        }
     }
 }

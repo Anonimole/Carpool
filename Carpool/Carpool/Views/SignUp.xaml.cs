@@ -77,10 +77,16 @@ namespace Carpool
             {
                 this.emailEntry.PlaceholderColor = this.emailEntry.TextColor = Color.FromHex("#00695C");
                 this.activityIndicator.IsRunning = true;
+                validationLabel.IsVisible = true;
+                signUpButton.IsEnabled = false;
                 Users usersSelect = await manager.GetUserWhere(userSelect=>userSelect.Email== email);
                 this.emailEntryError.IsVisible = usersSelect!=null ? true : false;
+                signUpButton.IsEnabled = usersSelect!=null? true: false;
                 this.signUpButton.IsEnabled = !emailEntryError.IsVisible;
+
                 this.activityIndicator.IsRunning = false;
+
+                validationLabel.IsVisible = false;
             }
 
         }
