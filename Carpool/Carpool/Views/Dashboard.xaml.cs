@@ -14,7 +14,6 @@ namespace Carpool
         private Users currentUser;
         private List<Routes> routesList;
         private RouteManager routeManager;
-        private List<Routes> routesReservations;
 
         private List<Reservations> reservationsList;
         private ReservationsManager reservationManager;
@@ -31,8 +30,7 @@ namespace Carpool
 
             reservationsList = new List<Reservations>();
             reservationManager = new ReservationsManager();
-
-            routesReservations = new List<Routes>();
+            
 
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
 
@@ -52,6 +50,7 @@ namespace Carpool
 
         private async void LoadRoutesList()
         {
+            reservationsList = new List<Reservations>();
             routesListView.IsRefreshing = true;
             routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID && route.Depart_Date > DateTime.Now);
 
@@ -133,7 +132,7 @@ namespace Carpool
             {
                 routesListView.ItemsSource =
                     routesList.Where(
-                        route => route.From.Contains(e.NewTextValue) || route.To.Contains(e.NewTextValue));
+                        route => route.From.ToLower().Contains(e.NewTextValue.ToLower()) || route.To.ToLower().Contains(e.NewTextValue.ToLower()));
             }
             else
             {

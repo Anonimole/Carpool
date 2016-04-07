@@ -21,8 +21,7 @@ namespace Carpool
         public ReservationsView()
         {
             InitializeComponent();
-
-
+            
             currentUser = (Users)Application.Current.Properties["user"];
 
             routesList = new List<Routes>();
@@ -31,7 +30,7 @@ namespace Carpool
             reservationsList = new List<Reservations>();
             reservationManager = new ReservationsManager();
 
-            routesReservations = new List<Routes>();
+            
 
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
 
@@ -44,11 +43,13 @@ namespace Carpool
         {
             base.OnAppearing();
             LoadRoutes();
-
         }
 
         private async void LoadRoutes()
         {
+
+            routesReservations = new List<Routes>();
+
             routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID && route.Depart_Date > DateTime.Now);
             reservationsList = await reservationManager.GetReservationsWhere(reservation => reservation.ID_User == currentUser.ID);
 
@@ -67,11 +68,15 @@ namespace Carpool
             }
             else
             {
+                errorLayout.IsVisible=true;
                 errorLabel.Text = "No reservations available";
                 routesListView.BackgroundColor = Color.FromHex("#009688");
+                await Navigation.PopAsync();
             }
 
             routesListView.ItemsSource = routesReservations;
+
+            routesListView.IsRefreshing = false;
         }
 
         private void RoutesListView_Refreshing(object sender, EventArgs e)

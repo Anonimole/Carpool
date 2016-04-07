@@ -8,6 +8,6 @@
     <StackLayout x:Name="errorLayout" HorizontalOptions="FillAndExpand">
       <Label x:Name="errorLabel" Text="Loading routes" Style="{StaticResource labelBoldStyle}" HorizontalTextAlignment="Center"></Label>
     </StackLayout>
-    <ListView x:Name="routesListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowHeight="100" BackgroundColor="White" SeparatorColor="#009688" IsPullToRefreshEnabled="True" ></ListView>
+    <ListView x:Name="routesListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="500" RowHeight="100" BackgroundColor="White" SeparatorColor="#009688" IsPullToRefreshEnabled="True" ></ListView>
   </StackLayout>
 </ContentPage>
