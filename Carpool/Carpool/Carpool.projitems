@@ -19,16 +19,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)ExtMap.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Cars.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\CarsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Reservations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ReservationsManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Routes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\RouteManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Users.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UsersManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MyRoutesDetail.xaml.cs">
-      <DependentUpon>MyRoutesDetail.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Reservations.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ReservationsManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RoutesCell.xaml.cs">
       <DependentUpon>RoutesCell.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -61,9 +57,17 @@
       <SubType>Code</SubType>
       <DependentUpon>MyRoutes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MyRoutesDetail.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>MyRoutesDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Profile.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>Profile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ReservationsView.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ReservationsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\RoutesDetail.xaml.cs">
       <SubType>Code</SubType>
@@ -107,7 +111,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MyRoutesDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ReservationsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -122,12 +134,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)RoutesCell.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyRoutesDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

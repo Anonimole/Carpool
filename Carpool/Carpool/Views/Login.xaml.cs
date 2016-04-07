@@ -8,14 +8,14 @@ namespace Carpool
     public partial class Login : ContentPage
     {
         private Users currentUser;
-        private UsersManager manager;
+        private UsersManager usersManager;
 
         public Login()
         {
             InitializeComponent();
 
-            manager = new UsersManager();
-
+            usersManager = new UsersManager();
+            
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
@@ -28,22 +28,15 @@ namespace Carpool
             if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
                 activityIndicator.IsRunning = true;
-                Users userResponse = await manager.SearchUserAsync(user);
+
+                Users userResponse = await usersManager.GetUserWhere(userSelect => userSelect.Email == user.Email && userSelect.Password==user.Password);
+
                 activityIndicator.IsRunning = false;
 
-                if (userResponse != null&&userResponse.Email.Equals(email,StringComparison.Ordinal))
+                if (userResponse != null&&userResponse.Email.Equals(email,StringComparison.Ordinal) && userResponse.Password.Equals(password, StringComparison.Ordinal))
                 {
-                    if (userResponse.Password.Equals(password,StringComparison.Ordinal))
-                    {
                         Application.Current.Properties["user"] = userResponse;
-                        Application.Current.MainPage = new NavigationPage(new Dashboard());
-                    }
-                    else
-                    {
-                        await
-                            DisplayAlert("Incorrect", "Your email or password is incorrect, please try again.", "Close");
-                            this.passwordEntry.Text = "";
-                    }
+                        Application.Current.MainPage = new NavigationPage(new Dashboard());  
                 }
                 else
                 {

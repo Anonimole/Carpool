@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Carpool
 {
@@ -23,49 +24,11 @@ namespace Carpool
             usersTable = client.GetTable<Users>();
         }
 
-
-        public async Task<ObservableCollection<Users>> GetUsersAsync(string email)
+        public async Task<Users> GetUserWhere(Expression<Func<Users, bool>> linq)
         {
             try
             {
-                return new ObservableCollection<Users>
-                (
-                    await usersTable.Where (user => user.Email==email).ToListAsync ()
-                );
-            } catch (MobileServiceInvalidOperationException msioe) {
-                Debug.WriteLine (@"INVALID {0}", msioe.Message);
-			} catch (Exception e) {
-				Debug.WriteLine (@"ERROR {0}", e.Message);
-			}
-            return null;
-        }
-
-
-        //public async Task<Collection<Users>> SearchUserAsync(string email)
-        //{
-        //    try
-        //    {
-        //        return new ObservableCollection<Users>
-        //        (
-        //            await usersTable.Where(user => user.Email == email).ToListAsync()
-        //        );
-        //    }
-        //    catch (MobileServiceInvalidOperationException msioe)
-        //    {
-        //        Debug.WriteLine(@"INVALID {0}", msioe.Message);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Debug.WriteLine(@"ERROR {0}", e.Message);
-        //    }
-        //    return null;
-        //}
-
-        public async Task<Users> SearchUserAsync(Users user)
-        {
-            try
-            {
-                List<Users> newUser = await usersTable.Where(userSelect => userSelect.Email == user.Email).Take(1).ToListAsync();
+                List<Users> newUser = await usersTable.Where(linq).Take(1).ToListAsync();
                 return newUser.First();
             }
             catch (MobileServiceInvalidOperationException msioe)
@@ -79,38 +42,6 @@ namespace Carpool
 
             return null;
         }
-
-        public async Task<Users> SearchIDUserAsync(Users user)
-        {
-            try
-            {
-                List<Users> newUser = await usersTable.Where(userSelect => userSelect.ID == user.ID).Take(1).ToListAsync();
-                return newUser.First();
-            }
-            catch (MobileServiceInvalidOperationException msioe)
-            {
-                Debug.WriteLine(@"INVALID {0}", msioe.Message);
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(@"ERROR {0}", e.Message);
-            }
-
-            return null;
-        }
-
-
-        //public async Task SaveUserAsync(Users user)
-        //{
-        //    if (user.ID == null)
-        //    {
-        //        await usersTable.InsertAsync(user);
-        //    }
-        //    else
-        //    {
-        //        await usersTable.UpdateAsync(user);
-        //    }
-        //}
 
         public async Task<Users> SaveGetUserAsync(Users user)
         {
@@ -122,7 +53,7 @@ namespace Carpool
             {
                 await usersTable.UpdateAsync(user);
             }
-            
+
             try
             {
                 List<Users> newUser = await usersTable.Where(userSelect => userSelect.Email == user.Email).ToListAsync();

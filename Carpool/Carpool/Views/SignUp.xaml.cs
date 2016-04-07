@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
@@ -76,10 +77,16 @@ namespace Carpool
             {
                 this.emailEntry.PlaceholderColor = this.emailEntry.TextColor = Color.FromHex("#00695C");
                 this.activityIndicator.IsRunning = true;
-                ObservableCollection<Users> usersList = await manager.GetUsersAsync(email);
-                this.emailEntryError.IsVisible = usersList.Count > 0 ? true : false;
+                validationLabel.IsVisible = true;
+                signUpButton.IsEnabled = false;
+                Users usersSelect = await manager.GetUserWhere(userSelect=>userSelect.Email== email);
+                this.emailEntryError.IsVisible = usersSelect!=null ? true : false;
+                signUpButton.IsEnabled = usersSelect!=null? true: false;
+                this.signUpButton.IsEnabled = !emailEntryError.IsVisible;
 
                 this.activityIndicator.IsRunning = false;
+
+                validationLabel.IsVisible = false;
             }
 
         }

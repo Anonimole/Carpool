@@ -42,6 +42,9 @@ namespace Carpool
         [JsonProperty(PropertyName = "depart_time")]
         public string Depart_Time { get; set; }
 
+        [JsonProperty(PropertyName = "depart_date")]
+        public DateTime Depart_Date { get; set; }
+
         public override string ToString()
         {
             return string.Format("[Routes: ID={0}, " +

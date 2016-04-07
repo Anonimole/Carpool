@@ -11,7 +11,6 @@ namespace Carpool
         private Users currentUser;
         private List<Routes> routesList;
         private RouteManager routeManager;
-        private ObservableCollection<Routes> routesCollection;
 
         public MyRoutes()
         {
@@ -39,9 +38,11 @@ namespace Carpool
         private async void LoadRoutes()
         {
             routesListView.IsRefreshing = true;
-            routesCollection = await routeManager.GetMyRoutesAsync(currentUser);
+
+            routesList = await routeManager.ListRoutesWhere(route => route.ID_User == currentUser.ID);
+            
             errorLayout.Children.Clear();
-            if (routesCollection.Count == 0)
+            if (routesList.Count == 0)
             {
                 errorLayout.Children.Add(new Label
                 {
@@ -53,7 +54,7 @@ namespace Carpool
             }
             else
             {
-                routesListView.ItemsSource = routesCollection;
+                routesListView.ItemsSource = routesList;
             }
 
             routesListView.IsRefreshing = false;
@@ -74,11 +75,11 @@ namespace Carpool
         {
             if (string.IsNullOrWhiteSpace(e.NewTextValue))
             {
-                routesListView.ItemsSource = routesCollection;
+                routesListView.ItemsSource = routesList;
             }
             else
             {
-                routesListView.ItemsSource = routesCollection.Where(route => (route.From).ToLower().Contains(e.NewTextValue.ToLower()) || (route.To).ToLower().Contains(e.NewTextValue.ToLower()));
+                routesListView.ItemsSource = routesList.Where(route => (route.From).ToLower().Contains(e.NewTextValue.ToLower()) || (route.To).ToLower().Contains(e.NewTextValue.ToLower()));
             }
         }
     }

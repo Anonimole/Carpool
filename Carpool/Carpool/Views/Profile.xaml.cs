@@ -7,35 +7,25 @@ namespace Carpool
 {
     public partial class Profile : ContentPage
     {
-        
+
         private Users currentUser;
         UsersManager manager;
 
         public Profile()
         {
-            
+
             InitializeComponent();
 
-            
+
             manager = new UsersManager();
             currentUser = (Users)Application.Current.Properties["user"];
 
             loadData();
 
-            /*genderPicker.SelectedIndexChanged += (sender, args) =>
+            genderPicker.SelectedIndexChanged += (sender, args) =>
             {
-                
-                if (genderPicker.SelectedIndex == -1)
-                {
-                    genderSelected = "";
-                }
-                else
-                {
-                    genderSelected = genderPicker.Items[genderPicker.SelectedIndex];
-                    genderPicker.BackgroundColor = Color.FromHex("#004D40");
-
-                }
-            };*/
+                genderPicker.BackgroundColor = Color.FromHex("#009688");
+            };
 
         }
 
@@ -50,7 +40,7 @@ namespace Carpool
                 if (!string.IsNullOrEmpty(currentUser.Name))
                     nameEntry.Text = currentUser.Name;
 
-                if (currentUser.Age!=0)
+                if (currentUser.Age != 0)
                     ageEntry.Text = currentUser.Age + "";
 
                 if (!string.IsNullOrEmpty(currentUser.Phone))
@@ -61,7 +51,7 @@ namespace Carpool
                 if (!string.IsNullOrEmpty(currentUser.Gender))
                 {
                     genderPicker.SelectedIndex = Array.IndexOf(genders, currentUser.Gender);
-                    genderPicker.BackgroundColor = Color.FromHex("#004D40");
+                    genderPicker.BackgroundColor = Color.FromHex("#00897B");
                 }
 
             }
@@ -75,29 +65,42 @@ namespace Carpool
 
         async void Dashboard(object sender, EventArgs e)
         {
-
             string name = this.nameEntry.Text;
-            int age = Int32.Parse(this.ageEntry.Text);
+            int age = string.IsNullOrEmpty(ageEntry.Text)? 0: Int32.Parse(ageEntry.Text);
             string phone = this.phoneEntry.Text;
+            string genderSelected = genderPicker.SelectedIndex!=-1?genderPicker.Items[genderPicker.SelectedIndex]:"";
 
-            string genderSelected = genderPicker.Items[genderPicker.SelectedIndex];
-
-
-            var user = new Users
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(phone) ||
+                string.IsNullOrEmpty(genderSelected) || age <= 0)
             {
-                ID = currentUser.ID,
-                Email = currentUser.Email,
-                Password = currentUser.Password,
-                Name = name+"",
-                Age = age,
-                Phone = phone+"",
-                Gender = genderSelected+""
-            };
-            
-            activityIndicator.IsRunning = true;
-            await UpdateUser(user);
-            activityIndicator.IsRunning = false;
-            Application.Current.MainPage = new NavigationPage(new Dashboard());
+                if (age == 0)
+                {
+                    await DisplayAlert("Error", "Age can't be null", "accept");
+                }
+                else
+                {
+                    await DisplayAlert("Error", "Fill blank fields", "Accept");
+                }
+            }
+            else
+            {
+                var user = new Users
+                {
+                    ID = currentUser.ID,
+                    Email = currentUser.Email,
+                    Password = currentUser.Password,
+                    Name = name + "",
+                    Age = age,
+                    Phone = phone + "",
+                    Gender = genderSelected + ""
+                };
+
+                activityIndicator.IsRunning = true;
+                await UpdateUser(user);
+                activityIndicator.IsRunning = false;
+                Application.Current.MainPage = new NavigationPage(new Dashboard());
+            }
+
         }
     }
 }

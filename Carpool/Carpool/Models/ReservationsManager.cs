@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,11 +34,11 @@ namespace Carpool
             }
         }
 
-        public async Task<List<Reservations>> GetReservationsAsync(Reservations reservations)
+        public async Task<List<Reservations>> GetReservationsWhere(Expression<Func<Reservations, bool>> linq)
         {
             try
             {
-                return await reservationsTable.Where(reserv => reserv.ID_Route == reservations.ID_Route&& reserv.ID_User==reservations.ID_User).ToListAsync();
+                return await reservationsTable.Where(linq).ToListAsync();
             }
             catch (MobileServiceInvalidOperationException msioe)
             {
@@ -50,11 +51,16 @@ namespace Carpool
             return null;
         }
 
-        public async Task<List<Reservations>> GetRouteReservationsAsync(Reservations reservations)
+        public async Task DeleteReservationsAsync(Reservations reservation)
         {
             try
             {
-                return await reservationsTable.Where(reserv => reserv.ID_Route == reservations.ID_Route).ToListAsync();
+                List<Reservations> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route);
+                foreach (var res in reservationsList)
+                {
+                    await reservationsTable.DeleteAsync(res);
+                }
+                    
             }
             catch (MobileServiceInvalidOperationException msioe)
             {
@@ -64,7 +70,30 @@ namespace Carpool
             {
                 Debug.WriteLine(@"ERROR {0}", e.Message);
             }
-            return null;
+
         }
+
+        public async Task DeleteReservationAsync(Reservations reservation)
+        {
+            try
+            {
+                List<Reservations> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route&& res.ID_User==reservation.ID_User);
+                foreach (var res in reservationsList)
+                {
+                    await reservationsTable.DeleteAsync(res);
+                }
+
+            }
+            catch (MobileServiceInvalidOperationException msioe)
+            {
+                Debug.WriteLine(@"INVALID {0}", msioe.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(@"ERROR {0}", e.Message);
+            }
+
+        }
+
     }
 }

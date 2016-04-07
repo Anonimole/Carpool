@@ -19,11 +19,14 @@
       
       <StackLayout Style="{StaticResource stackContent}">
         
-        <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EmailTextChanged" />
+        <Entry x:Name="emailEntry" Placeholder="Email/Username" Keyboard="Email" TextChanged="EmailTextChanged" />
         <Label x:Name="emailEntryError" Text="User already exists" Style="{StaticResource labelErrorStyle}" IsVisible="False"></Label>
         <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="True"  TextChanged="PasswordTextChanged" />
-        <ActivityIndicator x:Name="activityIndicator" Color="White" IsRunning="False"></ActivityIndicator>
-        <Button x:Name="signUpButton" Text="Sign Up" Style="{StaticResource buttonSuccessStyle}" Clicked="OnSignUp" ></Button>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+          <Label x:Name="validationLabel" Text="Validating user" Style="{StaticResource labelBoldStyle}"  VerticalOptions="Center" VerticalTextAlignment="Center" IsVisible="False"></Label>
+          <ActivityIndicator x:Name="activityIndicator" Color="White" IsRunning="False"></ActivityIndicator>
+        </StackLayout>
+        <Button x:Name="signUpButton" Text="Sign Up" Style="{StaticResource buttonSuccessStyle}" Clicked="OnSignUp"></Button>
 
       </StackLayout>
 
