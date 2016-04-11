@@ -6,21 +6,21 @@ using System;
 
 namespace Carpool
 {
-    class CarsManager
+    class CarManager
     {
-        IMobileServiceTable<Cars> carsTable;
+        IMobileServiceTable<Car> carsTable;
         MobileServiceClient client;
 
-        public CarsManager()
+        public CarManager()
         {
             client = new MobileServiceClient(
                 Constants.ApplicationURL,
                 Constants.ApplicationKey);
 
-            carsTable = client.GetTable<Cars>();
+            carsTable = client.GetTable<Car>();
         }
 
-        public async Task SaveCarAsync(Cars car)
+        public async Task SaveCarAsync(Car car)
         {
             if (car.ID == null)
             {
@@ -33,7 +33,7 @@ namespace Carpool
         }
 
 
-        public async Task<List<Cars>> GetMyCarsAsync(Users user)
+        public async Task<List<Car>> GetMyCarsAsync(User user)
         {
             try
             {

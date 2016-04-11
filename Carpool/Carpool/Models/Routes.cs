@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Carpool
 {
-     public class Routes
+     public class Route
     {
         [JsonProperty(PropertyName = "id")]
         public string ID { get; set; }

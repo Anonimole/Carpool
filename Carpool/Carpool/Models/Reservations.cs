@@ -2,7 +2,7 @@
 
 namespace Carpool
 {
-    class Reservations
+    class Reservation
     {
         [JsonProperty(PropertyName = "id")]
         public string ID { get; set; }

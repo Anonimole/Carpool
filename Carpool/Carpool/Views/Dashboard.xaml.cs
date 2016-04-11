@@ -11,25 +11,25 @@ namespace Carpool
 {
     public partial class Dashboard : ContentPage
     {
-        private Users currentUser;
-        private List<Routes> routesList;
+        private User currentUser;
+        private List<Route> routesList;
         private RouteManager routeManager;
 
-        private List<Reservations> reservationsList;
-        private ReservationsManager reservationManager;
+        private List<Reservation> reservationsList;
+        private ReservationManager reservationManager;
         private ToolbarItem reservationsButton;
 
         public Dashboard()
         {
             InitializeComponent();
 
-            currentUser = (Users)Application.Current.Properties["user"];
+            currentUser = (User)Application.Current.Properties["user"];
 
-            routesList = new List<Routes>();
+            routesList = new List<Route>();
             routeManager = new RouteManager();
 
-            reservationsList = new List<Reservations>();
-            reservationManager = new ReservationsManager();
+            reservationsList = new List<Reservation>();
+            reservationManager = new ReservationManager();
             
 
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
@@ -50,7 +50,7 @@ namespace Carpool
 
         private async void LoadRoutesList()
         {
-            reservationsList = new List<Reservations>();
+            reservationsList = new List<Reservation>();
             routesListView.IsRefreshing = true;
             routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID && route.Depart_Date > DateTime.Now);
 
@@ -64,7 +64,7 @@ namespace Carpool
             
             for (int i = 0; i < routesList.Count; i++)
             {
-                List<Reservations> rl = await reservationManager.GetReservationsWhere(reservation => reservation.ID_Route == routesList.ElementAt(i).ID);
+                List<Reservation> rl = await reservationManager.GetReservationsWhere(reservation => reservation.ID_Route == routesList.ElementAt(i).ID);
                 if (rl.Count == routesList.ElementAt(i).Capacity)
                 {
                     routesList.RemoveAt(i);
@@ -122,7 +122,7 @@ namespace Carpool
 
         private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var route = e.Item as Routes;
+            var route = e.Item as Route;
             await Navigation.PushAsync(new RoutesDetail(route));
         }
 

@@ -12,32 +12,32 @@ namespace Carpool
 {
     public partial class MyRoutesDetail : ContentPage
     {
-        private Routes route;
-        private Users userRoute;
-        private UsersManager usersManager;
+        private Route route;
+        private User userRoute;
+        private UserManager usersManager;
         private RouteManager routeManager;
-        private Users currentUser;
-        private ReservationsManager reservationsManager;
-        private List<Reservations> reservationResult;
-        private List<Users> usersList;
+        private User currentUser;
+        private ReservationManager reservationsManager;
+        private List<Reservation> reservationResult;
+        private List<User> usersList;
 
-        public MyRoutesDetail(Routes route)
+        public MyRoutesDetail(Route route)
         {
             this.route = route;
-            usersList = new List<Users>();
-            currentUser = (Users)Application.Current.Properties["user"];
-            reservationsManager = new ReservationsManager();
+            usersList = new List<User>();
+            currentUser = (User)Application.Current.Properties["user"];
+            reservationsManager = new ReservationManager();
             routeManager=new RouteManager();
-            reservationResult = new List<Reservations>();
+            reservationResult = new List<Reservation>();
             InitializeComponent();
 
             this.IsBusy = true;
-            userRoute = new Users
+            userRoute = new User
             {
                 ID = this.route.ID_User
             };
 
-            usersManager = new UsersManager();
+            usersManager = new UserManager();
 
             this.LoadData();
         }
@@ -47,7 +47,7 @@ namespace Carpool
             string id_user = currentUser.ID;
             string id_route = route.ID;
 
-            Reservations reservation = new Reservations
+            Reservation reservation = new Reservation
             {
                 ID_User = id_user,
                 ID_Route = id_route
@@ -124,7 +124,7 @@ namespace Carpool
 
         private async void OnActivate(object sender, EventArgs e)
         {
-            var reservations=new Reservations
+            var reservations=new Reservation
             {
                 ID_Route = route.ID
             };
@@ -147,6 +147,7 @@ namespace Carpool
             await routeManager.SaveRouteAsync(route);
             await DisplayAlert("Success", "Route activated", "Accept");
 
+            LoadData();
         }
 
 

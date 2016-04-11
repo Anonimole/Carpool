@@ -8,8 +8,8 @@ namespace Carpool
     public partial class Profile : ContentPage
     {
 
-        private Users currentUser;
-        UsersManager manager;
+        private User currentUser;
+        UserManager manager;
 
         public Profile()
         {
@@ -17,8 +17,8 @@ namespace Carpool
             InitializeComponent();
 
 
-            manager = new UsersManager();
-            currentUser = (Users)Application.Current.Properties["user"];
+            manager = new UserManager();
+            currentUser = (User)Application.Current.Properties["user"];
 
             loadData();
 
@@ -57,9 +57,9 @@ namespace Carpool
             }
         }
 
-        async Task UpdateUser(Users user)
+        async Task UpdateUser(User user)
         {
-            Users userResponse = await manager.SaveGetUserAsync(user);
+            User userResponse = await manager.SaveGetUserAsync(user);
             Application.Current.Properties["user"] = userResponse;
         }
 
@@ -84,7 +84,7 @@ namespace Carpool
             }
             else
             {
-                var user = new Users
+                var user = new User
                 {
                     ID = currentUser.ID,
                     Email = currentUser.Email,

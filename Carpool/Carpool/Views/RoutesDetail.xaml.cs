@@ -7,26 +7,26 @@ namespace Carpool
 {
     public partial class RoutesDetail : ContentPage
     {
-        private UsersManager usersManager;
-        private Users userRoute;
+        private UserManager usersManager;
+        private User userRoute;
         private ExtMap myMap;
-        private Routes route;
-        private ReservationsManager reservationsManager;
-        private Users currentUser;
+        private Route route;
+        private ReservationManager reservationsManager;
+        private User currentUser;
 
-        public RoutesDetail(Routes route)
+        public RoutesDetail(Route route)
         {
             InitializeComponent();
             this.route = route;
 
-            userRoute = new Users
+            userRoute = new User
             {
                 ID = route.ID_User
             };
 
-            usersManager = new UsersManager();
-            reservationsManager = new ReservationsManager();
-            currentUser = (Users)Application.Current.Properties["user"];
+            usersManager = new UserManager();
+            reservationsManager = new ReservationManager();
+            currentUser = (User)Application.Current.Properties["user"];
 
             this.LoadReservation();
             this.LoadData();
@@ -45,12 +45,12 @@ namespace Carpool
             descriptionLabel.Text = route.Comments;
             departureLabel.Text = "Departure: \n" + route.Depart_Date.ToString("dd/MMMM H:mm ") + "h";
 
-            Reservations reservation=new Reservations
+            Reservation reservation=new Reservation
             {
                 ID_Route = route.ID
             };
 
-            List<Reservations> reservations = await reservationsManager.GetReservationsWhere(reserv => reserv.ID_Route == reservation.ID_Route);
+            List<Reservation> reservations = await reservationsManager.GetReservationsWhere(reserv => reserv.ID_Route == reservation.ID_Route);
             
             seatsLabel.Text = "Seats Available: " + (route.Capacity-reservations.Count);
 
@@ -62,13 +62,13 @@ namespace Carpool
             string id_user = currentUser.ID;
             string id_route = route.ID;
 
-            Reservations reservation = new Reservations
+            Reservation reservation = new Reservation
             {
                 ID_User = id_user,
                 ID_Route = id_route
             };
 
-            List<Reservations> reservationResult = await reservationsManager.GetReservationsWhere(reserv => reserv.ID_Route == reservation.ID_Route && reserv.ID_User == reservation.ID_User);
+            List<Reservation> reservationResult = await reservationsManager.GetReservationsWhere(reserv => reserv.ID_Route == reservation.ID_Route && reserv.ID_User == reservation.ID_User);
 
             if (reservationResult.Count != 0)
             {
@@ -109,7 +109,7 @@ namespace Carpool
             {
                 activityIndicator.IsRunning = true;
 
-                var newReservation = new Reservations
+                var newReservation = new Reservation
                 {
                     ID_Route = route.ID,
                     ID_User = currentUser.ID
@@ -129,7 +129,7 @@ namespace Carpool
             bool answer = await DisplayAlert("Cancel Reservation", "Are you sure?", "Accept", "Cancel");
             if (answer)
             {
-                var reservation = new Reservations { ID_Route = route.ID, ID_User = currentUser.ID };
+                var reservation = new Reservation { ID_Route = route.ID, ID_User = currentUser.ID };
                 IsBusy = true;
                 await reservationsManager.DeleteReservationAsync(reservation);
                 IsBusy = false;

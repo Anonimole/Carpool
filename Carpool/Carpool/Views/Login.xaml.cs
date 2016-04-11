@@ -7,14 +7,14 @@ namespace Carpool
 {
     public partial class Login : ContentPage
     {
-        private Users currentUser;
-        private UsersManager usersManager;
+        private User currentUser;
+        private UserManager usersManager;
 
         public Login()
         {
             InitializeComponent();
 
-            usersManager = new UsersManager();
+            usersManager = new UserManager();
             
             NavigationPage.SetHasNavigationBar(this, false);
         }
@@ -23,13 +23,13 @@ namespace Carpool
         {
             string email = this.emailEntry.Text;
             string password = this.passwordEntry.Text;
-            var user = new Users { Email = email, Password = password };
+            var user = new User { Email = email, Password = password };
 
             if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
                 activityIndicator.IsRunning = true;
 
-                Users userResponse = await usersManager.GetUserWhere(userSelect => userSelect.Email == user.Email && userSelect.Password==user.Password);
+                User userResponse = await usersManager.GetUserWhere(userSelect => userSelect.Email == user.Email && userSelect.Password==user.Password);
 
                 activityIndicator.IsRunning = false;
 

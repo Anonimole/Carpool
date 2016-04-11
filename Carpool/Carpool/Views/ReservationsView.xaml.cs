@@ -10,25 +10,25 @@ namespace Carpool
 {
     public partial class ReservationsView : ContentPage
     {
-        private Users currentUser;
-        private List<Routes> routesList;
+        private User currentUser;
+        private List<Route> routesList;
         private RouteManager routeManager;
-        private List<Routes> routesReservations;
+        private List<Route> routesReservations;
 
-        private List<Reservations> reservationsList;
-        private ReservationsManager reservationManager;
+        private List<Reservation> reservationsList;
+        private ReservationManager reservationManager;
 
         public ReservationsView()
         {
             InitializeComponent();
             
-            currentUser = (Users)Application.Current.Properties["user"];
+            currentUser = (User)Application.Current.Properties["user"];
 
-            routesList = new List<Routes>();
+            routesList = new List<Route>();
             routeManager = new RouteManager();
 
-            reservationsList = new List<Reservations>();
-            reservationManager = new ReservationsManager();
+            reservationsList = new List<Reservation>();
+            reservationManager = new ReservationManager();
 
             
 
@@ -48,7 +48,7 @@ namespace Carpool
         private async void LoadRoutes()
         {
 
-            routesReservations = new List<Routes>();
+            routesReservations = new List<Route>();
 
             routesList = await routeManager.ListRoutesWhere(route => route.ID_User != currentUser.ID && route.Depart_Date > DateTime.Now);
             reservationsList = await reservationManager.GetReservationsWhere(reservation => reservation.ID_User == currentUser.ID);
@@ -86,7 +86,7 @@ namespace Carpool
 
         private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var route = e.Item as Routes;
+            var route = e.Item as Route;
             await Navigation.PushAsync(new RoutesDetail(route));
         }
 

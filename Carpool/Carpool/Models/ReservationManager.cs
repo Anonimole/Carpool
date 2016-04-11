@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace Carpool
 {
-    class ReservationsManager
+    class ReservationManager
     {
-        IMobileServiceTable<Reservations> reservationsTable;
+        IMobileServiceTable<Reservation> reservationsTable;
         MobileServiceClient client;
 
-        public ReservationsManager()
+        public ReservationManager()
         {
             client = new MobileServiceClient(
                 Constants.ApplicationURL,
                 Constants.ApplicationKey);
 
-            reservationsTable = client.GetTable<Reservations>();
+            reservationsTable = client.GetTable<Reservation>();
         }
 
-        public async Task SaveReservationAsync(Reservations reservation)
+        public async Task SaveReservationAsync(Reservation reservation)
         {
             if (reservation.ID == null)
             {
@@ -34,7 +34,7 @@ namespace Carpool
             }
         }
 
-        public async Task<List<Reservations>> GetReservationsWhere(Expression<Func<Reservations, bool>> linq)
+        public async Task<List<Reservation>> GetReservationsWhere(Expression<Func<Reservation, bool>> linq)
         {
             try
             {
@@ -51,11 +51,11 @@ namespace Carpool
             return null;
         }
 
-        public async Task DeleteReservationsAsync(Reservations reservation)
+        public async Task DeleteReservationsAsync(Reservation reservation)
         {
             try
             {
-                List<Reservations> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route);
+                List<Reservation> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route);
                 foreach (var res in reservationsList)
                 {
                     await reservationsTable.DeleteAsync(res);
@@ -73,11 +73,11 @@ namespace Carpool
 
         }
 
-        public async Task DeleteReservationAsync(Reservations reservation)
+        public async Task DeleteReservationAsync(Reservation reservation)
         {
             try
             {
-                List<Reservations> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route&& res.ID_User==reservation.ID_User);
+                List<Reservation> reservationsList = await GetReservationsWhere(res => res.ID_Route == reservation.ID_Route&& res.ID_User==reservation.ID_User);
                 foreach (var res in reservationsList)
                 {
                     await reservationsTable.DeleteAsync(res);

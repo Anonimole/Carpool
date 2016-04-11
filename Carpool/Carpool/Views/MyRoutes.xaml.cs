@@ -8,16 +8,16 @@ namespace Carpool
 {
     public partial class MyRoutes : ContentPage
     {
-        private Users currentUser;
-        private List<Routes> routesList;
+        private User currentUser;
+        private List<Route> routesList;
         private RouteManager routeManager;
 
         public MyRoutes()
         {
-            routesList = new List<Routes>();
+            routesList = new List<Route>();
             routeManager = new RouteManager();
             InitializeComponent();
-            currentUser = (Users)Application.Current.Properties["user"];
+            currentUser = (User)Application.Current.Properties["user"];
             routesListView.ItemTemplate = new DataTemplate(typeof(RoutesCell));
             routesListView.Refreshing += RoutesListView_Refreshing;
             routesListView.ItemTapped += RoutesListView_ItemTapped;
@@ -25,7 +25,7 @@ namespace Carpool
 
         private async void RoutesListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var route = e.Item as Routes;
+            var route = e.Item as Route;
             await Navigation.PushAsync(new MyRoutesDetail(route));
         }
 

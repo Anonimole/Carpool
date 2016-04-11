@@ -17,10 +17,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\EmailValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\LengthValidatorBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtMap.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Cars.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\CarsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Car.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CarManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Reservations.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\ReservationsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ReservationManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Routes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\RouteManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Users.cs" />

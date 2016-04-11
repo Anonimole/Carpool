@@ -11,16 +11,16 @@ namespace Carpool
 {
     class RouteManager
     {
-        private IMobileServiceTable<Routes> routesTable;
+        private IMobileServiceTable<Route> routesTable;
         private MobileServiceClient client;
 
         public RouteManager()
         {
             client = new MobileServiceClient(Constants.ApplicationURL,Constants.ApplicationKey);
-            routesTable = client.GetTable<Routes>();
+            routesTable = client.GetTable<Route>();
         }
 
-        public async Task SaveRouteAsync(Routes route)
+        public async Task SaveRouteAsync(Route route)
         {
             if (route.ID == null)
             {
@@ -32,11 +32,11 @@ namespace Carpool
             }
         }
 
-        public async Task<Routes> GetRouteWhere(Expression<Func<Routes,bool>> linq)
+        public async Task<Route> GetRouteWhere(Expression<Func<Route,bool>> linq)
         {
             try
             {
-                List<Routes> routesList = await routesTable.Where(linq).Take(1).ToListAsync();
+                List<Route> routesList = await routesTable.Where(linq).Take(1).ToListAsync();
                 return routesList.First();
             }
             catch (MobileServiceInvalidOperationException msioe)
@@ -50,11 +50,11 @@ namespace Carpool
             return null;
         }
 
-        public async Task<List<Routes>> ListRoutesWhere(Expression<Func<Routes, bool>> linq)
+        public async Task<List<Route>> ListRoutesWhere(Expression<Func<Route, bool>> linq)
         {
             try
             {
-                return new List<Routes>
+                return new List<Route>
                 (
                     await routesTable.Where(linq).ToListAsync()
                 );

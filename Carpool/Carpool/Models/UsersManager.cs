@@ -10,25 +10,25 @@ using System.Linq.Expressions;
 
 namespace Carpool
 {
-    class UsersManager
+    class UserManager
     {
-        IMobileServiceTable<Users> usersTable;
+        IMobileServiceTable<User> usersTable;
         MobileServiceClient client;
 
-        public UsersManager()
+        public UserManager()
         {
             client = new MobileServiceClient(
                 Constants.ApplicationURL,
                 Constants.ApplicationKey);
 
-            usersTable = client.GetTable<Users>();
+            usersTable = client.GetTable<User>();
         }
 
-        public async Task<Users> GetUserWhere(Expression<Func<Users, bool>> linq)
+        public async Task<User> GetUserWhere(Expression<Func<User, bool>> linq)
         {
             try
             {
-                List<Users> newUser = await usersTable.Where(linq).Take(1).ToListAsync();
+                List<User> newUser = await usersTable.Where(linq).Take(1).ToListAsync();
                 return newUser.First();
             }
             catch (MobileServiceInvalidOperationException msioe)
@@ -43,7 +43,7 @@ namespace Carpool
             return null;
         }
 
-        public async Task<Users> SaveGetUserAsync(Users user)
+        public async Task<User> SaveGetUserAsync(User user)
         {
             if (user.ID == null)
             {
@@ -56,7 +56,7 @@ namespace Carpool
 
             try
             {
-                List<Users> newUser = await usersTable.Where(userSelect => userSelect.Email == user.Email).ToListAsync();
+                List<User> newUser = await usersTable.Where(userSelect => userSelect.Email == user.Email).ToListAsync();
                 return newUser.First();
             }
             catch (MobileServiceInvalidOperationException msioe)

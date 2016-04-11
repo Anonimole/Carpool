@@ -15,7 +15,7 @@ namespace Carpool
     {
         private ExtMap myMap;
         private bool pinFlag;
-        private Routes newRoute;
+        private Route newRoute;
         private IDictionary<string, object> properties;
 
         public MapStartingPoint()
@@ -37,11 +37,11 @@ namespace Carpool
 
             if (properties.ContainsKey("route"))
             {
-                newRoute = (Routes)Application.Current.Properties["route"];
+                newRoute = (Route)Application.Current.Properties["route"];
             }
             else
             {
-                newRoute = new Routes();
+                newRoute = new Route();
             }
 
         }

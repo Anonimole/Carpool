@@ -10,20 +10,20 @@ namespace Carpool
 {
 	public partial class AddCar : ContentPage
 	{
-        private Users currentUser;
-	    private CarsManager manager;
+        private User currentUser;
+	    private CarManager manager;
 
         public AddCar ()
         {
 
 			InitializeComponent ();
 
-            currentUser = (Users)Application.Current.Properties["user"];
-            manager = new CarsManager();
+            currentUser = (User)Application.Current.Properties["user"];
+            manager = new CarManager();
         }
 
 
-	    async Task AddNewCar(Cars car)
+	    async Task AddNewCar(Car car)
 	    {
 	        await manager.SaveCarAsync(car);
 	    }
@@ -35,7 +35,7 @@ namespace Carpool
 
 	        activityIndicator.IsRunning = true;
 
-	        var car = new Cars {Color = color, Model = model, ID_User = currentUser.ID};
+	        var car = new Car {Color = color, Model = model, ID_User = currentUser.ID};
 
             if (!string.IsNullOrEmpty(model) && !string.IsNullOrEmpty(color))
             {

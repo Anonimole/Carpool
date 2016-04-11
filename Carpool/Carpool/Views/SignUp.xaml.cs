@@ -11,20 +11,20 @@ namespace Carpool
 {
     public partial class SignUp : ContentPage
     {
-        UsersManager manager;
+        UserManager manager;
 
         public SignUp()
         {
             InitializeComponent();
 
-            manager = new UsersManager();
+            manager = new UserManager();
         }
 
-        async Task AddUser(Users user)
+        async Task AddUser(User user)
         {
             //await manager.SaveUserAsync(user);
 
-            Users userResponse = await manager.SaveGetUserAsync(user);
+            User userResponse = await manager.SaveGetUserAsync(user);
 
             Application.Current.Properties["user"] = userResponse;
 
@@ -41,7 +41,7 @@ namespace Carpool
                 this.activityIndicator.IsRunning = true;
                 this.signUpButton.IsEnabled = false;
 
-                var user = new Users
+                var user = new User
                 {
                     Email = email,
                     Password = password,
@@ -79,7 +79,7 @@ namespace Carpool
                 this.activityIndicator.IsRunning = true;
                 validationLabel.IsVisible = true;
                 signUpButton.IsEnabled = false;
-                Users usersSelect = await manager.GetUserWhere(userSelect=>userSelect.Email== email);
+                User usersSelect = await manager.GetUserWhere(userSelect=>userSelect.Email== email);
                 this.emailEntryError.IsVisible = usersSelect!=null ? true : false;
                 signUpButton.IsEnabled = usersSelect!=null? true: false;
                 this.signUpButton.IsEnabled = !emailEntryError.IsVisible;

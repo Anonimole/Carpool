@@ -7,24 +7,24 @@ namespace Carpool
 {
     public partial class AddRoute : ContentPage
     {
-        private CarsManager carsManager;
+        private CarManager carsManager;
         private RouteManager routeManager;
-        private Users currentUser;
-        private Routes newRoute;
+        private User currentUser;
+        private Route newRoute;
         private bool carSelected;
         private IDictionary<string, object> properties;
-        private List<Cars> carsList;
+        private List<Car> carsList;
         private bool savePoints;
 
         public AddRoute()
         {
             carSelected = false;
             savePoints = false;
-            carsManager = new CarsManager();
+            carsManager = new CarManager();
             routeManager = new RouteManager();
 
             properties = Application.Current.Properties;
-            currentUser = (Users)Application.Current.Properties["user"];
+            currentUser = (User)Application.Current.Properties["user"];
             this.IsBusy = true;
             InitializeComponent();
 
@@ -63,7 +63,7 @@ namespace Carpool
 
             if (properties.ContainsKey("route"))
             {
-                newRoute = (Routes)Application.Current.Properties["route"];
+                newRoute = (Route)Application.Current.Properties["route"];
 
                 if (!string.IsNullOrEmpty(newRoute.From_Latitude))
                     startingPointButton.Text = "Change Starting point";
@@ -100,8 +100,8 @@ namespace Carpool
             }
             else
             {
-                if (string.IsNullOrEmpty((properties["route"] as Routes).From_Latitude) ||
-                    string.IsNullOrEmpty((properties["route"] as Routes).To_Latitude))
+                if (string.IsNullOrEmpty((properties["route"] as Route).From_Latitude) ||
+                    string.IsNullOrEmpty((properties["route"] as Route).To_Latitude))
                 {
                     await DisplayAlert("Error", "Select points in map", "accept");
                 }
@@ -136,7 +136,7 @@ namespace Carpool
 
             if (validation == true)
             {
-                newRoute = (Routes)properties["route"];
+                newRoute = (Route)properties["route"];
                 newRoute.From = startingNameEntry.Text;
                 newRoute.To = endingNameEntry.Text;
                 newRoute.Capacity = Int32.Parse("" + seatsEntry.Text);
@@ -149,7 +149,7 @@ namespace Carpool
                 newRoute.Depart_Date = dateRoute.DateTime;
                 newRoute.Depart_Time = departureTimePicker.Time.ToString();
                 string carSelected = carPicker.Items.ElementAt(carPicker.SelectedIndex);
-                Cars car = carsList.Where(cars => cars.Model+" "+cars.Color == carSelected).First();
+                Car car = carsList.Where(cars => cars.Model+" "+cars.Color == carSelected).First();
 
                 newRoute.ID_Car = car.ID;
 
