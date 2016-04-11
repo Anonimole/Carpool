@@ -120,6 +120,7 @@ namespace Carpool
                 activityIndicator.IsRunning = false;
                 cancelButton.IsVisible = true;
                 reserveButton.IsVisible = false;
+                LoadData();
             }
 
         }
